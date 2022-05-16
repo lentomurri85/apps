@@ -1,0 +1,3 @@
+upload report in this folder, save it as "weekly.csv"
+Calculation -> calculation_ebay 
+The file should refresh automatically. For every problem, please go to the Elephant Graveyard in the corner of the office. 

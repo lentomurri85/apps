@@ -1,0 +1,3 @@
+Linnworks -> Query Data -> Accounting: last_sales(latest date)
+Save the file in the reports 
+Change the filename with "last_sales" + current yyyyMM (eg: last_sales202202)

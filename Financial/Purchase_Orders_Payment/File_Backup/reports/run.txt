@@ -1,0 +1,8 @@
+open ftp.amberta.com
+support8@ amberta.com
+4q8g]LX06q9([)nn0A#v
+lcd "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\File_Backup\reports"
+cd public_html / reports / reports_for_apps
+recv purchase.csv
+Disconnect
+Quit

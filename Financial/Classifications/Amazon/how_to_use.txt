@@ -1,0 +1,6 @@
+Save the report file as "1.xlsx"
+Enter the Amazon Value 
+	For order: Sheet "orderReport"
+	For refunds: Sheet "refundReport"
+
+If it doesn't work, come get blessed in the elephant graveyard in the corner 

@@ -1,0 +1,21 @@
+TO USE IF THE RUN_ME_FIRST SCRIPT DIDN'T UPDATE THE FILES:
+stock.csv
+fba.csv
+purchase.csv
+sales.csv
+
+Linnworks -> Query Data -> General: stock
+Save the file in the reports 
+Change the filename with stock.csv
+
+Linnworks -> Query Data -> General: Fba
+Save the file in the reports 
+Change the filename with fba.csv
+
+Linnworks -> Query Data -> General: Purchase
+Save the file in the reports 
+Change the filename with purchase.csv
+
+Linnworks -> Query Data -> General: 6 Months Sales
+Save the file in the reports 
+Change the filename with sales.csv

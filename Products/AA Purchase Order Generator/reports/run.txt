@@ -1,0 +1,11 @@
+open ftp.amberta.com
+support8@amberta.com
+4q8g]LX06q9([)nn0A#v
+lcd "\\NIKOTSY-PC\Amberta LTD - Working Files\12 - IT Files\PURCHASE AND FBA ORDER STRUCTURE\Purchase Order Generator\reports"
+cd public_html/reports/reports_for_apps
+recv sales.csv 
+recv purchase.csv
+recv fba.csv
+recv stock.csv
+disconnect
+quit

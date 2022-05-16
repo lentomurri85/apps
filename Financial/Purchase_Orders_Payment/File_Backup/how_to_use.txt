@@ -1,0 +1,8 @@
+1) Download report:
+	Linnworks -> Dashboard -> Query Data -> Purchase Payment Tracker.
+2) Save report as "po" in this folder -> Reports
+3) Open Workbook po_payments. It should update everything.
+	-If update fails, go to Data -> Refresh All.
+4) Your working Sheet is called "Master". Follow the istruction on the sheet to use the program. 
+5) You can take an overlook of your data on the Sheet "Payment Tracker"
+6) The graphics is horrible but so am I. 

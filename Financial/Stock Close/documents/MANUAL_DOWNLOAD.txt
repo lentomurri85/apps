@@ -1,0 +1,16 @@
+TO USE IF THE RUN_ME_FIRST SCRIPT DIDN'T UPDATE THE FILES:
+stock_yyyyMM.csv
+fba_stockyyyyMM.csv
+last_salesyyyyMM.csv
+
+Linnworks -> Query Data -> Accounting: last_sales(latest date)
+Save the file in the reports 
+Change the filename with "last_sales" + current yyyyMM (eg: last_sales202202)
+
+Linnworks -> Query Data -> Amazon Stock
+Save the file in the reports 
+Change the filename with "fba_stock" + current yyyyMM (eg: fba_stock202202)
+
+Linnworks -> Query Data -> Total Stock Level Warehouse
+Save the file in the reports 
+Change the filename with "stock_" + current yyyyMM (eg: stock_202202)

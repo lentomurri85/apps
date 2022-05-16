@@ -1,0 +1,2364 @@
+. 2022-02-16 17:02:03.747 --------------------------------------------------------------------------
+. 2022-02-16 17:02:03.748 WinSCP Version 5.19.5 (Build 11933 2021-11-25) (OS 10.0.19044 - Windows 10 Enterprise)
+. 2022-02-16 17:02:03.748 Configuration: nul
+. 2022-02-16 17:02:03.749 Log level: Normal
+. 2022-02-16 17:02:03.749 Local account: SUPPORT8\Amberta Support8
+. 2022-02-16 17:02:03.750 Working directory: C:\Windows
+. 2022-02-16 17:02:03.750 Process ID: 13360
+. 2022-02-16 17:02:03.756 Ancestor processes: WinSCP, cmd, explorer, ...
+. 2022-02-16 17:02:03.758 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.19.5 /consoleinstance=_10124_303 "/log=""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\documents\winscp.log""" "/ini=nul" "/command" "open ftp://kanifa%40amberta.com:***@ftp.amberta.com/" "cd /public_html/reports/reports_for_apps" "lcd ""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports""" "option batch abort" "option failonnomatch on" "get purchase.csv" "get stock.csv" "exit"
+. 2022-02-16 17:02:03.759 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 27/03/2022, DST End: 30/10/2022
+. 2022-02-16 17:02:03.759 Login time: 16 February 2022 17:02:03
+. 2022-02-16 17:02:03.759 --------------------------------------------------------------------------
+. 2022-02-16 17:02:03.760 Script: Retrospectively logging previous script records:
+> 2022-02-16 17:02:03.760 Script: open ftp://kanifa%40amberta.com:***@ftp.amberta.com/
+. 2022-02-16 17:02:03.761 --------------------------------------------------------------------------
+. 2022-02-16 17:02:03.761 Session name: kanifa@amberta.com@ftp.amberta.com (Ad-Hoc site)
+. 2022-02-16 17:02:03.761 Host name: ftp.amberta.com (Port: 21)
+. 2022-02-16 17:02:03.762 User name: kanifa@amberta.com (Password: Yes, Key file: No, Passphrase: No)
+. 2022-02-16 17:02:03.762 Transfer Protocol: FTP
+. 2022-02-16 17:02:03.762 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2022-02-16 17:02:03.763 Disable Nagle: No
+. 2022-02-16 17:02:03.763 Proxy: None
+. 2022-02-16 17:02:03.763 Send buffer: 262144
+. 2022-02-16 17:02:03.764 UTF: Auto
+. 2022-02-16 17:02:03.764 FTPS: None [Client certificate: No]
+. 2022-02-16 17:02:03.765 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2022-02-16 17:02:03.765 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2022-02-16 17:02:03.766 Cache directory changes: Yes, Permanent: Yes
+. 2022-02-16 17:02:03.766 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2022-02-16 17:02:03.766 Timezone offset: 0h 0m
+. 2022-02-16 17:02:03.766 --------------------------------------------------------------------------
+< 2022-02-16 17:02:03.771 Script: Connecting to ftp.amberta.com ...
+. 2022-02-16 17:02:03.772 Connecting to ftp.amberta.com ...
+. 2022-02-16 17:02:03.809 Connected with ftp.amberta.com. Waiting for welcome message...
+< 2022-02-16 17:02:03.841 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+< 2022-02-16 17:02:03.842 220-You are user number 121 of 5000 allowed.
+< 2022-02-16 17:02:03.843 220-Local time is now 17:02. Server port: 21.
+< 2022-02-16 17:02:03.843 220-This is a private system - No anonymous login
+< 2022-02-16 17:02:03.843 220-IPv6 connections are also welcome on this server.
+< 2022-02-16 17:02:03.844 220 You will be disconnected after 15 minutes of inactivity.
+> 2022-02-16 17:02:03.844 USER kanifa@amberta.com
+< 2022-02-16 17:02:03.867 331 User kanifa@amberta.com OK. Password required
+> 2022-02-16 17:02:03.868 PASS ********************
+< 2022-02-16 17:02:03.904 230-This server supports FXP transfers
+< 2022-02-16 17:02:03.905 230 OK. Current restricted directory is /
+> 2022-02-16 17:02:03.905 SYST
+< 2022-02-16 17:02:03.930 215 UNIX Type: L8
+> 2022-02-16 17:02:03.931 FEAT
+< 2022-02-16 17:02:03.958 211-Extensions supported:
+< 2022-02-16 17:02:03.960  EPRT
+< 2022-02-16 17:02:03.961  IDLE
+< 2022-02-16 17:02:03.962  MDTM
+< 2022-02-16 17:02:03.963  SIZE
+< 2022-02-16 17:02:03.964  MFMT
+< 2022-02-16 17:02:03.965  REST STREAM
+< 2022-02-16 17:02:03.966  MLST type*;size*;sizd*;modify*;UNIX.mode*;UNIX.uid*;UNIX.gid*;unique*;
+< 2022-02-16 17:02:03.967  MLSD
+< 2022-02-16 17:02:03.967  AUTH TLS
+< 2022-02-16 17:02:03.968  PBSZ
+< 2022-02-16 17:02:03.968  PROT
+< 2022-02-16 17:02:03.970  ESTA
+< 2022-02-16 17:02:03.971  PASV
+< 2022-02-16 17:02:03.972  EPSV
+< 2022-02-16 17:02:03.972  SPSV
+< 2022-02-16 17:02:03.972 211 End.
+< 2022-02-16 17:02:03.973 Script: Connected
+. 2022-02-16 17:02:03.973 Connected
+. 2022-02-16 17:02:03.974 --------------------------------------------------------------------------
+. 2022-02-16 17:02:03.974 Using FTP protocol.
+. 2022-02-16 17:02:03.975 Doing startup conversation with host.
+< 2022-02-16 17:02:03.975 Script: Starting the session...
+> 2022-02-16 17:02:03.976 PWD
+< 2022-02-16 17:02:04.001 257 "/" is your current location
+. 2022-02-16 17:02:04.002 Getting current directory name.
+. 2022-02-16 17:02:04.003 Startup conversation with host finished.
+< 2022-02-16 17:02:04.004 Script: Session started.
+< 2022-02-16 17:02:04.005 Script: Active session: [1] kanifa@amberta.com@ftp.amberta.com
+> 2022-02-16 17:02:04.007 Script: cd /public_html/reports/reports_for_apps
+. 2022-02-16 17:02:04.008 Changing directory to "/public_html/reports/reports_for_apps".
+> 2022-02-16 17:02:04.010 CWD /public_html/reports/reports_for_apps
+< 2022-02-16 17:02:04.037 250 OK. Current directory is /public_html/reports/reports_for_apps
+. 2022-02-16 17:02:04.038 Getting current directory name.
+> 2022-02-16 17:02:04.039 PWD
+< 2022-02-16 17:02:04.065 257 "/public_html/reports/reports_for_apps" is your current location
+< 2022-02-16 17:02:04.066 Script: /public_html/reports/reports_for_apps
+> 2022-02-16 17:02:04.067 Script: lcd "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports"
+< 2022-02-16 17:02:04.068 Script: \\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports
+> 2022-02-16 17:02:04.069 Script: option batch abort
+< 2022-02-16 17:02:04.070 Script: batch           abort     
+> 2022-02-16 17:02:04.070 Script: option failonnomatch on
+< 2022-02-16 17:02:04.070 Script: failonnomatch   on        
+> 2022-02-16 17:02:04.071 Script: get purchase.csv
+. 2022-02-16 17:02:04.071 Listing file "purchase.csv".
+. 2022-02-16 17:02:04.072 Retrieving file information...
+> 2022-02-16 17:02:04.072 MLST /public_html/reports/reports_for_apps/purchase.csv
+< 2022-02-16 17:02:04.101 250-Begin
+< 2022-02-16 17:02:04.102  type=file;size=302756;modify=20220216165248;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2fg3f1f379; /public_html/reports/reports_for_apps/purchase.csv
+< 2022-02-16 17:02:04.102 250 End.
+. 2022-02-16 17:02:04.103  type=file;size=302756;modify=20220216165248;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2fg3f1f379; /public_html/reports/reports_for_apps/purchase.csv
+. 2022-02-16 17:02:04.104 Retrieving file information successful
+. 2022-02-16 17:02:04.105 purchase.csv;-;302756;2022-02-16T16:52:48.000Z;3;"385925" [0];"82284" [0];rw-r--r--;0
+. 2022-02-16 17:02:04.105 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 302,756
+. 2022-02-16 17:02:04.105   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-02-16 17:02:04.105   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-02-16 17:02:04.106   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-02-16 17:02:04.106 File: '/public_html/reports/reports_for_apps/purchase.csv' [2022-02-16T16:52:48.000Z] [302756]
+. 2022-02-16 17:02:04.107 Copying "/public_html/reports/reports_for_apps/purchase.csv" to local directory started.
+. 2022-02-16 17:02:04.108 Binary transfer mode selected.
+. 2022-02-16 17:02:04.109 Starting download of /public_html/reports/reports_for_apps/purchase.csv
+> 2022-02-16 17:02:04.110 TYPE A
+< 2022-02-16 17:02:04.135 200 TYPE is now ASCII
+> 2022-02-16 17:02:04.136 PASV
+< 2022-02-16 17:02:04.162 227 Entering Passive Mode (91,208,99,4,40,240)
+> 2022-02-16 17:02:04.164 MLSD
+. 2022-02-16 17:02:04.165 Connecting to 91.208.99.4:10480 ...
+< 2022-02-16 17:02:04.221 150 Accepted data connection
+. 2022-02-16 17:02:04.223 type=cdir;sizd=11;modify=20220216165248;UNIX.mode=0755;UNIX.uid=385925;UNIX.gid=82284;unique=2fgd73e025; .
+. 2022-02-16 17:02:04.224 type=pdir;sizd=398;modify=20220117140819;UNIX.mode=0755;UNIX.uid=385925;UNIX.gid=82284;unique=2fg438b10f0; ..
+. 2022-02-16 17:02:04.224 type=file;size=1818962;modify=20220215235113;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2fg10438803; 1_month_sales.csv
+. 2022-02-16 17:02:04.226 type=dir;sizd=4;modify=20220216161431;UNIX.mode=0755;UNIX.uid=385925;UNIX.gid=82284;unique=2fgf18c84c; accounting
+. 2022-02-16 17:02:04.227 type=file;size=1074505;modify=20220215235122;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2fg10438933; fba.csv
+. 2022-02-16 17:02:04.227 type=file;size=12151861;modify=20220215235151;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2fg10438d4a; forecast.csv
+. 2022-02-16 17:02:04.227 type=file;size=302756;modify=20220216165248;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2fg3f1f379; purchase.csv
+. 2022-02-16 17:02:04.228 type=file;size=8188925;modify=20220215235138;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2fg104389dd; sales.csv
+. 2022-02-16 17:02:04.228 type=file;size=11417515;modify=20220215235157;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2fg10438db5; sales_and_subsource.csv
+. 2022-02-16 17:02:04.249 type=file;size=181390;modify=20220215235134;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2fg10438ac1; stock.csv
+. 2022-02-16 17:02:04.261 type=dir;sizd=26;modify=20220210150835;UNIX.mode=0755;UNIX.uid=385925;UNIX.gid=82284;unique=2fg1021719d; stock_levels
+< 2022-02-16 17:02:04.261 226-Options: -a -l 
+< 2022-02-16 17:02:04.262 226 11 matches total
+. 2022-02-16 17:02:04.262 Data connection closed
+> 2022-02-16 17:02:04.263 TYPE I
+< 2022-02-16 17:02:04.290 200 TYPE is now 8-bit binary
+> 2022-02-16 17:02:04.291 PASV
+< 2022-02-16 17:02:04.316 227 Entering Passive Mode (91,208,99,4,66,251)
+> 2022-02-16 17:02:04.318 RETR purchase.csv
+. 2022-02-16 17:02:04.319 Connecting to 91.208.99.4:17147 ...
+< 2022-02-16 17:02:04.372 150-Accepted data connection
+< 2022-02-16 17:02:04.373 150 295.7 kbytes to download
+< 2022-02-16 17:02:04.381 226-File successfully transferred
+< 2022-02-16 17:02:04.381 226 0.004 seconds (measured here), 82.31 Mbytes per second
+. 2022-02-16 17:02:04.688 Data connection closed
+. 2022-02-16 17:02:04.689 Preserving timestamp [2022-02-16T16:52:48.000Z]
+. 2022-02-16 17:02:04.690 Download successful
+. 2022-02-16 17:02:04.691 Transfer done: '/public_html/reports/reports_for_apps/purchase.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\purchase.csv' [302756]
+. 2022-02-16 17:02:04.691 Copying finished: Transferred: 302,756, Elapsed: 0:00:00, CPS: 920,231/s
+> 2022-02-16 17:02:04.692 Script: get stock.csv
+. 2022-02-16 17:02:04.692 Listing file "stock.csv".
+. 2022-02-16 17:02:04.693 Retrieving file information...
+> 2022-02-16 17:02:04.693 MLST /public_html/reports/reports_for_apps/stock.csv
+< 2022-02-16 17:02:04.723 250-Begin
+< 2022-02-16 17:02:04.724  type=file;size=181390;modify=20220215235134;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2fg10438ac1; /public_html/reports/reports_for_apps/stock.csv
+< 2022-02-16 17:02:04.725 250 End.
+. 2022-02-16 17:02:04.726  type=file;size=181390;modify=20220215235134;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2fg10438ac1; /public_html/reports/reports_for_apps/stock.csv
+. 2022-02-16 17:02:04.726 Retrieving file information successful
+. 2022-02-16 17:02:04.727 stock.csv;-;181390;2022-02-15T23:51:34.000Z;3;"385925" [0];"82284" [0];rw-r--r--;0
+. 2022-02-16 17:02:04.727 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 181,390
+. 2022-02-16 17:02:04.728   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-02-16 17:02:04.728   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-02-16 17:02:04.729   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-02-16 17:02:04.729 File: '/public_html/reports/reports_for_apps/stock.csv' [2022-02-15T23:51:34.000Z] [181390]
+. 2022-02-16 17:02:04.730 Copying "/public_html/reports/reports_for_apps/stock.csv" to local directory started.
+. 2022-02-16 17:02:04.730 Binary transfer mode selected.
+. 2022-02-16 17:02:04.731 Starting download of /public_html/reports/reports_for_apps/stock.csv
+> 2022-02-16 17:02:04.731 TYPE I
+< 2022-02-16 17:02:04.758 200 TYPE is now 8-bit binary
+> 2022-02-16 17:02:04.759 PASV
+< 2022-02-16 17:02:04.785 227 Entering Passive Mode (91,208,99,4,76,114)
+> 2022-02-16 17:02:04.788 RETR stock.csv
+. 2022-02-16 17:02:04.789 Connecting to 91.208.99.4:19570 ...
+< 2022-02-16 17:02:04.848 150-Accepted data connection
+< 2022-02-16 17:02:04.849 150 177.1 kbytes to download
+< 2022-02-16 17:02:04.855 226-File successfully transferred
+< 2022-02-16 17:02:04.855 226 0.000 seconds (measured here), 421.10 Mbytes per second
+. 2022-02-16 17:02:05.067 Data connection closed
+. 2022-02-16 17:02:05.068 Preserving timestamp [2022-02-15T23:51:34.000Z]
+. 2022-02-16 17:02:05.070 Download successful
+. 2022-02-16 17:02:05.071 Transfer done: '/public_html/reports/reports_for_apps/stock.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\stock.csv' [181390]
+. 2022-02-16 17:02:05.071 Copying finished: Transferred: 181,390, Elapsed: 0:00:00, CPS: 828,264/s
+> 2022-02-16 17:02:05.071 Script: exit
+. 2022-02-16 17:02:05.072 Script: Exit code: 0
+. 2022-02-16 17:02:05.073 Disconnected from server
+. 2022-02-17 10:12:11.768 --------------------------------------------------------------------------
+. 2022-02-17 10:12:11.768 WinSCP Version 5.19.5 (Build 11933 2021-11-25) (OS 10.0.19043 - Windows 10 Enterprise)
+. 2022-02-17 10:12:11.768 Configuration: nul
+. 2022-02-17 10:12:11.769 Log level: Normal
+. 2022-02-17 10:12:11.769 Local account: SUPPORT10\Amberta Support10
+. 2022-02-17 10:12:11.770 Working directory: C:\Windows
+. 2022-02-17 10:12:11.770 Process ID: 3532
+. 2022-02-17 10:12:11.777 Ancestor processes: WinSCP, cmd, explorer, ...
+. 2022-02-17 10:12:11.778 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.19.5 /consoleinstance=_12536_41 "/log=""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\documents\winscp.log""" "/ini=nul" "/command" "open ftp://kanifa%40amberta.com:***@ftp.amberta.com/" "cd /public_html/reports/reports_for_apps" "lcd ""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports""" "option batch abort" "option failonnomatch on" "get purchase.csv" "get stock.csv" "exit"
+. 2022-02-17 10:12:11.779 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 27/03/2022, DST End: 30/10/2022
+. 2022-02-17 10:12:11.780 Login time: 17 February 2022 10:12:11
+. 2022-02-17 10:12:11.781 --------------------------------------------------------------------------
+. 2022-02-17 10:12:11.782 Script: Retrospectively logging previous script records:
+> 2022-02-17 10:12:11.782 Script: open ftp://kanifa%40amberta.com:***@ftp.amberta.com/
+. 2022-02-17 10:12:11.783 --------------------------------------------------------------------------
+. 2022-02-17 10:12:11.783 Session name: kanifa@amberta.com@ftp.amberta.com (Ad-Hoc site)
+. 2022-02-17 10:12:11.783 Host name: ftp.amberta.com (Port: 21)
+. 2022-02-17 10:12:11.784 User name: kanifa@amberta.com (Password: Yes, Key file: No, Passphrase: No)
+. 2022-02-17 10:12:11.784 Transfer Protocol: FTP
+. 2022-02-17 10:12:11.784 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2022-02-17 10:12:11.785 Disable Nagle: No
+. 2022-02-17 10:12:11.785 Proxy: None
+. 2022-02-17 10:12:11.786 Send buffer: 262144
+. 2022-02-17 10:12:11.786 UTF: Auto
+. 2022-02-17 10:12:11.786 FTPS: None [Client certificate: No]
+. 2022-02-17 10:12:11.787 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2022-02-17 10:12:11.787 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2022-02-17 10:12:11.787 Cache directory changes: Yes, Permanent: Yes
+. 2022-02-17 10:12:11.788 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2022-02-17 10:12:11.788 Timezone offset: 0h 0m
+. 2022-02-17 10:12:11.789 --------------------------------------------------------------------------
+< 2022-02-17 10:12:11.790 Script: Connecting to ftp.amberta.com ...
+. 2022-02-17 10:12:11.790 Connecting to ftp.amberta.com ...
+. 2022-02-17 10:12:11.828 Connected with ftp.amberta.com. Waiting for welcome message...
+< 2022-02-17 10:12:11.864 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+< 2022-02-17 10:12:11.865 220-You are user number 176 of 5000 allowed.
+< 2022-02-17 10:12:11.866 220-Local time is now 10:12. Server port: 21.
+< 2022-02-17 10:12:11.866 220-This is a private system - No anonymous login
+< 2022-02-17 10:12:11.866 220-IPv6 connections are also welcome on this server.
+< 2022-02-17 10:12:11.867 220 You will be disconnected after 15 minutes of inactivity.
+> 2022-02-17 10:12:11.867 USER kanifa@amberta.com
+< 2022-02-17 10:12:11.897 331 User kanifa@amberta.com OK. Password required
+> 2022-02-17 10:12:11.899 PASS ********************
+< 2022-02-17 10:12:11.975 230-This server supports FXP transfers
+< 2022-02-17 10:12:11.977 230 OK. Current restricted directory is /
+> 2022-02-17 10:12:11.977 SYST
+< 2022-02-17 10:12:12.008 215 UNIX Type: L8
+> 2022-02-17 10:12:12.009 FEAT
+< 2022-02-17 10:12:12.043 211-Extensions supported:
+< 2022-02-17 10:12:12.044  EPRT
+< 2022-02-17 10:12:12.045  IDLE
+< 2022-02-17 10:12:12.046  MDTM
+< 2022-02-17 10:12:12.046  SIZE
+< 2022-02-17 10:12:12.048  MFMT
+< 2022-02-17 10:12:12.049  REST STREAM
+< 2022-02-17 10:12:12.049  MLST type*;size*;sizd*;modify*;UNIX.mode*;UNIX.uid*;UNIX.gid*;unique*;
+< 2022-02-17 10:12:12.050  MLSD
+< 2022-02-17 10:12:12.050  AUTH TLS
+< 2022-02-17 10:12:12.050  PBSZ
+< 2022-02-17 10:12:12.051  PROT
+< 2022-02-17 10:12:12.051  ESTA
+< 2022-02-17 10:12:12.052  PASV
+< 2022-02-17 10:12:12.052  EPSV
+< 2022-02-17 10:12:12.052  SPSV
+< 2022-02-17 10:12:12.054 211 End.
+< 2022-02-17 10:12:12.055 Script: Connected
+. 2022-02-17 10:12:12.056 Connected
+. 2022-02-17 10:12:12.056 --------------------------------------------------------------------------
+. 2022-02-17 10:12:12.056 Using FTP protocol.
+. 2022-02-17 10:12:12.056 Doing startup conversation with host.
+< 2022-02-17 10:12:12.057 Script: Starting the session...
+> 2022-02-17 10:12:12.057 PWD
+< 2022-02-17 10:12:12.091 257 "/" is your current location
+. 2022-02-17 10:12:12.091 Getting current directory name.
+. 2022-02-17 10:12:12.091 Startup conversation with host finished.
+< 2022-02-17 10:12:12.092 Script: Session started.
+< 2022-02-17 10:12:12.092 Script: Active session: [1] kanifa@amberta.com@ftp.amberta.com
+> 2022-02-17 10:12:12.094 Script: cd /public_html/reports/reports_for_apps
+. 2022-02-17 10:12:12.094 Changing directory to "/public_html/reports/reports_for_apps".
+> 2022-02-17 10:12:12.095 CWD /public_html/reports/reports_for_apps
+< 2022-02-17 10:12:12.142 250 OK. Current directory is /public_html/reports/reports_for_apps
+. 2022-02-17 10:12:12.143 Getting current directory name.
+> 2022-02-17 10:12:12.144 PWD
+< 2022-02-17 10:12:12.177 257 "/public_html/reports/reports_for_apps" is your current location
+< 2022-02-17 10:12:12.177 Script: /public_html/reports/reports_for_apps
+> 2022-02-17 10:12:12.180 Script: lcd "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports"
+< 2022-02-17 10:12:12.182 Script: \\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports
+> 2022-02-17 10:12:12.182 Script: option batch abort
+< 2022-02-17 10:12:12.183 Script: batch           abort     
+> 2022-02-17 10:12:12.183 Script: option failonnomatch on
+< 2022-02-17 10:12:12.184 Script: failonnomatch   on        
+> 2022-02-17 10:12:12.184 Script: get purchase.csv
+. 2022-02-17 10:12:12.185 Listing file "purchase.csv".
+. 2022-02-17 10:12:12.185 Retrieving file information...
+> 2022-02-17 10:12:12.185 MLST /public_html/reports/reports_for_apps/purchase.csv
+< 2022-02-17 10:12:12.225 250-Begin
+< 2022-02-17 10:12:12.226  type=file;size=302757;modify=20220217092500;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg2d619c; /public_html/reports/reports_for_apps/purchase.csv
+< 2022-02-17 10:12:12.227 250 End.
+. 2022-02-17 10:12:12.228  type=file;size=302757;modify=20220217092500;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg2d619c; /public_html/reports/reports_for_apps/purchase.csv
+. 2022-02-17 10:12:12.228 Retrieving file information successful
+. 2022-02-17 10:12:12.229 purchase.csv;-;302757;2022-02-17T09:25:00.000Z;3;"385925" [0];"82284" [0];rw-r--r--;0
+. 2022-02-17 10:12:12.230 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 302,757
+. 2022-02-17 10:12:12.230   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-02-17 10:12:12.232   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-02-17 10:12:12.232   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-02-17 10:12:12.232 File: '/public_html/reports/reports_for_apps/purchase.csv' [2022-02-17T09:25:00.000Z] [302757]
+. 2022-02-17 10:12:12.233 Copying "/public_html/reports/reports_for_apps/purchase.csv" to local directory started.
+. 2022-02-17 10:12:12.233 Binary transfer mode selected.
+. 2022-02-17 10:12:12.234 Starting download of /public_html/reports/reports_for_apps/purchase.csv
+> 2022-02-17 10:12:12.235 TYPE A
+< 2022-02-17 10:12:12.265 200 TYPE is now ASCII
+> 2022-02-17 10:12:12.267 PASV
+< 2022-02-17 10:12:12.297 227 Entering Passive Mode (91,208,99,4,106,160)
+> 2022-02-17 10:12:12.298 MLSD
+. 2022-02-17 10:12:12.299 Connecting to 91.208.99.4:27296 ...
+< 2022-02-17 10:12:12.371 150 Accepted data connection
+. 2022-02-17 10:12:12.377 type=cdir;sizd=9;modify=20220217092810;UNIX.mode=0755;UNIX.uid=385925;UNIX.gid=82284;unique=2egd73e025; .
+. 2022-02-17 10:12:12.378 type=pdir;sizd=397;modify=20220217092645;UNIX.mode=0755;UNIX.uid=385925;UNIX.gid=82284;unique=2eg438b10f0; ..
+. 2022-02-17 10:12:12.379 type=dir;sizd=5;modify=20220216165547;UNIX.mode=0755;UNIX.uid=385925;UNIX.gid=82284;unique=2egf18c84c; accounting
+. 2022-02-17 10:12:12.380 type=file;size=1074520;modify=20220217092453;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg2d619a; fba.csv
+. 2022-02-17 10:12:12.382 type=file;size=12130823;modify=20220217090626;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg27aaae; forecast.csv
+. 2022-02-17 10:12:12.382 type=file;size=302757;modify=20220217092500;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg2d619c; purchase.csv
+. 2022-02-17 10:12:12.383 type=file;size=8207045;modify=20220217092441;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg2d6196; sales.csv
+. 2022-02-17 10:12:12.383 type=file;size=11474049;modify=20220217090637;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg27a04a; sales_and_subsource.csv
+. 2022-02-17 10:12:12.384 type=file;size=181375;modify=20220217092446;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg27e5fe; stock.csv
+. 2022-02-17 10:12:12.384 Data connection closed
+< 2022-02-17 10:12:12.384 226-Options: -a -l 
+< 2022-02-17 10:12:12.385 226 9 matches total
+> 2022-02-17 10:12:12.385 TYPE I
+< 2022-02-17 10:12:12.417 200 TYPE is now 8-bit binary
+> 2022-02-17 10:12:12.417 PASV
+< 2022-02-17 10:12:12.449 227 Entering Passive Mode (91,208,99,4,110,14)
+> 2022-02-17 10:12:12.451 RETR purchase.csv
+. 2022-02-17 10:12:12.452 Connecting to 91.208.99.4:28174 ...
+< 2022-02-17 10:12:12.523 150-Accepted data connection
+< 2022-02-17 10:12:12.524 150 295.7 kbytes to download
+< 2022-02-17 10:12:12.539 226-File successfully transferred
+< 2022-02-17 10:12:12.540 226 0.016 seconds (measured here), 18.26 Mbytes per second
+. 2022-02-17 10:12:12.903 Data connection closed
+. 2022-02-17 10:12:12.904 Preserving timestamp [2022-02-17T09:25:00.000Z]
+. 2022-02-17 10:12:12.905 Download successful
+. 2022-02-17 10:12:12.906 Transfer done: '/public_html/reports/reports_for_apps/purchase.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\purchase.csv' [302757]
+. 2022-02-17 10:12:12.906 Copying finished: Transferred: 302,757, Elapsed: 0:00:00, CPS: 807,352/s
+> 2022-02-17 10:12:12.907 Script: get stock.csv
+. 2022-02-17 10:12:12.907 Listing file "stock.csv".
+. 2022-02-17 10:12:12.908 Retrieving file information...
+> 2022-02-17 10:12:12.908 MLST /public_html/reports/reports_for_apps/stock.csv
+< 2022-02-17 10:12:12.939 250-Begin
+< 2022-02-17 10:12:12.939  type=file;size=181375;modify=20220217092446;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg27e5fe; /public_html/reports/reports_for_apps/stock.csv
+< 2022-02-17 10:12:12.940 250 End.
+. 2022-02-17 10:12:12.940  type=file;size=181375;modify=20220217092446;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg27e5fe; /public_html/reports/reports_for_apps/stock.csv
+. 2022-02-17 10:12:12.940 Retrieving file information successful
+. 2022-02-17 10:12:12.942 stock.csv;-;181375;2022-02-17T09:24:46.000Z;3;"385925" [0];"82284" [0];rw-r--r--;0
+. 2022-02-17 10:12:12.942 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 181,375
+. 2022-02-17 10:12:12.942   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-02-17 10:12:12.943   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-02-17 10:12:12.943   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-02-17 10:12:12.944 File: '/public_html/reports/reports_for_apps/stock.csv' [2022-02-17T09:24:46.000Z] [181375]
+. 2022-02-17 10:12:12.944 Copying "/public_html/reports/reports_for_apps/stock.csv" to local directory started.
+. 2022-02-17 10:12:12.945 Binary transfer mode selected.
+. 2022-02-17 10:12:12.946 Starting download of /public_html/reports/reports_for_apps/stock.csv
+> 2022-02-17 10:12:12.946 TYPE I
+< 2022-02-17 10:12:12.980 200 TYPE is now 8-bit binary
+> 2022-02-17 10:12:12.981 PASV
+< 2022-02-17 10:12:13.010 227 Entering Passive Mode (91,208,99,4,80,73)
+> 2022-02-17 10:12:13.014 RETR stock.csv
+. 2022-02-17 10:12:13.015 Connecting to 91.208.99.4:20553 ...
+< 2022-02-17 10:12:13.091 150-Accepted data connection
+< 2022-02-17 10:12:13.092 150 177.1 kbytes to download
+< 2022-02-17 10:12:13.105 226-File successfully transferred
+< 2022-02-17 10:12:13.106 226 0.008 seconds (measured here), 20.89 Mbytes per second
+. 2022-02-17 10:12:13.348 Data connection closed
+. 2022-02-17 10:12:13.349 Preserving timestamp [2022-02-17T09:24:46.000Z]
+. 2022-02-17 10:12:13.350 Download successful
+. 2022-02-17 10:12:13.351 Transfer done: '/public_html/reports/reports_for_apps/stock.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\stock.csv' [181375]
+. 2022-02-17 10:12:13.351 Copying finished: Transferred: 181,375, Elapsed: 0:00:00, CPS: 684,433/s
+> 2022-02-17 10:12:13.352 Script: exit
+. 2022-02-17 10:12:13.352 Script: Exit code: 0
+. 2022-02-17 10:12:13.353 Disconnected from server
+. 2022-02-17 14:25:48.891 --------------------------------------------------------------------------
+. 2022-02-17 14:25:48.910 WinSCP Version 5.19.5 (Build 11933 2021-11-25) (OS 10.0.19044 - Windows 10 Enterprise)
+. 2022-02-17 14:25:48.910 Configuration: nul
+. 2022-02-17 14:25:48.911 Log level: Normal
+. 2022-02-17 14:25:48.911 Local account: SUPPORT8\Amberta Support8
+. 2022-02-17 14:25:48.911 Working directory: C:\Windows
+. 2022-02-17 14:25:48.912 Process ID: 9100
+. 2022-02-17 14:25:48.920 Ancestor processes: WinSCP, cmd, explorer, ...
+. 2022-02-17 14:25:48.921 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.19.5 /consoleinstance=_17748_598 "/log=""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\documents\winscp.log""" "/ini=nul" "/command" "open ftp://kanifa%40amberta.com:***@ftp.amberta.com/" "cd /public_html/reports/reports_for_apps" "lcd ""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports""" "option batch abort" "option failonnomatch on" "get purchase.csv" "get fba.csv" "get stock.csv" "exit"
+. 2022-02-17 14:25:48.922 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 27/03/2022, DST End: 30/10/2022
+. 2022-02-17 14:25:48.922 Login time: 17 February 2022 14:25:48
+. 2022-02-17 14:25:48.922 --------------------------------------------------------------------------
+. 2022-02-17 14:25:48.923 Script: Retrospectively logging previous script records:
+> 2022-02-17 14:25:48.923 Script: open ftp://kanifa%40amberta.com:***@ftp.amberta.com/
+. 2022-02-17 14:25:48.924 --------------------------------------------------------------------------
+. 2022-02-17 14:25:48.924 Session name: kanifa@amberta.com@ftp.amberta.com (Ad-Hoc site)
+. 2022-02-17 14:25:48.924 Host name: ftp.amberta.com (Port: 21)
+. 2022-02-17 14:25:48.925 User name: kanifa@amberta.com (Password: Yes, Key file: No, Passphrase: No)
+. 2022-02-17 14:25:48.925 Transfer Protocol: FTP
+. 2022-02-17 14:25:48.926 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2022-02-17 14:25:48.926 Disable Nagle: No
+. 2022-02-17 14:25:48.926 Proxy: None
+. 2022-02-17 14:25:48.927 Send buffer: 262144
+. 2022-02-17 14:25:48.927 UTF: Auto
+. 2022-02-17 14:25:48.927 FTPS: None [Client certificate: No]
+. 2022-02-17 14:25:48.928 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2022-02-17 14:25:48.928 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2022-02-17 14:25:48.928 Cache directory changes: Yes, Permanent: Yes
+. 2022-02-17 14:25:48.929 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2022-02-17 14:25:48.929 Timezone offset: 0h 0m
+. 2022-02-17 14:25:48.930 --------------------------------------------------------------------------
+< 2022-02-17 14:25:48.933 Script: Connecting to ftp.amberta.com ...
+. 2022-02-17 14:25:48.933 Connecting to ftp.amberta.com ...
+. 2022-02-17 14:25:49.019 Connected with ftp.amberta.com. Waiting for welcome message...
+< 2022-02-17 14:25:49.052 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+< 2022-02-17 14:25:49.052 220-You are user number 134 of 5000 allowed.
+< 2022-02-17 14:25:49.053 220-Local time is now 14:25. Server port: 21.
+< 2022-02-17 14:25:49.053 220-This is a private system - No anonymous login
+< 2022-02-17 14:25:49.053 220-IPv6 connections are also welcome on this server.
+< 2022-02-17 14:25:49.055 220 You will be disconnected after 15 minutes of inactivity.
+> 2022-02-17 14:25:49.055 USER kanifa@amberta.com
+< 2022-02-17 14:25:49.084 331 User kanifa@amberta.com OK. Password required
+> 2022-02-17 14:25:49.085 PASS ********************
+< 2022-02-17 14:25:49.168 230-This server supports FXP transfers
+< 2022-02-17 14:25:49.169 230 OK. Current restricted directory is /
+> 2022-02-17 14:25:49.169 SYST
+< 2022-02-17 14:25:49.200 215 UNIX Type: L8
+> 2022-02-17 14:25:49.200 FEAT
+< 2022-02-17 14:25:49.231 211-Extensions supported:
+< 2022-02-17 14:25:49.233  EPRT
+< 2022-02-17 14:25:49.233  IDLE
+< 2022-02-17 14:25:49.234  MDTM
+< 2022-02-17 14:25:49.234  SIZE
+< 2022-02-17 14:25:49.235  MFMT
+< 2022-02-17 14:25:49.235  REST STREAM
+< 2022-02-17 14:25:49.235  MLST type*;size*;sizd*;modify*;UNIX.mode*;UNIX.uid*;UNIX.gid*;unique*;
+< 2022-02-17 14:25:49.236  MLSD
+< 2022-02-17 14:25:49.236  AUTH TLS
+< 2022-02-17 14:25:49.252  PBSZ
+< 2022-02-17 14:25:49.252  PROT
+< 2022-02-17 14:25:49.253  ESTA
+< 2022-02-17 14:25:49.254  PASV
+< 2022-02-17 14:25:49.254  EPSV
+< 2022-02-17 14:25:49.255  SPSV
+< 2022-02-17 14:25:49.255 211 End.
+< 2022-02-17 14:25:49.255 Script: Connected
+. 2022-02-17 14:25:49.256 Connected
+. 2022-02-17 14:25:49.256 --------------------------------------------------------------------------
+. 2022-02-17 14:25:49.257 Using FTP protocol.
+. 2022-02-17 14:25:49.257 Doing startup conversation with host.
+< 2022-02-17 14:25:49.258 Script: Starting the session...
+> 2022-02-17 14:25:49.258 PWD
+< 2022-02-17 14:25:49.301 257 "/" is your current location
+. 2022-02-17 14:25:49.303 Getting current directory name.
+. 2022-02-17 14:25:49.303 Startup conversation with host finished.
+< 2022-02-17 14:25:49.304 Script: Session started.
+< 2022-02-17 14:25:49.304 Script: Active session: [1] kanifa@amberta.com@ftp.amberta.com
+> 2022-02-17 14:25:49.305 Script: cd /public_html/reports/reports_for_apps
+. 2022-02-17 14:25:49.305 Changing directory to "/public_html/reports/reports_for_apps".
+> 2022-02-17 14:25:49.305 CWD /public_html/reports/reports_for_apps
+< 2022-02-17 14:25:49.358 250 OK. Current directory is /public_html/reports/reports_for_apps
+. 2022-02-17 14:25:49.358 Getting current directory name.
+> 2022-02-17 14:25:49.359 PWD
+< 2022-02-17 14:25:49.393 257 "/public_html/reports/reports_for_apps" is your current location
+< 2022-02-17 14:25:49.394 Script: /public_html/reports/reports_for_apps
+> 2022-02-17 14:25:49.396 Script: lcd "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports"
+< 2022-02-17 14:25:49.398 Script: \\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports
+> 2022-02-17 14:25:49.400 Script: option batch abort
+< 2022-02-17 14:25:49.401 Script: batch           abort     
+> 2022-02-17 14:25:49.402 Script: option failonnomatch on
+< 2022-02-17 14:25:49.403 Script: failonnomatch   on        
+> 2022-02-17 14:25:49.403 Script: get purchase.csv
+. 2022-02-17 14:25:49.404 Listing file "purchase.csv".
+. 2022-02-17 14:25:49.404 Retrieving file information...
+> 2022-02-17 14:25:49.405 MLST /public_html/reports/reports_for_apps/purchase.csv
+< 2022-02-17 14:25:49.440 250-Begin
+< 2022-02-17 14:25:49.442  type=file;size=302757;modify=20220217092500;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg2d619c; /public_html/reports/reports_for_apps/purchase.csv
+< 2022-02-17 14:25:49.442 250 End.
+. 2022-02-17 14:25:49.443  type=file;size=302757;modify=20220217092500;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg2d619c; /public_html/reports/reports_for_apps/purchase.csv
+. 2022-02-17 14:25:49.443 Retrieving file information successful
+. 2022-02-17 14:25:49.443 purchase.csv;-;302757;2022-02-17T09:25:00.000Z;3;"385925" [0];"82284" [0];rw-r--r--;0
+. 2022-02-17 14:25:49.444 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 302,757
+. 2022-02-17 14:25:49.444   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-02-17 14:25:49.444   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-02-17 14:25:49.446   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-02-17 14:25:49.446 File: '/public_html/reports/reports_for_apps/purchase.csv' [2022-02-17T09:25:00.000Z] [302757]
+. 2022-02-17 14:25:49.447 Copying "/public_html/reports/reports_for_apps/purchase.csv" to local directory started.
+. 2022-02-17 14:25:49.447 Binary transfer mode selected.
+. 2022-02-17 14:25:49.448 Starting download of /public_html/reports/reports_for_apps/purchase.csv
+> 2022-02-17 14:25:49.448 TYPE A
+< 2022-02-17 14:25:49.478 200 TYPE is now ASCII
+> 2022-02-17 14:25:49.479 PASV
+< 2022-02-17 14:25:49.511 227 Entering Passive Mode (91,208,99,4,113,54)
+> 2022-02-17 14:25:49.512 MLSD
+. 2022-02-17 14:25:49.513 Connecting to 91.208.99.4:28982 ...
+< 2022-02-17 14:25:49.577 150 Accepted data connection
+. 2022-02-17 14:25:49.629 type=cdir;sizd=9;modify=20220217092810;UNIX.mode=0755;UNIX.uid=385925;UNIX.gid=82284;unique=2egd73e025; .
+. 2022-02-17 14:25:49.629 type=pdir;sizd=397;modify=20220217092645;UNIX.mode=0755;UNIX.uid=385925;UNIX.gid=82284;unique=2eg438b10f0; ..
+. 2022-02-17 14:25:49.630 type=dir;sizd=5;modify=20220216165547;UNIX.mode=0755;UNIX.uid=385925;UNIX.gid=82284;unique=2egf18c84c; accounting
+. 2022-02-17 14:25:49.630 type=file;size=1074520;modify=20220217092453;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg2d619a; fba.csv
+. 2022-02-17 14:25:49.631 type=file;size=12130823;modify=20220217090626;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg27aaae; forecast.csv
+. 2022-02-17 14:25:49.631 type=file;size=302757;modify=20220217092500;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg2d619c; purchase.csv
+. 2022-02-17 14:25:49.631 type=file;size=8207045;modify=20220217092441;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg2d6196; sales.csv
+. 2022-02-17 14:25:49.632 type=file;size=11474049;modify=20220217090637;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg27a04a; sales_and_subsource.csv
+. 2022-02-17 14:25:49.633 type=file;size=181375;modify=20220217092446;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg27e5fe; stock.csv
+. 2022-02-17 14:25:49.633 Data connection closed
+< 2022-02-17 14:25:49.633 226-Options: -a -l 
+< 2022-02-17 14:25:49.634 226 9 matches total
+> 2022-02-17 14:25:49.634 TYPE I
+< 2022-02-17 14:25:49.665 200 TYPE is now 8-bit binary
+> 2022-02-17 14:25:49.666 PASV
+< 2022-02-17 14:25:49.699 227 Entering Passive Mode (91,208,99,4,95,211)
+> 2022-02-17 14:25:49.701 RETR purchase.csv
+. 2022-02-17 14:25:49.702 Connecting to 91.208.99.4:24531 ...
+< 2022-02-17 14:25:49.771 150-Accepted data connection
+< 2022-02-17 14:25:49.771 150 295.7 kbytes to download
+< 2022-02-17 14:25:49.788 226-File successfully transferred
+< 2022-02-17 14:25:49.788 226 0.016 seconds (measured here), 18.07 Mbytes per second
+. 2022-02-17 14:25:50.360 Data connection closed
+. 2022-02-17 14:25:50.361 Preserving timestamp [2022-02-17T09:25:00.000Z]
+. 2022-02-17 14:25:50.363 Download successful
+. 2022-02-17 14:25:50.363 Transfer done: '/public_html/reports/reports_for_apps/purchase.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\purchase.csv' [302757]
+. 2022-02-17 14:25:50.364 Copying finished: Transferred: 302,757, Elapsed: 0:00:00, CPS: 523,801/s
+> 2022-02-17 14:25:50.364 Script: get fba.csv
+. 2022-02-17 14:25:50.365 Listing file "fba.csv".
+. 2022-02-17 14:25:50.365 Retrieving file information...
+> 2022-02-17 14:25:50.366 MLST /public_html/reports/reports_for_apps/fba.csv
+< 2022-02-17 14:25:50.399 250-Begin
+< 2022-02-17 14:25:50.399  type=file;size=1074520;modify=20220217092453;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg2d619a; /public_html/reports/reports_for_apps/fba.csv
+< 2022-02-17 14:25:50.401 250 End.
+. 2022-02-17 14:25:50.401  type=file;size=1074520;modify=20220217092453;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg2d619a; /public_html/reports/reports_for_apps/fba.csv
+. 2022-02-17 14:25:50.401 Retrieving file information successful
+. 2022-02-17 14:25:50.402 fba.csv;-;1074520;2022-02-17T09:24:53.000Z;3;"385925" [0];"82284" [0];rw-r--r--;0
+. 2022-02-17 14:25:50.402 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 1,074,520
+. 2022-02-17 14:25:50.403   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-02-17 14:25:50.403   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-02-17 14:25:50.403   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-02-17 14:25:50.404 File: '/public_html/reports/reports_for_apps/fba.csv' [2022-02-17T09:24:53.000Z] [1074520]
+. 2022-02-17 14:25:50.404 Copying "/public_html/reports/reports_for_apps/fba.csv" to local directory started.
+. 2022-02-17 14:25:50.405 Binary transfer mode selected.
+. 2022-02-17 14:25:50.405 Starting download of /public_html/reports/reports_for_apps/fba.csv
+> 2022-02-17 14:25:50.405 TYPE I
+< 2022-02-17 14:25:50.438 200 TYPE is now 8-bit binary
+> 2022-02-17 14:25:50.438 PASV
+< 2022-02-17 14:25:50.471 227 Entering Passive Mode (91,208,99,4,101,152)
+> 2022-02-17 14:25:50.473 RETR fba.csv
+. 2022-02-17 14:25:50.473 Connecting to 91.208.99.4:26008 ...
+< 2022-02-17 14:25:50.546 150-Accepted data connection
+< 2022-02-17 14:25:50.547 150 1049.3 kbytes to download
+< 2022-02-17 14:25:50.577 226-File successfully transferred
+< 2022-02-17 14:25:50.578 226 0.031 seconds (measured here), 32.84 Mbytes per second
+. 2022-02-17 14:25:52.555 Data connection closed
+. 2022-02-17 14:25:52.555 Preserving timestamp [2022-02-17T09:24:53.000Z]
+. 2022-02-17 14:25:52.557 Download successful
+. 2022-02-17 14:25:52.558 Transfer done: '/public_html/reports/reports_for_apps/fba.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\fba.csv' [1074520]
+. 2022-02-17 14:25:52.558 Copying finished: Transferred: 1,074,520, Elapsed: 0:00:02, CPS: 533,260/s
+> 2022-02-17 14:25:52.559 Script: get stock.csv
+. 2022-02-17 14:25:52.559 Listing file "stock.csv".
+. 2022-02-17 14:25:52.560 Retrieving file information...
+> 2022-02-17 14:25:52.560 MLST /public_html/reports/reports_for_apps/stock.csv
+< 2022-02-17 14:25:52.592 250-Begin
+< 2022-02-17 14:25:52.593  type=file;size=181375;modify=20220217092446;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg27e5fe; /public_html/reports/reports_for_apps/stock.csv
+< 2022-02-17 14:25:52.594 250 End.
+. 2022-02-17 14:25:52.595  type=file;size=181375;modify=20220217092446;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg27e5fe; /public_html/reports/reports_for_apps/stock.csv
+. 2022-02-17 14:25:52.595 Retrieving file information successful
+. 2022-02-17 14:25:52.596 stock.csv;-;181375;2022-02-17T09:24:46.000Z;3;"385925" [0];"82284" [0];rw-r--r--;0
+. 2022-02-17 14:25:52.596 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 181,375
+. 2022-02-17 14:25:52.597   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-02-17 14:25:52.597   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-02-17 14:25:52.597   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-02-17 14:25:52.598 File: '/public_html/reports/reports_for_apps/stock.csv' [2022-02-17T09:24:46.000Z] [181375]
+. 2022-02-17 14:25:52.599 Copying "/public_html/reports/reports_for_apps/stock.csv" to local directory started.
+. 2022-02-17 14:25:52.599 Binary transfer mode selected.
+. 2022-02-17 14:25:52.600 Starting download of /public_html/reports/reports_for_apps/stock.csv
+> 2022-02-17 14:25:52.601 TYPE I
+< 2022-02-17 14:25:52.637 200 TYPE is now 8-bit binary
+> 2022-02-17 14:25:52.637 PASV
+< 2022-02-17 14:25:52.673 227 Entering Passive Mode (91,208,99,4,96,189)
+> 2022-02-17 14:25:52.675 RETR stock.csv
+. 2022-02-17 14:25:52.676 Connecting to 91.208.99.4:24765 ...
+< 2022-02-17 14:25:52.747 150-Accepted data connection
+< 2022-02-17 14:25:52.747 150 177.1 kbytes to download
+< 2022-02-17 14:25:52.761 226-File successfully transferred
+< 2022-02-17 14:25:52.761 226 0.008 seconds (measured here), 21.00 Mbytes per second
+. 2022-02-17 14:25:53.066 Data connection closed
+. 2022-02-17 14:25:53.067 Preserving timestamp [2022-02-17T09:24:46.000Z]
+. 2022-02-17 14:25:53.068 Download successful
+. 2022-02-17 14:25:53.069 Transfer done: '/public_html/reports/reports_for_apps/stock.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\stock.csv' [181375]
+. 2022-02-17 14:25:53.069 Copying finished: Transferred: 181,375, Elapsed: 0:00:00, CPS: 552,972/s
+> 2022-02-17 14:25:53.070 Script: exit
+. 2022-02-17 14:25:53.070 Script: Exit code: 0
+. 2022-02-17 14:25:53.072 Disconnected from server
+. 2022-02-18 08:30:28.002 --------------------------------------------------------------------------
+. 2022-02-18 08:30:28.054 WinSCP Version 5.19.5 (Build 11933 2021-11-25) (OS 10.0.19043 - Windows 10 Enterprise)
+. 2022-02-18 08:30:28.055 Configuration: nul
+. 2022-02-18 08:30:28.056 Log level: Normal
+. 2022-02-18 08:30:28.056 Local account: SUPPORT10\Amberta Support10
+. 2022-02-18 08:30:28.056 Working directory: C:\Windows
+. 2022-02-18 08:30:28.057 Process ID: 10224
+. 2022-02-18 08:30:28.064 Ancestor processes: WinSCP, cmd, explorer, ...
+. 2022-02-18 08:30:28.065 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.19.5 /consoleinstance=_17852_68 "/log=""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\documents\winscp.log""" "/ini=nul" "/command" "open ftp://kanifa%40amberta.com:***@ftp.amberta.com/" "cd /public_html/reports/reports_for_apps" "lcd ""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports""" "option batch abort" "option failonnomatch on" "get purchase.csv" "get fba.csv" "get stock.csv" "exit"
+. 2022-02-18 08:30:28.065 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 27/03/2022, DST End: 30/10/2022
+. 2022-02-18 08:30:28.066 Login time: 18 February 2022 08:30:28
+. 2022-02-18 08:30:28.066 --------------------------------------------------------------------------
+. 2022-02-18 08:30:28.067 Script: Retrospectively logging previous script records:
+> 2022-02-18 08:30:28.067 Script: open ftp://kanifa%40amberta.com:***@ftp.amberta.com/
+. 2022-02-18 08:30:28.067 --------------------------------------------------------------------------
+. 2022-02-18 08:30:28.068 Session name: kanifa@amberta.com@ftp.amberta.com (Ad-Hoc site)
+. 2022-02-18 08:30:28.068 Host name: ftp.amberta.com (Port: 21)
+. 2022-02-18 08:30:28.069 User name: kanifa@amberta.com (Password: Yes, Key file: No, Passphrase: No)
+. 2022-02-18 08:30:28.069 Transfer Protocol: FTP
+. 2022-02-18 08:30:28.070 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2022-02-18 08:30:28.070 Disable Nagle: No
+. 2022-02-18 08:30:28.070 Proxy: None
+. 2022-02-18 08:30:28.071 Send buffer: 262144
+. 2022-02-18 08:30:28.071 UTF: Auto
+. 2022-02-18 08:30:28.072 FTPS: None [Client certificate: No]
+. 2022-02-18 08:30:28.072 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2022-02-18 08:30:28.072 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2022-02-18 08:30:28.073 Cache directory changes: Yes, Permanent: Yes
+. 2022-02-18 08:30:28.073 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2022-02-18 08:30:28.074 Timezone offset: 0h 0m
+. 2022-02-18 08:30:28.074 --------------------------------------------------------------------------
+< 2022-02-18 08:30:28.076 Script: Connecting to ftp.amberta.com ...
+. 2022-02-18 08:30:28.076 Connecting to ftp.amberta.com ...
+. 2022-02-18 08:30:28.162 Connected with ftp.amberta.com. Waiting for welcome message...
+< 2022-02-18 08:30:28.195 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+< 2022-02-18 08:30:28.196 220-You are user number 100 of 5000 allowed.
+< 2022-02-18 08:30:28.196 220-Local time is now 08:30. Server port: 21.
+< 2022-02-18 08:30:28.197 220-This is a private system - No anonymous login
+< 2022-02-18 08:30:28.197 220-IPv6 connections are also welcome on this server.
+< 2022-02-18 08:30:28.198 220 You will be disconnected after 15 minutes of inactivity.
+> 2022-02-18 08:30:28.198 USER kanifa@amberta.com
+< 2022-02-18 08:30:28.228 331 User kanifa@amberta.com OK. Password required
+> 2022-02-18 08:30:28.228 PASS ********************
+< 2022-02-18 08:30:28.315 230-This server supports FXP transfers
+< 2022-02-18 08:30:28.315 230 OK. Current restricted directory is /
+> 2022-02-18 08:30:28.316 SYST
+< 2022-02-18 08:30:28.346 215 UNIX Type: L8
+> 2022-02-18 08:30:28.347 FEAT
+< 2022-02-18 08:30:28.378 211-Extensions supported:
+< 2022-02-18 08:30:28.403  EPRT
+< 2022-02-18 08:30:28.404  IDLE
+< 2022-02-18 08:30:28.404  MDTM
+< 2022-02-18 08:30:28.404  SIZE
+< 2022-02-18 08:30:28.405  MFMT
+< 2022-02-18 08:30:28.405  REST STREAM
+< 2022-02-18 08:30:28.406  MLST type*;size*;sizd*;modify*;UNIX.mode*;UNIX.uid*;UNIX.gid*;unique*;
+< 2022-02-18 08:30:28.406  MLSD
+< 2022-02-18 08:30:28.406  AUTH TLS
+< 2022-02-18 08:30:28.407  PBSZ
+< 2022-02-18 08:30:28.407  PROT
+< 2022-02-18 08:30:28.408  ESTA
+< 2022-02-18 08:30:28.408  PASV
+< 2022-02-18 08:30:28.408  EPSV
+< 2022-02-18 08:30:28.409  SPSV
+< 2022-02-18 08:30:28.409 211 End.
+< 2022-02-18 08:30:28.409 Script: Connected
+. 2022-02-18 08:30:28.410 Connected
+. 2022-02-18 08:30:28.410 --------------------------------------------------------------------------
+. 2022-02-18 08:30:28.411 Using FTP protocol.
+. 2022-02-18 08:30:28.411 Doing startup conversation with host.
+< 2022-02-18 08:30:28.412 Script: Starting the session...
+> 2022-02-18 08:30:28.412 PWD
+< 2022-02-18 08:30:28.444 257 "/" is your current location
+. 2022-02-18 08:30:28.445 Getting current directory name.
+. 2022-02-18 08:30:28.445 Startup conversation with host finished.
+< 2022-02-18 08:30:28.446 Script: Session started.
+< 2022-02-18 08:30:28.446 Script: Active session: [1] kanifa@amberta.com@ftp.amberta.com
+> 2022-02-18 08:30:28.447 Script: cd /public_html/reports/reports_for_apps
+. 2022-02-18 08:30:28.448 Changing directory to "/public_html/reports/reports_for_apps".
+> 2022-02-18 08:30:28.448 CWD /public_html/reports/reports_for_apps
+< 2022-02-18 08:30:28.524 250 OK. Current directory is /public_html/reports/reports_for_apps
+. 2022-02-18 08:30:28.525 Getting current directory name.
+> 2022-02-18 08:30:28.525 PWD
+< 2022-02-18 08:30:28.559 257 "/public_html/reports/reports_for_apps" is your current location
+< 2022-02-18 08:30:28.560 Script: /public_html/reports/reports_for_apps
+> 2022-02-18 08:30:28.560 Script: lcd "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports"
+< 2022-02-18 08:30:28.561 Script: \\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports
+> 2022-02-18 08:30:28.562 Script: option batch abort
+< 2022-02-18 08:30:28.562 Script: batch           abort     
+> 2022-02-18 08:30:28.563 Script: option failonnomatch on
+< 2022-02-18 08:30:28.563 Script: failonnomatch   on        
+> 2022-02-18 08:30:28.564 Script: get purchase.csv
+. 2022-02-18 08:30:28.564 Listing file "purchase.csv".
+. 2022-02-18 08:30:28.564 Retrieving file information...
+> 2022-02-18 08:30:28.565 MLST /public_html/reports/reports_for_apps/purchase.csv
+< 2022-02-18 08:30:28.604 250-Begin
+< 2022-02-18 08:30:28.605  type=file;size=316342;modify=20220218000012;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg65822f; /public_html/reports/reports_for_apps/purchase.csv
+< 2022-02-18 08:30:28.605 250 End.
+. 2022-02-18 08:30:28.606  type=file;size=316342;modify=20220218000012;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg65822f; /public_html/reports/reports_for_apps/purchase.csv
+. 2022-02-18 08:30:28.606 Retrieving file information successful
+. 2022-02-18 08:30:28.606 purchase.csv;-;316342;2022-02-18T00:00:12.000Z;3;"385925" [0];"82284" [0];rw-r--r--;0
+. 2022-02-18 08:30:28.607 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 316,342
+. 2022-02-18 08:30:28.607   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-02-18 08:30:28.608   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-02-18 08:30:28.608   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-02-18 08:30:28.609 File: '/public_html/reports/reports_for_apps/purchase.csv' [2022-02-18T00:00:12.000Z] [316342]
+. 2022-02-18 08:30:28.609 Copying "/public_html/reports/reports_for_apps/purchase.csv" to local directory started.
+. 2022-02-18 08:30:28.610 Binary transfer mode selected.
+. 2022-02-18 08:30:28.611 Starting download of /public_html/reports/reports_for_apps/purchase.csv
+> 2022-02-18 08:30:28.611 TYPE A
+< 2022-02-18 08:30:28.643 200 TYPE is now ASCII
+> 2022-02-18 08:30:28.643 PASV
+< 2022-02-18 08:30:28.673 227 Entering Passive Mode (91,208,99,4,106,231)
+> 2022-02-18 08:30:28.674 MLSD
+. 2022-02-18 08:30:28.674 Connecting to 91.208.99.4:27367 ...
+< 2022-02-18 08:30:28.742 150 Accepted data connection
+. 2022-02-18 08:30:28.749 type=cdir;sizd=10;modify=20220218000031;UNIX.mode=0755;UNIX.uid=385925;UNIX.gid=82284;unique=2egd73e025; .
+. 2022-02-18 08:30:28.750 type=pdir;sizd=397;modify=20220217092645;UNIX.mode=0755;UNIX.uid=385925;UNIX.gid=82284;unique=2eg438b10f0; ..
+. 2022-02-18 08:30:28.750 type=file;size=1800443;modify=20220218000028;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg658270; 1_month_sales.csv
+. 2022-02-18 08:30:28.751 type=dir;sizd=5;modify=20220216165547;UNIX.mode=0755;UNIX.uid=385925;UNIX.gid=82284;unique=2egf18c84c; accounting
+. 2022-02-18 08:30:28.751 type=file;size=1074564;modify=20220218000023;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg658269; fba.csv
+. 2022-02-18 08:30:28.752 type=file;size=12140309;modify=20220218000021;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg6e6d7b; forecast.csv
+. 2022-02-18 08:30:28.752 type=file;size=316342;modify=20220218000012;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg65822f; purchase.csv
+. 2022-02-18 08:30:28.752 type=file;size=8221354;modify=20220218000018;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg65817d; sales.csv
+. 2022-02-18 08:30:28.753 type=file;size=11449875;modify=20220218000032;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg6585a5; sales_and_subsource.csv
+. 2022-02-18 08:30:28.753 type=file;size=181266;modify=20220218000010;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg658199; stock.csv
+. 2022-02-18 08:30:28.754 Data connection closed
+< 2022-02-18 08:30:28.755 226-Options: -a -l 
+< 2022-02-18 08:30:28.755 226 10 matches total
+> 2022-02-18 08:30:28.755 TYPE I
+< 2022-02-18 08:30:28.794 200 TYPE is now 8-bit binary
+> 2022-02-18 08:30:28.794 PASV
+< 2022-02-18 08:30:28.826 227 Entering Passive Mode (91,208,99,4,102,117)
+> 2022-02-18 08:30:28.827 RETR purchase.csv
+. 2022-02-18 08:30:28.828 Connecting to 91.208.99.4:26229 ...
+< 2022-02-18 08:30:28.894 150-Accepted data connection
+< 2022-02-18 08:30:28.894 150 308.9 kbytes to download
+< 2022-02-18 08:30:28.919 226-File successfully transferred
+< 2022-02-18 08:30:28.920 226 0.022 seconds (measured here), 13.64 Mbytes per second
+. 2022-02-18 08:30:29.355 Data connection closed
+. 2022-02-18 08:30:29.355 Preserving timestamp [2022-02-18T00:00:12.000Z]
+. 2022-02-18 08:30:29.357 Download successful
+. 2022-02-18 08:30:29.358 Transfer done: '/public_html/reports/reports_for_apps/purchase.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\purchase.csv' [316342]
+. 2022-02-18 08:30:29.359 Copying finished: Transferred: 316,342, Elapsed: 0:00:00, CPS: 696,788/s
+> 2022-02-18 08:30:29.360 Script: get fba.csv
+. 2022-02-18 08:30:29.360 Listing file "fba.csv".
+. 2022-02-18 08:30:29.361 Retrieving file information...
+> 2022-02-18 08:30:29.361 MLST /public_html/reports/reports_for_apps/fba.csv
+< 2022-02-18 08:30:29.392 250-Begin
+< 2022-02-18 08:30:29.393  type=file;size=1074564;modify=20220218000023;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg658269; /public_html/reports/reports_for_apps/fba.csv
+< 2022-02-18 08:30:29.393 250 End.
+. 2022-02-18 08:30:29.394  type=file;size=1074564;modify=20220218000023;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg658269; /public_html/reports/reports_for_apps/fba.csv
+. 2022-02-18 08:30:29.394 Retrieving file information successful
+. 2022-02-18 08:30:29.395 fba.csv;-;1074564;2022-02-18T00:00:23.000Z;3;"385925" [0];"82284" [0];rw-r--r--;0
+. 2022-02-18 08:30:29.395 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 1,074,564
+. 2022-02-18 08:30:29.395   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-02-18 08:30:29.396   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-02-18 08:30:29.396   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-02-18 08:30:29.396 File: '/public_html/reports/reports_for_apps/fba.csv' [2022-02-18T00:00:23.000Z] [1074564]
+. 2022-02-18 08:30:29.397 Copying "/public_html/reports/reports_for_apps/fba.csv" to local directory started.
+. 2022-02-18 08:30:29.397 Binary transfer mode selected.
+. 2022-02-18 08:30:29.397 Starting download of /public_html/reports/reports_for_apps/fba.csv
+> 2022-02-18 08:30:29.398 TYPE I
+< 2022-02-18 08:30:29.431 200 TYPE is now 8-bit binary
+> 2022-02-18 08:30:29.433 PASV
+< 2022-02-18 08:30:29.464 227 Entering Passive Mode (91,208,99,4,113,235)
+> 2022-02-18 08:30:29.465 RETR fba.csv
+. 2022-02-18 08:30:29.465 Connecting to 91.208.99.4:29163 ...
+< 2022-02-18 08:30:29.530 150-Accepted data connection
+< 2022-02-18 08:30:29.531 150 1049.4 kbytes to download
+< 2022-02-18 08:30:29.593 226-File successfully transferred
+< 2022-02-18 08:30:29.593 226 0.064 seconds (measured here), 16.12 Mbytes per second
+. 2022-02-18 08:30:30.360 Data connection closed
+. 2022-02-18 08:30:30.360 Preserving timestamp [2022-02-18T00:00:23.000Z]
+. 2022-02-18 08:30:30.361 Download successful
+. 2022-02-18 08:30:30.362 Transfer done: '/public_html/reports/reports_for_apps/fba.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\fba.csv' [1074564]
+. 2022-02-18 08:30:30.363 Copying finished: Transferred: 1,074,564, Elapsed: 0:00:00, CPS: 1,273,180/s
+> 2022-02-18 08:30:30.363 Script: get stock.csv
+. 2022-02-18 08:30:30.364 Listing file "stock.csv".
+. 2022-02-18 08:30:30.364 Retrieving file information...
+> 2022-02-18 08:30:30.365 MLST /public_html/reports/reports_for_apps/stock.csv
+< 2022-02-18 08:30:30.396 250-Begin
+< 2022-02-18 08:30:30.397  type=file;size=181266;modify=20220218000010;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg658199; /public_html/reports/reports_for_apps/stock.csv
+< 2022-02-18 08:30:30.397 250 End.
+. 2022-02-18 08:30:30.398  type=file;size=181266;modify=20220218000010;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg658199; /public_html/reports/reports_for_apps/stock.csv
+. 2022-02-18 08:30:30.398 Retrieving file information successful
+. 2022-02-18 08:30:30.399 stock.csv;-;181266;2022-02-18T00:00:10.000Z;3;"385925" [0];"82284" [0];rw-r--r--;0
+. 2022-02-18 08:30:30.399 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 181,266
+. 2022-02-18 08:30:30.399   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-02-18 08:30:30.400   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-02-18 08:30:30.400   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-02-18 08:30:30.401 File: '/public_html/reports/reports_for_apps/stock.csv' [2022-02-18T00:00:10.000Z] [181266]
+. 2022-02-18 08:30:30.401 Copying "/public_html/reports/reports_for_apps/stock.csv" to local directory started.
+. 2022-02-18 08:30:30.402 Binary transfer mode selected.
+. 2022-02-18 08:30:30.402 Starting download of /public_html/reports/reports_for_apps/stock.csv
+> 2022-02-18 08:30:30.403 TYPE I
+< 2022-02-18 08:30:30.433 200 TYPE is now 8-bit binary
+> 2022-02-18 08:30:30.434 PASV
+< 2022-02-18 08:30:30.465 227 Entering Passive Mode (91,208,99,4,95,113)
+> 2022-02-18 08:30:30.467 RETR stock.csv
+. 2022-02-18 08:30:30.467 Connecting to 91.208.99.4:24433 ...
+< 2022-02-18 08:30:30.534 150-Accepted data connection
+< 2022-02-18 08:30:30.535 150 177.0 kbytes to download
+< 2022-02-18 08:30:30.548 226-File successfully transferred
+< 2022-02-18 08:30:30.549 226 0.014 seconds (measured here), 12.62 Mbytes per second
+. 2022-02-18 08:30:30.816 Data connection closed
+. 2022-02-18 08:30:30.816 Preserving timestamp [2022-02-18T00:00:10.000Z]
+. 2022-02-18 08:30:30.818 Download successful
+. 2022-02-18 08:30:30.818 Transfer done: '/public_html/reports/reports_for_apps/stock.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\stock.csv' [181266]
+. 2022-02-18 08:30:30.819 Copying finished: Transferred: 181,266, Elapsed: 0:00:00, CPS: 645,074/s
+> 2022-02-18 08:30:30.819 Script: exit
+. 2022-02-18 08:30:30.820 Script: Exit code: 0
+. 2022-02-18 08:30:30.821 Disconnected from server
+. 2022-02-18 12:14:11.670 --------------------------------------------------------------------------
+. 2022-02-18 12:14:11.684 WinSCP Version 5.19.5 (Build 11933 2021-11-25) (OS 10.0.19043 - Windows 10 Enterprise)
+. 2022-02-18 12:14:11.684 Configuration: nul
+. 2022-02-18 12:14:11.685 Log level: Normal
+. 2022-02-18 12:14:11.685 Local account: SUPPORT10\Amberta Support10
+. 2022-02-18 12:14:11.685 Working directory: C:\Windows
+. 2022-02-18 12:14:11.686 Process ID: 17476
+. 2022-02-18 12:14:11.693 Ancestor processes: WinSCP, cmd, explorer, ...
+. 2022-02-18 12:14:11.694 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.19.5 /consoleinstance=_2868_917 "/log=""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\documents\winscp.log""" "/ini=nul" "/command" "open ftp://kanifa%40amberta.com:***@ftp.amberta.com/" "cd /public_html/reports/reports_for_apps" "lcd ""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports""" "option batch abort" "option failonnomatch on" "get purchase.csv" "get fba.csv" "get stock.csv" "exit"
+. 2022-02-18 12:14:11.695 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 27/03/2022, DST End: 30/10/2022
+. 2022-02-18 12:14:11.695 Login time: 18 February 2022 12:14:11
+. 2022-02-18 12:14:11.695 --------------------------------------------------------------------------
+. 2022-02-18 12:14:11.696 Script: Retrospectively logging previous script records:
+> 2022-02-18 12:14:11.696 Script: open ftp://kanifa%40amberta.com:***@ftp.amberta.com/
+. 2022-02-18 12:14:11.697 --------------------------------------------------------------------------
+. 2022-02-18 12:14:11.697 Session name: kanifa@amberta.com@ftp.amberta.com (Ad-Hoc site)
+. 2022-02-18 12:14:11.697 Host name: ftp.amberta.com (Port: 21)
+. 2022-02-18 12:14:11.698 User name: kanifa@amberta.com (Password: Yes, Key file: No, Passphrase: No)
+. 2022-02-18 12:14:11.698 Transfer Protocol: FTP
+. 2022-02-18 12:14:11.698 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2022-02-18 12:14:11.699 Disable Nagle: No
+. 2022-02-18 12:14:11.699 Proxy: None
+. 2022-02-18 12:14:11.700 Send buffer: 262144
+. 2022-02-18 12:14:11.700 UTF: Auto
+. 2022-02-18 12:14:11.700 FTPS: None [Client certificate: No]
+. 2022-02-18 12:14:11.701 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2022-02-18 12:14:11.701 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2022-02-18 12:14:11.702 Cache directory changes: Yes, Permanent: Yes
+. 2022-02-18 12:14:11.702 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2022-02-18 12:14:11.702 Timezone offset: 0h 0m
+. 2022-02-18 12:14:11.703 --------------------------------------------------------------------------
+< 2022-02-18 12:14:11.705 Script: Connecting to ftp.amberta.com ...
+. 2022-02-18 12:14:11.705 Connecting to ftp.amberta.com ...
+. 2022-02-18 12:14:11.756 Connected with ftp.amberta.com. Waiting for welcome message...
+< 2022-02-18 12:14:11.792 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+< 2022-02-18 12:14:11.792 220-You are user number 113 of 5000 allowed.
+< 2022-02-18 12:14:11.793 220-Local time is now 12:14. Server port: 21.
+< 2022-02-18 12:14:11.793 220-This is a private system - No anonymous login
+< 2022-02-18 12:14:11.794 220-IPv6 connections are also welcome on this server.
+< 2022-02-18 12:14:11.794 220 You will be disconnected after 15 minutes of inactivity.
+> 2022-02-18 12:14:11.795 USER kanifa@amberta.com
+< 2022-02-18 12:14:11.828 331 User kanifa@amberta.com OK. Password required
+> 2022-02-18 12:14:11.829 PASS ********************
+< 2022-02-18 12:14:11.907 230-This server supports FXP transfers
+< 2022-02-18 12:14:11.908 230 OK. Current restricted directory is /
+> 2022-02-18 12:14:11.908 SYST
+< 2022-02-18 12:14:11.941 215 UNIX Type: L8
+> 2022-02-18 12:14:11.942 FEAT
+< 2022-02-18 12:14:11.975 211-Extensions supported:
+< 2022-02-18 12:14:11.975  EPRT
+< 2022-02-18 12:14:11.976  IDLE
+< 2022-02-18 12:14:11.976  MDTM
+< 2022-02-18 12:14:11.976  SIZE
+< 2022-02-18 12:14:11.977  MFMT
+< 2022-02-18 12:14:11.977  REST STREAM
+< 2022-02-18 12:14:11.978  MLST type*;size*;sizd*;modify*;UNIX.mode*;UNIX.uid*;UNIX.gid*;unique*;
+< 2022-02-18 12:14:11.978  MLSD
+< 2022-02-18 12:14:11.978  AUTH TLS
+< 2022-02-18 12:14:11.979  PBSZ
+< 2022-02-18 12:14:11.979  PROT
+< 2022-02-18 12:14:11.979  ESTA
+< 2022-02-18 12:14:11.980  PASV
+< 2022-02-18 12:14:11.980  EPSV
+< 2022-02-18 12:14:11.981  SPSV
+< 2022-02-18 12:14:11.981 211 End.
+< 2022-02-18 12:14:11.981 Script: Connected
+. 2022-02-18 12:14:11.982 Connected
+. 2022-02-18 12:14:11.982 --------------------------------------------------------------------------
+. 2022-02-18 12:14:11.983 Using FTP protocol.
+. 2022-02-18 12:14:11.983 Doing startup conversation with host.
+< 2022-02-18 12:14:11.983 Script: Starting the session...
+> 2022-02-18 12:14:11.984 PWD
+< 2022-02-18 12:14:12.016 257 "/" is your current location
+. 2022-02-18 12:14:12.017 Getting current directory name.
+. 2022-02-18 12:14:12.017 Startup conversation with host finished.
+< 2022-02-18 12:14:12.017 Script: Session started.
+< 2022-02-18 12:14:12.018 Script: Active session: [1] kanifa@amberta.com@ftp.amberta.com
+> 2022-02-18 12:14:12.019 Script: cd /public_html/reports/reports_for_apps
+. 2022-02-18 12:14:12.020 Changing directory to "/public_html/reports/reports_for_apps".
+> 2022-02-18 12:14:12.020 CWD /public_html/reports/reports_for_apps
+< 2022-02-18 12:14:12.096 250 OK. Current directory is /public_html/reports/reports_for_apps
+. 2022-02-18 12:14:12.097 Getting current directory name.
+> 2022-02-18 12:14:12.097 PWD
+< 2022-02-18 12:14:12.132 257 "/public_html/reports/reports_for_apps" is your current location
+< 2022-02-18 12:14:12.132 Script: /public_html/reports/reports_for_apps
+> 2022-02-18 12:14:12.133 Script: lcd "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports"
+< 2022-02-18 12:14:12.134 Script: \\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports
+> 2022-02-18 12:14:12.135 Script: option batch abort
+< 2022-02-18 12:14:12.135 Script: batch           abort     
+> 2022-02-18 12:14:12.136 Script: option failonnomatch on
+< 2022-02-18 12:14:12.136 Script: failonnomatch   on        
+> 2022-02-18 12:14:12.137 Script: get purchase.csv
+. 2022-02-18 12:14:12.137 Listing file "purchase.csv".
+. 2022-02-18 12:14:12.138 Retrieving file information...
+> 2022-02-18 12:14:12.138 MLST /public_html/reports/reports_for_apps/purchase.csv
+< 2022-02-18 12:14:12.178 250-Begin
+< 2022-02-18 12:14:12.178  type=file;size=316342;modify=20220218000012;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg65822f; /public_html/reports/reports_for_apps/purchase.csv
+< 2022-02-18 12:14:12.179 250 End.
+. 2022-02-18 12:14:12.179  type=file;size=316342;modify=20220218000012;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg65822f; /public_html/reports/reports_for_apps/purchase.csv
+. 2022-02-18 12:14:12.180 Retrieving file information successful
+. 2022-02-18 12:14:12.180 purchase.csv;-;316342;2022-02-18T00:00:12.000Z;3;"385925" [0];"82284" [0];rw-r--r--;0
+. 2022-02-18 12:14:12.181 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 316,342
+. 2022-02-18 12:14:12.181   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-02-18 12:14:12.181   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-02-18 12:14:12.182   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-02-18 12:14:12.182 File: '/public_html/reports/reports_for_apps/purchase.csv' [2022-02-18T00:00:12.000Z] [316342]
+. 2022-02-18 12:14:12.183 Copying "/public_html/reports/reports_for_apps/purchase.csv" to local directory started.
+. 2022-02-18 12:14:12.183 Binary transfer mode selected.
+. 2022-02-18 12:14:12.185 Starting download of /public_html/reports/reports_for_apps/purchase.csv
+> 2022-02-18 12:14:12.185 TYPE A
+< 2022-02-18 12:14:12.215 200 TYPE is now ASCII
+> 2022-02-18 12:14:12.216 PASV
+< 2022-02-18 12:14:12.255 227 Entering Passive Mode (91,208,99,4,91,151)
+> 2022-02-18 12:14:12.256 MLSD
+. 2022-02-18 12:14:12.256 Connecting to 91.208.99.4:23447 ...
+< 2022-02-18 12:14:12.323 150 Accepted data connection
+. 2022-02-18 12:14:12.329 type=cdir;sizd=10;modify=20220218000031;UNIX.mode=0755;UNIX.uid=385925;UNIX.gid=82284;unique=2egd73e025; .
+. 2022-02-18 12:14:12.330 type=pdir;sizd=397;modify=20220217092645;UNIX.mode=0755;UNIX.uid=385925;UNIX.gid=82284;unique=2eg438b10f0; ..
+. 2022-02-18 12:14:12.331 type=file;size=1800443;modify=20220218000028;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg658270; 1_month_sales.csv
+. 2022-02-18 12:14:12.331 type=dir;sizd=5;modify=20220216165547;UNIX.mode=0755;UNIX.uid=385925;UNIX.gid=82284;unique=2egf18c84c; accounting
+. 2022-02-18 12:14:12.331 type=file;size=1074564;modify=20220218000023;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg658269; fba.csv
+. 2022-02-18 12:14:12.332 type=file;size=12140309;modify=20220218000021;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg6e6d7b; forecast.csv
+. 2022-02-18 12:14:12.332 type=file;size=316342;modify=20220218000012;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg65822f; purchase.csv
+. 2022-02-18 12:14:12.333 type=file;size=8221354;modify=20220218000018;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg65817d; sales.csv
+. 2022-02-18 12:14:12.333 type=file;size=11449875;modify=20220218000032;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg6585a5; sales_and_subsource.csv
+. 2022-02-18 12:14:12.333 type=file;size=181266;modify=20220218000010;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg658199; stock.csv
+. 2022-02-18 12:14:12.334 Data connection closed
+< 2022-02-18 12:14:12.334 226-Options: -a -l 
+< 2022-02-18 12:14:12.334 226 10 matches total
+> 2022-02-18 12:14:12.335 TYPE I
+< 2022-02-18 12:14:12.369 200 TYPE is now 8-bit binary
+> 2022-02-18 12:14:12.369 PASV
+< 2022-02-18 12:14:12.410 227 Entering Passive Mode (91,208,99,4,116,247)
+> 2022-02-18 12:14:12.411 RETR purchase.csv
+. 2022-02-18 12:14:12.412 Connecting to 91.208.99.4:29943 ...
+< 2022-02-18 12:14:12.480 150-Accepted data connection
+< 2022-02-18 12:14:12.481 150 308.9 kbytes to download
+< 2022-02-18 12:14:12.496 226-File successfully transferred
+< 2022-02-18 12:14:12.497 226 0.016 seconds (measured here), 18.94 Mbytes per second
+. 2022-02-18 12:14:12.929 Data connection closed
+. 2022-02-18 12:14:12.929 Preserving timestamp [2022-02-18T00:00:12.000Z]
+. 2022-02-18 12:14:12.931 Download successful
+. 2022-02-18 12:14:12.931 Transfer done: '/public_html/reports/reports_for_apps/purchase.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\purchase.csv' [316342]
+. 2022-02-18 12:14:12.931 Copying finished: Transferred: 316,342, Elapsed: 0:00:00, CPS: 698,326/s
+> 2022-02-18 12:14:12.932 Script: get fba.csv
+. 2022-02-18 12:14:12.932 Listing file "fba.csv".
+. 2022-02-18 12:14:12.933 Retrieving file information...
+> 2022-02-18 12:14:12.933 MLST /public_html/reports/reports_for_apps/fba.csv
+< 2022-02-18 12:14:12.964 250-Begin
+< 2022-02-18 12:14:12.965  type=file;size=1074564;modify=20220218000023;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg658269; /public_html/reports/reports_for_apps/fba.csv
+< 2022-02-18 12:14:12.965 250 End.
+. 2022-02-18 12:14:12.966  type=file;size=1074564;modify=20220218000023;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg658269; /public_html/reports/reports_for_apps/fba.csv
+. 2022-02-18 12:14:12.966 Retrieving file information successful
+. 2022-02-18 12:14:12.966 fba.csv;-;1074564;2022-02-18T00:00:23.000Z;3;"385925" [0];"82284" [0];rw-r--r--;0
+. 2022-02-18 12:14:12.967 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 1,074,564
+. 2022-02-18 12:14:12.967   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-02-18 12:14:12.967   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-02-18 12:14:12.968   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-02-18 12:14:12.968 File: '/public_html/reports/reports_for_apps/fba.csv' [2022-02-18T00:00:23.000Z] [1074564]
+. 2022-02-18 12:14:12.969 Copying "/public_html/reports/reports_for_apps/fba.csv" to local directory started.
+. 2022-02-18 12:14:12.969 Binary transfer mode selected.
+. 2022-02-18 12:14:12.970 Starting download of /public_html/reports/reports_for_apps/fba.csv
+> 2022-02-18 12:14:12.971 TYPE I
+< 2022-02-18 12:14:13.003 200 TYPE is now 8-bit binary
+> 2022-02-18 12:14:13.004 PASV
+< 2022-02-18 12:14:13.038 227 Entering Passive Mode (91,208,99,4,87,135)
+> 2022-02-18 12:14:13.039 RETR fba.csv
+. 2022-02-18 12:14:13.039 Connecting to 91.208.99.4:22407 ...
+< 2022-02-18 12:14:13.110 150-Accepted data connection
+< 2022-02-18 12:14:13.110 150 1049.4 kbytes to download
+< 2022-02-18 12:14:13.146 226-File successfully transferred
+< 2022-02-18 12:14:13.146 226 0.035 seconds (measured here), 28.93 Mbytes per second
+. 2022-02-18 12:14:13.957 Data connection closed
+. 2022-02-18 12:14:13.957 Preserving timestamp [2022-02-18T00:00:23.000Z]
+. 2022-02-18 12:14:13.959 Download successful
+. 2022-02-18 12:14:13.959 Transfer done: '/public_html/reports/reports_for_apps/fba.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\fba.csv' [1074564]
+. 2022-02-18 12:14:13.960 Copying finished: Transferred: 1,074,564, Elapsed: 0:00:00, CPS: 1,273,180/s
+> 2022-02-18 12:14:13.961 Script: get stock.csv
+. 2022-02-18 12:14:13.961 Listing file "stock.csv".
+. 2022-02-18 12:14:13.961 Retrieving file information...
+> 2022-02-18 12:14:13.962 MLST /public_html/reports/reports_for_apps/stock.csv
+< 2022-02-18 12:14:13.997 250-Begin
+< 2022-02-18 12:14:13.997  type=file;size=181266;modify=20220218000010;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg658199; /public_html/reports/reports_for_apps/stock.csv
+< 2022-02-18 12:14:13.998 250 End.
+. 2022-02-18 12:14:13.998  type=file;size=181266;modify=20220218000010;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg658199; /public_html/reports/reports_for_apps/stock.csv
+. 2022-02-18 12:14:13.999 Retrieving file information successful
+. 2022-02-18 12:14:13.999 stock.csv;-;181266;2022-02-18T00:00:10.000Z;3;"385925" [0];"82284" [0];rw-r--r--;0
+. 2022-02-18 12:14:14.000 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 181,266
+. 2022-02-18 12:14:14.000   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-02-18 12:14:14.000   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-02-18 12:14:14.001   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-02-18 12:14:14.001 File: '/public_html/reports/reports_for_apps/stock.csv' [2022-02-18T00:00:10.000Z] [181266]
+. 2022-02-18 12:14:14.002 Copying "/public_html/reports/reports_for_apps/stock.csv" to local directory started.
+. 2022-02-18 12:14:14.002 Binary transfer mode selected.
+. 2022-02-18 12:14:14.004 Starting download of /public_html/reports/reports_for_apps/stock.csv
+> 2022-02-18 12:14:14.004 TYPE I
+< 2022-02-18 12:14:14.037 200 TYPE is now 8-bit binary
+> 2022-02-18 12:14:14.037 PASV
+< 2022-02-18 12:14:14.068 227 Entering Passive Mode (91,208,99,4,111,195)
+> 2022-02-18 12:14:14.070 RETR stock.csv
+. 2022-02-18 12:14:14.071 Connecting to 91.208.99.4:28611 ...
+< 2022-02-18 12:14:14.138 150-Accepted data connection
+< 2022-02-18 12:14:14.139 150 177.0 kbytes to download
+< 2022-02-18 12:14:14.152 226-File successfully transferred
+< 2022-02-18 12:14:14.153 226 0.008 seconds (measured here), 21.39 Mbytes per second
+. 2022-02-18 12:14:14.435 Data connection closed
+. 2022-02-18 12:14:14.435 Preserving timestamp [2022-02-18T00:00:10.000Z]
+. 2022-02-18 12:14:14.436 Download successful
+. 2022-02-18 12:14:14.437 Transfer done: '/public_html/reports/reports_for_apps/stock.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\stock.csv' [181266]
+. 2022-02-18 12:14:14.437 Copying finished: Transferred: 181,266, Elapsed: 0:00:00, CPS: 580,980/s
+> 2022-02-18 12:14:14.438 Script: exit
+. 2022-02-18 12:14:14.439 Script: Exit code: 0
+. 2022-02-18 12:14:14.441 Disconnected from server
+. 2022-02-21 13:24:58.668 --------------------------------------------------------------------------
+. 2022-02-21 13:24:58.694 WinSCP Version 5.19.5 (Build 11933 2021-11-25) (OS 10.0.19043 - Windows 10 Enterprise)
+. 2022-02-21 13:24:58.695 Configuration: nul
+. 2022-02-21 13:24:58.695 Log level: Normal
+. 2022-02-21 13:24:58.695 Local account: SUPPORT10\Amberta Support10
+. 2022-02-21 13:24:58.696 Working directory: C:\Windows
+. 2022-02-21 13:24:58.696 Process ID: 15836
+. 2022-02-21 13:24:58.703 Ancestor processes: WinSCP, cmd, explorer, ...
+. 2022-02-21 13:24:58.704 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.19.5 /consoleinstance=_12456_159 "/log=""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\documents\winscp.log""" "/ini=nul" "/command" "open ftp://kanifa%40amberta.com:***@ftp.amberta.com/" "cd /public_html/reports/reports_for_apps" "lcd ""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports""" "option batch abort" "option failonnomatch on" "get purchase.csv" "get fba.csv" "get stock.csv" "exit"
+. 2022-02-21 13:24:58.705 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 27/03/2022, DST End: 30/10/2022
+. 2022-02-21 13:24:58.705 Login time: 21 February 2022 13:24:58
+. 2022-02-21 13:24:58.705 --------------------------------------------------------------------------
+. 2022-02-21 13:24:58.706 Script: Retrospectively logging previous script records:
+> 2022-02-21 13:24:58.707 Script: open ftp://kanifa%40amberta.com:***@ftp.amberta.com/
+. 2022-02-21 13:24:58.707 --------------------------------------------------------------------------
+. 2022-02-21 13:24:58.708 Session name: kanifa@amberta.com@ftp.amberta.com (Ad-Hoc site)
+. 2022-02-21 13:24:58.708 Host name: ftp.amberta.com (Port: 21)
+. 2022-02-21 13:24:58.708 User name: kanifa@amberta.com (Password: Yes, Key file: No, Passphrase: No)
+. 2022-02-21 13:24:58.708 Transfer Protocol: FTP
+. 2022-02-21 13:24:58.709 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2022-02-21 13:24:58.709 Disable Nagle: No
+. 2022-02-21 13:24:58.709 Proxy: None
+. 2022-02-21 13:24:58.709 Send buffer: 262144
+. 2022-02-21 13:24:58.710 UTF: Auto
+. 2022-02-21 13:24:58.710 FTPS: None [Client certificate: No]
+. 2022-02-21 13:24:58.710 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2022-02-21 13:24:58.711 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2022-02-21 13:24:58.711 Cache directory changes: Yes, Permanent: Yes
+. 2022-02-21 13:24:58.712 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2022-02-21 13:24:58.712 Timezone offset: 0h 0m
+. 2022-02-21 13:24:58.713 --------------------------------------------------------------------------
+< 2022-02-21 13:24:58.715 Script: Connecting to ftp.amberta.com ...
+. 2022-02-21 13:24:58.715 Connecting to ftp.amberta.com ...
+. 2022-02-21 13:24:58.758 Connection failed.
+< 2022-02-21 13:24:58.759 Script: Connection failed.
+< 2022-02-21 13:24:58.759 Connection failed.
+. 2022-02-21 13:25:00.420 --------------------------------------------------------------------------
+. 2022-02-21 13:25:00.420 WinSCP Version 5.19.5 (Build 11933 2021-11-25) (OS 10.0.19043 - Windows 10 Enterprise)
+. 2022-02-21 13:25:00.421 Configuration: nul
+. 2022-02-21 13:25:00.421 Log level: Normal
+. 2022-02-21 13:25:00.422 Local account: SUPPORT10\Amberta Support10
+. 2022-02-21 13:25:00.422 Working directory: C:\Windows
+. 2022-02-21 13:25:00.422 Process ID: 12580
+. 2022-02-21 13:25:00.429 Ancestor processes: WinSCP, cmd, explorer, ...
+. 2022-02-21 13:25:00.431 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.19.5 /consoleinstance=_13112_14 "/log=""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\documents\winscp.log""" "/ini=nul" "/command" "open ftp://kanifa%40amberta.com:***@ftp.amberta.com/" "cd /public_html/reports/reports_for_apps" "lcd ""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports""" "option batch abort" "option failonnomatch on" "get purchase.csv" "get fba.csv" "get stock.csv" "exit"
+. 2022-02-21 13:25:00.431 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 27/03/2022, DST End: 30/10/2022
+. 2022-02-21 13:25:00.432 Login time: 21 February 2022 13:25:00
+. 2022-02-21 13:25:00.432 --------------------------------------------------------------------------
+. 2022-02-21 13:25:00.433 Script: Retrospectively logging previous script records:
+> 2022-02-21 13:25:00.433 Script: open ftp://kanifa%40amberta.com:***@ftp.amberta.com/
+. 2022-02-21 13:25:00.433 --------------------------------------------------------------------------
+. 2022-02-21 13:25:00.434 Session name: kanifa@amberta.com@ftp.amberta.com (Ad-Hoc site)
+. 2022-02-21 13:25:00.434 Host name: ftp.amberta.com (Port: 21)
+. 2022-02-21 13:25:00.434 User name: kanifa@amberta.com (Password: Yes, Key file: No, Passphrase: No)
+. 2022-02-21 13:25:00.435 Transfer Protocol: FTP
+. 2022-02-21 13:25:00.435 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2022-02-21 13:25:00.436 Disable Nagle: No
+. 2022-02-21 13:25:00.436 Proxy: None
+. 2022-02-21 13:25:00.436 Send buffer: 262144
+. 2022-02-21 13:25:00.437 UTF: Auto
+. 2022-02-21 13:25:00.437 FTPS: None [Client certificate: No]
+. 2022-02-21 13:25:00.438 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2022-02-21 13:25:00.438 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2022-02-21 13:25:00.438 Cache directory changes: Yes, Permanent: Yes
+. 2022-02-21 13:25:00.439 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2022-02-21 13:25:00.439 Timezone offset: 0h 0m
+. 2022-02-21 13:25:00.439 --------------------------------------------------------------------------
+< 2022-02-21 13:25:00.441 Script: Connecting to ftp.amberta.com ...
+. 2022-02-21 13:25:00.441 Connecting to ftp.amberta.com ...
+. 2022-02-21 13:25:00.443 Connection failed.
+< 2022-02-21 13:25:00.446 Script: Connection failed.
+< 2022-02-21 13:25:00.447 Connection failed.
+. 2022-02-21 13:25:01.323 --------------------------------------------------------------------------
+. 2022-02-21 13:25:01.324 WinSCP Version 5.19.5 (Build 11933 2021-11-25) (OS 10.0.19043 - Windows 10 Enterprise)
+. 2022-02-21 13:25:01.325 Configuration: nul
+. 2022-02-21 13:25:01.325 Log level: Normal
+. 2022-02-21 13:25:01.325 Local account: SUPPORT10\Amberta Support10
+. 2022-02-21 13:25:01.325 Working directory: C:\Windows
+. 2022-02-21 13:25:01.326 Process ID: 8652
+. 2022-02-21 13:25:01.337 Ancestor processes: WinSCP, cmd, explorer, ...
+. 2022-02-21 13:25:01.338 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.19.5 /consoleinstance=_2032_941 "/log=""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\documents\winscp.log""" "/ini=nul" "/command" "open ftp://kanifa%40amberta.com:***@ftp.amberta.com/" "cd /public_html/reports/reports_for_apps" "lcd ""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports""" "option batch abort" "option failonnomatch on" "get purchase.csv" "get fba.csv" "get stock.csv" "exit"
+. 2022-02-21 13:25:01.339 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 27/03/2022, DST End: 30/10/2022
+. 2022-02-21 13:25:01.339 Login time: 21 February 2022 13:25:01
+. 2022-02-21 13:25:01.340 --------------------------------------------------------------------------
+. 2022-02-21 13:25:01.340 Script: Retrospectively logging previous script records:
+> 2022-02-21 13:25:01.341 Script: open ftp://kanifa%40amberta.com:***@ftp.amberta.com/
+. 2022-02-21 13:25:01.341 --------------------------------------------------------------------------
+. 2022-02-21 13:25:01.341 Session name: kanifa@amberta.com@ftp.amberta.com (Ad-Hoc site)
+. 2022-02-21 13:25:01.341 Host name: ftp.amberta.com (Port: 21)
+. 2022-02-21 13:25:01.342 User name: kanifa@amberta.com (Password: Yes, Key file: No, Passphrase: No)
+. 2022-02-21 13:25:01.343 Transfer Protocol: FTP
+. 2022-02-21 13:25:01.345 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2022-02-21 13:25:01.347 Disable Nagle: No
+. 2022-02-21 13:25:01.348 Proxy: None
+. 2022-02-21 13:25:01.348 Send buffer: 262144
+. 2022-02-21 13:25:01.349 UTF: Auto
+. 2022-02-21 13:25:01.349 FTPS: None [Client certificate: No]
+. 2022-02-21 13:25:01.350 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2022-02-21 13:25:01.350 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2022-02-21 13:25:01.350 Cache directory changes: Yes, Permanent: Yes
+. 2022-02-21 13:25:01.351 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2022-02-21 13:25:01.351 Timezone offset: 0h 0m
+. 2022-02-21 13:25:01.351 --------------------------------------------------------------------------
+< 2022-02-21 13:25:01.354 Script: Connecting to ftp.amberta.com ...
+. 2022-02-21 13:25:01.354 Connecting to ftp.amberta.com ...
+. 2022-02-21 13:25:01.356 Connection failed.
+< 2022-02-21 13:25:01.357 Script: Connection failed.
+< 2022-02-21 13:25:01.357 Connection failed.
+. 2022-02-21 13:25:02.107 --------------------------------------------------------------------------
+. 2022-02-21 13:25:02.108 WinSCP Version 5.19.5 (Build 11933 2021-11-25) (OS 10.0.19043 - Windows 10 Enterprise)
+. 2022-02-21 13:25:02.108 Configuration: nul
+. 2022-02-21 13:25:02.109 Log level: Normal
+. 2022-02-21 13:25:02.109 Local account: SUPPORT10\Amberta Support10
+. 2022-02-21 13:25:02.109 Working directory: C:\Windows
+. 2022-02-21 13:25:02.110 Process ID: 12848
+. 2022-02-21 13:25:02.117 Ancestor processes: WinSCP, cmd, explorer, ...
+. 2022-02-21 13:25:02.118 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.19.5 /consoleinstance=_14144_869 "/log=""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\documents\winscp.log""" "/ini=nul" "/command" "open ftp://kanifa%40amberta.com:***@ftp.amberta.com/" "cd /public_html/reports/reports_for_apps" "lcd ""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports""" "option batch abort" "option failonnomatch on" "get purchase.csv" "get fba.csv" "get stock.csv" "exit"
+. 2022-02-21 13:25:02.119 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 27/03/2022, DST End: 30/10/2022
+. 2022-02-21 13:25:02.119 Login time: 21 February 2022 13:25:02
+. 2022-02-21 13:25:02.120 --------------------------------------------------------------------------
+. 2022-02-21 13:25:02.120 Script: Retrospectively logging previous script records:
+> 2022-02-21 13:25:02.120 Script: open ftp://kanifa%40amberta.com:***@ftp.amberta.com/
+. 2022-02-21 13:25:02.121 --------------------------------------------------------------------------
+. 2022-02-21 13:25:02.121 Session name: kanifa@amberta.com@ftp.amberta.com (Ad-Hoc site)
+. 2022-02-21 13:25:02.121 Host name: ftp.amberta.com (Port: 21)
+. 2022-02-21 13:25:02.122 User name: kanifa@amberta.com (Password: Yes, Key file: No, Passphrase: No)
+. 2022-02-21 13:25:02.122 Transfer Protocol: FTP
+. 2022-02-21 13:25:02.123 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2022-02-21 13:25:02.123 Disable Nagle: No
+. 2022-02-21 13:25:02.123 Proxy: None
+. 2022-02-21 13:25:02.124 Send buffer: 262144
+. 2022-02-21 13:25:02.124 UTF: Auto
+. 2022-02-21 13:25:02.124 FTPS: None [Client certificate: No]
+. 2022-02-21 13:25:02.125 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2022-02-21 13:25:02.125 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2022-02-21 13:25:02.126 Cache directory changes: Yes, Permanent: Yes
+. 2022-02-21 13:25:02.126 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2022-02-21 13:25:02.126 Timezone offset: 0h 0m
+. 2022-02-21 13:25:02.127 --------------------------------------------------------------------------
+< 2022-02-21 13:25:02.129 Script: Connecting to ftp.amberta.com ...
+. 2022-02-21 13:25:02.129 Connecting to ftp.amberta.com ...
+. 2022-02-21 13:25:02.131 Connection failed.
+< 2022-02-21 13:25:02.132 Script: Connection failed.
+< 2022-02-21 13:25:02.132 Connection failed.
+. 2022-02-21 13:25:03.104 --------------------------------------------------------------------------
+. 2022-02-21 13:25:03.104 WinSCP Version 5.19.5 (Build 11933 2021-11-25) (OS 10.0.19043 - Windows 10 Enterprise)
+. 2022-02-21 13:25:03.105 Configuration: nul
+. 2022-02-21 13:25:03.105 Log level: Normal
+. 2022-02-21 13:25:03.106 Local account: SUPPORT10\Amberta Support10
+. 2022-02-21 13:25:03.106 Working directory: C:\Windows
+. 2022-02-21 13:25:03.107 Process ID: 15216
+. 2022-02-21 13:25:03.116 Ancestor processes: WinSCP, cmd, explorer, ...
+. 2022-02-21 13:25:03.116 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.19.5 /consoleinstance=_16468_796 "/log=""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\documents\winscp.log""" "/ini=nul" "/command" "open ftp://kanifa%40amberta.com:***@ftp.amberta.com/" "cd /public_html/reports/reports_for_apps" "lcd ""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports""" "option batch abort" "option failonnomatch on" "get purchase.csv" "get fba.csv" "get stock.csv" "exit"
+. 2022-02-21 13:25:03.117 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 27/03/2022, DST End: 30/10/2022
+. 2022-02-21 13:25:03.118 Login time: 21 February 2022 13:25:03
+. 2022-02-21 13:25:03.118 --------------------------------------------------------------------------
+. 2022-02-21 13:25:03.119 Script: Retrospectively logging previous script records:
+> 2022-02-21 13:25:03.119 Script: open ftp://kanifa%40amberta.com:***@ftp.amberta.com/
+. 2022-02-21 13:25:03.120 --------------------------------------------------------------------------
+. 2022-02-21 13:25:03.120 Session name: kanifa@amberta.com@ftp.amberta.com (Ad-Hoc site)
+. 2022-02-21 13:25:03.121 Host name: ftp.amberta.com (Port: 21)
+. 2022-02-21 13:25:03.121 User name: kanifa@amberta.com (Password: Yes, Key file: No, Passphrase: No)
+. 2022-02-21 13:25:03.122 Transfer Protocol: FTP
+. 2022-02-21 13:25:03.122 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2022-02-21 13:25:03.122 Disable Nagle: No
+. 2022-02-21 13:25:03.122 Proxy: None
+. 2022-02-21 13:25:03.123 Send buffer: 262144
+. 2022-02-21 13:25:03.123 UTF: Auto
+. 2022-02-21 13:25:03.123 FTPS: None [Client certificate: No]
+. 2022-02-21 13:25:03.124 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2022-02-21 13:25:03.124 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2022-02-21 13:25:03.124 Cache directory changes: Yes, Permanent: Yes
+. 2022-02-21 13:25:03.125 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2022-02-21 13:25:03.125 Timezone offset: 0h 0m
+. 2022-02-21 13:25:03.125 --------------------------------------------------------------------------
+< 2022-02-21 13:25:03.128 Script: Connecting to ftp.amberta.com ...
+. 2022-02-21 13:25:03.128 Connecting to ftp.amberta.com ...
+. 2022-02-21 13:25:03.130 Connection failed.
+< 2022-02-21 13:25:03.132 Script: Connection failed.
+< 2022-02-21 13:25:03.132 Connection failed.
+. 2022-02-21 13:25:25.517 --------------------------------------------------------------------------
+. 2022-02-21 13:25:25.517 WinSCP Version 5.19.5 (Build 11933 2021-11-25) (OS 10.0.19043 - Windows 10 Enterprise)
+. 2022-02-21 13:25:25.518 Configuration: nul
+. 2022-02-21 13:25:25.518 Log level: Normal
+. 2022-02-21 13:25:25.518 Local account: SUPPORT10\Amberta Support10
+. 2022-02-21 13:25:25.519 Working directory: C:\Windows
+. 2022-02-21 13:25:25.519 Process ID: 13992
+. 2022-02-21 13:25:25.526 Ancestor processes: WinSCP, cmd, explorer, ...
+. 2022-02-21 13:25:25.527 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.19.5 /consoleinstance=_11468_201 "/log=""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\documents\winscp.log""" "/ini=nul" "/command" "open ftp://kanifa%40amberta.com:***@ftp.amberta.com/" "cd /public_html/reports/reports_for_apps" "lcd ""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports""" "option batch abort" "option failonnomatch on" "get purchase.csv" "get fba.csv" "get stock.csv" "exit"
+. 2022-02-21 13:25:25.528 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 27/03/2022, DST End: 30/10/2022
+. 2022-02-21 13:25:25.528 Login time: 21 February 2022 13:25:25
+. 2022-02-21 13:25:25.529 --------------------------------------------------------------------------
+. 2022-02-21 13:25:25.529 Script: Retrospectively logging previous script records:
+> 2022-02-21 13:25:25.530 Script: open ftp://kanifa%40amberta.com:***@ftp.amberta.com/
+. 2022-02-21 13:25:25.530 --------------------------------------------------------------------------
+. 2022-02-21 13:25:25.530 Session name: kanifa@amberta.com@ftp.amberta.com (Ad-Hoc site)
+. 2022-02-21 13:25:25.531 Host name: ftp.amberta.com (Port: 21)
+. 2022-02-21 13:25:25.531 User name: kanifa@amberta.com (Password: Yes, Key file: No, Passphrase: No)
+. 2022-02-21 13:25:25.531 Transfer Protocol: FTP
+. 2022-02-21 13:25:25.532 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2022-02-21 13:25:25.532 Disable Nagle: No
+. 2022-02-21 13:25:25.533 Proxy: None
+. 2022-02-21 13:25:25.533 Send buffer: 262144
+. 2022-02-21 13:25:25.533 UTF: Auto
+. 2022-02-21 13:25:25.533 FTPS: None [Client certificate: No]
+. 2022-02-21 13:25:25.533 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2022-02-21 13:25:25.534 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2022-02-21 13:25:25.534 Cache directory changes: Yes, Permanent: Yes
+. 2022-02-21 13:25:25.534 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2022-02-21 13:25:25.535 Timezone offset: 0h 0m
+. 2022-02-21 13:25:25.535 --------------------------------------------------------------------------
+< 2022-02-21 13:25:25.538 Script: Connecting to ftp.amberta.com ...
+. 2022-02-21 13:25:25.538 Connecting to ftp.amberta.com ...
+. 2022-02-21 13:25:25.570 Connection failed.
+< 2022-02-21 13:25:25.571 Script: Connection failed.
+< 2022-02-21 13:25:25.571 Connection failed.
+. 2022-02-21 13:25:48.968 --------------------------------------------------------------------------
+. 2022-02-21 13:25:48.968 WinSCP Version 5.19.5 (Build 11933 2021-11-25) (OS 10.0.19044 - Windows 10 Enterprise)
+. 2022-02-21 13:25:48.969 Configuration: nul
+. 2022-02-21 13:25:48.972 Log level: Normal
+. 2022-02-21 13:25:48.976 Local account: SUPPORT8\Amberta Support8
+. 2022-02-21 13:25:48.979 Working directory: C:\Windows
+. 2022-02-21 13:25:48.980 Process ID: 5380
+. 2022-02-21 13:25:48.991 Ancestor processes: WinSCP, cmd, explorer, ...
+. 2022-02-21 13:25:48.992 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.19.5 /consoleinstance=_12712_534 "/log=""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\documents\winscp.log""" "/ini=nul" "/command" "open ftp://kanifa%40amberta.com:***@ftp.amberta.com/" "cd /public_html/reports/reports_for_apps" "lcd ""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports""" "option batch abort" "option failonnomatch on" "get purchase.csv" "get fba.csv" "get stock.csv" "exit"
+. 2022-02-21 13:25:48.993 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 27/03/2022, DST End: 30/10/2022
+. 2022-02-21 13:25:48.993 Login time: 21 February 2022 13:25:48
+. 2022-02-21 13:25:48.994 --------------------------------------------------------------------------
+. 2022-02-21 13:25:48.995 Script: Retrospectively logging previous script records:
+> 2022-02-21 13:25:48.995 Script: open ftp://kanifa%40amberta.com:***@ftp.amberta.com/
+. 2022-02-21 13:25:48.996 --------------------------------------------------------------------------
+. 2022-02-21 13:25:48.996 Session name: kanifa@amberta.com@ftp.amberta.com (Ad-Hoc site)
+. 2022-02-21 13:25:49.002 Host name: ftp.amberta.com (Port: 21)
+. 2022-02-21 13:25:49.003 User name: kanifa@amberta.com (Password: Yes, Key file: No, Passphrase: No)
+. 2022-02-21 13:25:49.003 Transfer Protocol: FTP
+. 2022-02-21 13:25:49.005 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2022-02-21 13:25:49.006 Disable Nagle: No
+. 2022-02-21 13:25:49.006 Proxy: None
+. 2022-02-21 13:25:49.007 Send buffer: 262144
+. 2022-02-21 13:25:49.007 UTF: Auto
+. 2022-02-21 13:25:49.008 FTPS: None [Client certificate: No]
+. 2022-02-21 13:25:49.008 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2022-02-21 13:25:49.009 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2022-02-21 13:25:49.009 Cache directory changes: Yes, Permanent: Yes
+. 2022-02-21 13:25:49.010 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2022-02-21 13:25:49.010 Timezone offset: 0h 0m
+. 2022-02-21 13:25:49.011 --------------------------------------------------------------------------
+< 2022-02-21 13:25:49.012 Script: Connecting to ftp.amberta.com ...
+. 2022-02-21 13:25:49.013 Connecting to ftp.amberta.com ...
+. 2022-02-21 13:25:49.034 Connection failed.
+< 2022-02-21 13:25:49.040 Script: Connection failed.
+< 2022-02-21 13:25:49.042 Connection failed.
+. 2022-02-21 13:30:49.706 --------------------------------------------------------------------------
+. 2022-02-21 13:30:49.707 WinSCP Version 5.19.5 (Build 11933 2021-11-25) (OS 10.0.19043 - Windows 10 Enterprise)
+. 2022-02-21 13:30:49.707 Configuration: nul
+. 2022-02-21 13:30:49.708 Log level: Normal
+. 2022-02-21 13:30:49.708 Local account: SUPPORT10\Amberta Support10
+. 2022-02-21 13:30:49.709 Working directory: C:\Windows
+. 2022-02-21 13:30:49.709 Process ID: 15940
+. 2022-02-21 13:30:49.716 Ancestor processes: WinSCP, cmd, explorer, ...
+. 2022-02-21 13:30:49.721 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.19.5 /consoleinstance=_12780_756 "/log=""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\documents\winscp.log""" "/ini=nul" "/command" "open ftp://kanifa%40amberta.com:***@ftp.amberta.com/" "cd /public_html/reports/reports_for_apps" "lcd ""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports""" "option batch abort" "option failonnomatch on" "get purchase.csv" "get fba.csv" "get stock.csv" "exit"
+. 2022-02-21 13:30:49.724 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 27/03/2022, DST End: 30/10/2022
+. 2022-02-21 13:30:49.725 Login time: 21 February 2022 13:30:49
+. 2022-02-21 13:30:49.725 --------------------------------------------------------------------------
+. 2022-02-21 13:30:49.726 Script: Retrospectively logging previous script records:
+> 2022-02-21 13:30:49.728 Script: open ftp://kanifa%40amberta.com:***@ftp.amberta.com/
+. 2022-02-21 13:30:49.729 --------------------------------------------------------------------------
+. 2022-02-21 13:30:49.729 Session name: kanifa@amberta.com@ftp.amberta.com (Ad-Hoc site)
+. 2022-02-21 13:30:49.729 Host name: ftp.amberta.com (Port: 21)
+. 2022-02-21 13:30:49.730 User name: kanifa@amberta.com (Password: Yes, Key file: No, Passphrase: No)
+. 2022-02-21 13:30:49.731 Transfer Protocol: FTP
+. 2022-02-21 13:30:49.731 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2022-02-21 13:30:49.732 Disable Nagle: No
+. 2022-02-21 13:30:49.732 Proxy: None
+. 2022-02-21 13:30:49.733 Send buffer: 262144
+. 2022-02-21 13:30:49.733 UTF: Auto
+. 2022-02-21 13:30:49.734 FTPS: None [Client certificate: No]
+. 2022-02-21 13:30:49.734 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2022-02-21 13:30:49.735 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2022-02-21 13:30:49.736 Cache directory changes: Yes, Permanent: Yes
+. 2022-02-21 13:30:49.736 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2022-02-21 13:30:49.737 Timezone offset: 0h 0m
+. 2022-02-21 13:30:49.737 --------------------------------------------------------------------------
+< 2022-02-21 13:30:49.740 Script: Connecting to ftp.amberta.com ...
+. 2022-02-21 13:30:49.741 Connecting to ftp.amberta.com ...
+. 2022-02-21 13:30:49.766 Connection failed.
+< 2022-02-21 13:30:49.767 Script: Connection failed.
+< 2022-02-21 13:30:49.769 Connection failed.
+. 2022-02-23 12:03:30.851 --------------------------------------------------------------------------
+. 2022-02-23 12:03:30.883 WinSCP Version 5.19.5 (Build 11933 2021-11-25) (OS 10.0.19044 - Windows 10 Enterprise)
+. 2022-02-23 12:03:30.883 Configuration: nul
+. 2022-02-23 12:03:30.883 Log level: Normal
+. 2022-02-23 12:03:30.883 Local account: SUPPORT8\AmbertaSupport8
+. 2022-02-23 12:03:30.883 Working directory: C:\Windows
+. 2022-02-23 12:03:30.883 Process ID: 4232
+. 2022-02-23 12:03:30.898 Ancestor processes: WinSCP, cmd, explorer, ...
+. 2022-02-23 12:03:30.898 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.19.5 /consoleinstance=_3420_887 "/log=""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\documents\winscp.log""" "/ini=nul" "/command" "open ftp://kanifa%40amberta.com:***@91.208.99.4:21/" "cd /public_html/reports/reports_for_apps" "lcd ""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports""" "option batch abort" "option failonnomatch on" "get purchase.csv" "get fba.csv" "get stock.csv" "exit"
+. 2022-02-23 12:03:30.898 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 27/03/2022, DST End: 30/10/2022
+. 2022-02-23 12:03:30.898 Login time: 23 February 2022 12:03:30
+. 2022-02-23 12:03:30.898 --------------------------------------------------------------------------
+. 2022-02-23 12:03:30.898 Script: Retrospectively logging previous script records:
+> 2022-02-23 12:03:30.898 Script: open ftp://kanifa%40amberta.com:***@91.208.99.4:21/
+. 2022-02-23 12:03:30.898 --------------------------------------------------------------------------
+. 2022-02-23 12:03:30.898 Session name: kanifa@amberta.com@91.208.99.4 (Ad-Hoc site)
+. 2022-02-23 12:03:30.898 Host name: 91.208.99.4 (Port: 21)
+. 2022-02-23 12:03:30.905 User name: kanifa@amberta.com (Password: Yes, Key file: No, Passphrase: No)
+. 2022-02-23 12:03:30.905 Transfer Protocol: FTP
+. 2022-02-23 12:03:30.905 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2022-02-23 12:03:30.905 Disable Nagle: No
+. 2022-02-23 12:03:30.905 Proxy: None
+. 2022-02-23 12:03:30.905 Send buffer: 262144
+. 2022-02-23 12:03:30.905 UTF: Auto
+. 2022-02-23 12:03:30.905 FTPS: None [Client certificate: No]
+. 2022-02-23 12:03:30.905 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2022-02-23 12:03:30.905 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2022-02-23 12:03:30.905 Cache directory changes: Yes, Permanent: Yes
+. 2022-02-23 12:03:30.905 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2022-02-23 12:03:30.905 Timezone offset: 0h 0m
+. 2022-02-23 12:03:30.905 --------------------------------------------------------------------------
+< 2022-02-23 12:03:30.905 Script: Connecting to 91.208.99.4 ...
+. 2022-02-23 12:03:30.905 Connecting to 91.208.99.4 ...
+. 2022-02-23 12:03:30.936 Connected with 91.208.99.4. Waiting for welcome message...
+< 2022-02-23 12:03:30.967 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+< 2022-02-23 12:03:30.967 220-You are user number 26 of 5000 allowed.
+< 2022-02-23 12:03:30.967 220-Local time is now 12:03. Server port: 21.
+< 2022-02-23 12:03:30.967 220-This is a private system - No anonymous login
+< 2022-02-23 12:03:30.967 220-IPv6 connections are also welcome on this server.
+< 2022-02-23 12:03:30.967 220 You will be disconnected after 15 minutes of inactivity.
+> 2022-02-23 12:03:30.967 USER kanifa@amberta.com
+< 2022-02-23 12:03:31.005 331 User kanifa@amberta.com OK. Password required
+> 2022-02-23 12:03:31.005 PASS ********************
+< 2022-02-23 12:03:31.052 230-This server supports FXP transfers
+< 2022-02-23 12:03:31.052 230 OK. Current restricted directory is /
+> 2022-02-23 12:03:31.052 SYST
+< 2022-02-23 12:03:31.083 215 UNIX Type: L8
+> 2022-02-23 12:03:31.083 FEAT
+< 2022-02-23 12:03:31.105 211-Extensions supported:
+< 2022-02-23 12:03:31.105  EPRT
+< 2022-02-23 12:03:31.105  IDLE
+< 2022-02-23 12:03:31.105  MDTM
+< 2022-02-23 12:03:31.105  SIZE
+< 2022-02-23 12:03:31.105  MFMT
+< 2022-02-23 12:03:31.105  REST STREAM
+< 2022-02-23 12:03:31.105  MLST type*;size*;sizd*;modify*;UNIX.mode*;UNIX.uid*;UNIX.gid*;unique*;
+< 2022-02-23 12:03:31.121  MLSD
+< 2022-02-23 12:03:31.121  AUTH TLS
+< 2022-02-23 12:03:31.121  PBSZ
+< 2022-02-23 12:03:31.121  PROT
+< 2022-02-23 12:03:31.121  ESTA
+< 2022-02-23 12:03:31.121  PASV
+< 2022-02-23 12:03:31.121  EPSV
+< 2022-02-23 12:03:31.121  SPSV
+< 2022-02-23 12:03:31.121 211 End.
+< 2022-02-23 12:03:31.121 Script: Connected
+. 2022-02-23 12:03:31.121 Connected
+. 2022-02-23 12:03:31.121 --------------------------------------------------------------------------
+. 2022-02-23 12:03:31.121 Using FTP protocol.
+. 2022-02-23 12:03:31.121 Doing startup conversation with host.
+< 2022-02-23 12:03:31.121 Script: Starting the session...
+> 2022-02-23 12:03:31.121 PWD
+< 2022-02-23 12:03:31.152 257 "/" is your current location
+. 2022-02-23 12:03:31.152 Getting current directory name.
+. 2022-02-23 12:03:31.152 Startup conversation with host finished.
+< 2022-02-23 12:03:31.152 Script: Session started.
+< 2022-02-23 12:03:31.152 Script: Active session: [1] kanifa@amberta.com@91.208.99.4
+> 2022-02-23 12:03:31.152 Script: cd /public_html/reports/reports_for_apps
+. 2022-02-23 12:03:31.152 Changing directory to "/public_html/reports/reports_for_apps".
+> 2022-02-23 12:03:31.152 CWD /public_html/reports/reports_for_apps
+< 2022-02-23 12:03:31.183 250 OK. Current directory is /public_html/reports/reports_for_apps
+. 2022-02-23 12:03:31.183 Getting current directory name.
+> 2022-02-23 12:03:31.183 PWD
+< 2022-02-23 12:03:31.221 257 "/public_html/reports/reports_for_apps" is your current location
+< 2022-02-23 12:03:31.221 Script: /public_html/reports/reports_for_apps
+> 2022-02-23 12:03:31.237 Script: lcd "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports"
+< 2022-02-23 12:03:31.237 Script: \\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports
+> 2022-02-23 12:03:31.237 Script: option batch abort
+< 2022-02-23 12:03:31.237 Script: batch           abort     
+> 2022-02-23 12:03:31.237 Script: option failonnomatch on
+< 2022-02-23 12:03:31.237 Script: failonnomatch   on        
+> 2022-02-23 12:03:31.237 Script: get purchase.csv
+. 2022-02-23 12:03:31.237 Listing file "purchase.csv".
+. 2022-02-23 12:03:31.237 Retrieving file information...
+> 2022-02-23 12:03:31.237 MLST /public_html/reports/reports_for_apps/purchase.csv
+< 2022-02-23 12:03:31.268 250-Begin
+< 2022-02-23 12:03:31.268  type=file;size=316389;modify=20220223000023;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg157380c; /public_html/reports/reports_for_apps/purchase.csv
+< 2022-02-23 12:03:31.268 250 End.
+. 2022-02-23 12:03:31.268  type=file;size=316389;modify=20220223000023;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg157380c; /public_html/reports/reports_for_apps/purchase.csv
+. 2022-02-23 12:03:31.268 Retrieving file information successful
+. 2022-02-23 12:03:31.268 purchase.csv;-;316389;2022-02-23T00:00:23.000Z;3;"385925" [0];"82284" [0];rw-r--r--;0
+. 2022-02-23 12:03:31.268 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 316,389
+. 2022-02-23 12:03:31.268   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-02-23 12:03:31.268   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-02-23 12:03:31.268   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-02-23 12:03:31.268 File: '/public_html/reports/reports_for_apps/purchase.csv' [2022-02-23T00:00:23.000Z] [316389]
+. 2022-02-23 12:03:31.268 Copying "/public_html/reports/reports_for_apps/purchase.csv" to local directory started.
+. 2022-02-23 12:03:31.268 Binary transfer mode selected.
+. 2022-02-23 12:03:31.268 Starting download of /public_html/reports/reports_for_apps/purchase.csv
+> 2022-02-23 12:03:31.268 TYPE A
+< 2022-02-23 12:03:31.306 200 TYPE is now ASCII
+> 2022-02-23 12:03:31.306 PASV
+< 2022-02-23 12:03:31.337 227 Entering Passive Mode (91,208,99,4,97,173)
+> 2022-02-23 12:03:31.337 MLSD
+. 2022-02-23 12:03:31.337 Connecting to 91.208.99.4:25005 ...
+< 2022-02-23 12:03:31.402 150 Accepted data connection
+. 2022-02-23 12:03:31.402 type=cdir;sizd=10;modify=20220223000107;UNIX.mode=0755;UNIX.uid=385925;UNIX.gid=82284;unique=2egd73e025; .
+. 2022-02-23 12:03:31.406 type=pdir;sizd=397;modify=20220217092645;UNIX.mode=0755;UNIX.uid=385925;UNIX.gid=82284;unique=2eg438b10f0; ..
+. 2022-02-23 12:03:31.406 type=file;size=1780011;modify=20220223000015;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg1573502; 1_month_sales.csv
+. 2022-02-23 12:03:31.406 type=dir;sizd=5;modify=20220216165547;UNIX.mode=0755;UNIX.uid=385925;UNIX.gid=82284;unique=2egf18c84c; accounting
+. 2022-02-23 12:03:31.406 type=file;size=1074531;modify=20220223000024;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg1573507; fba.csv
+. 2022-02-23 12:03:31.406 type=file;size=12120045;modify=20220223000037;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg15742f3; forecast.csv
+. 2022-02-23 12:03:31.406 type=file;size=316389;modify=20220223000023;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg157380c; purchase.csv
+. 2022-02-23 12:03:31.406 type=file;size=8238212;modify=20220223000017;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg1572ef9; sales.csv
+. 2022-02-23 12:03:31.406 type=file;size=11438762;modify=20220223000018;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg1573505; sales_and_subsource.csv
+. 2022-02-23 12:03:31.406 type=file;size=181307;modify=20220223000107;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg1575628; stock.csv
+. 2022-02-23 12:03:31.406 Data connection closed
+< 2022-02-23 12:03:31.406 226-Options: -a -l 
+< 2022-02-23 12:03:31.406 226 10 matches total
+> 2022-02-23 12:03:31.406 TYPE I
+< 2022-02-23 12:03:31.437 200 TYPE is now 8-bit binary
+> 2022-02-23 12:03:31.437 PASV
+< 2022-02-23 12:03:31.469 227 Entering Passive Mode (91,208,99,4,99,233)
+> 2022-02-23 12:03:31.469 RETR purchase.csv
+. 2022-02-23 12:03:31.469 Connecting to 91.208.99.4:25577 ...
+< 2022-02-23 12:03:31.538 150-Accepted data connection
+< 2022-02-23 12:03:31.538 150 309.0 kbytes to download
+< 2022-02-23 12:03:31.538 226-File successfully transferred
+< 2022-02-23 12:03:31.538 226 0.000 seconds (measured here), 720.29 Mbytes per second
+. 2022-02-23 12:03:31.986 Data connection closed
+. 2022-02-23 12:03:31.986 Preserving timestamp [2022-02-23T00:00:23.000Z]
+. 2022-02-23 12:03:31.986 Download successful
+. 2022-02-23 12:03:31.986 Transfer done: '/public_html/reports/reports_for_apps/purchase.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\purchase.csv' [316389]
+. 2022-02-23 12:03:31.986 Copying finished: Transferred: 316,389, Elapsed: 0:00:00, CPS: 674,412/s
+> 2022-02-23 12:03:31.986 Script: get fba.csv
+. 2022-02-23 12:03:31.986 Listing file "fba.csv".
+. 2022-02-23 12:03:31.986 Retrieving file information...
+> 2022-02-23 12:03:31.986 MLST /public_html/reports/reports_for_apps/fba.csv
+< 2022-02-23 12:03:32.023 250-Begin
+< 2022-02-23 12:03:32.023  type=file;size=1074531;modify=20220223000024;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg1573507; /public_html/reports/reports_for_apps/fba.csv
+< 2022-02-23 12:03:32.023 250 End.
+. 2022-02-23 12:03:32.023  type=file;size=1074531;modify=20220223000024;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg1573507; /public_html/reports/reports_for_apps/fba.csv
+. 2022-02-23 12:03:32.023 Retrieving file information successful
+. 2022-02-23 12:03:32.023 fba.csv;-;1074531;2022-02-23T00:00:24.000Z;3;"385925" [0];"82284" [0];rw-r--r--;0
+. 2022-02-23 12:03:32.023 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 1,074,531
+. 2022-02-23 12:03:32.023   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-02-23 12:03:32.023   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-02-23 12:03:32.023   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-02-23 12:03:32.023 File: '/public_html/reports/reports_for_apps/fba.csv' [2022-02-23T00:00:24.000Z] [1074531]
+. 2022-02-23 12:03:32.023 Copying "/public_html/reports/reports_for_apps/fba.csv" to local directory started.
+. 2022-02-23 12:03:32.023 Binary transfer mode selected.
+. 2022-02-23 12:03:32.023 Starting download of /public_html/reports/reports_for_apps/fba.csv
+> 2022-02-23 12:03:32.023 TYPE I
+< 2022-02-23 12:03:32.070 200 TYPE is now 8-bit binary
+> 2022-02-23 12:03:32.070 PASV
+< 2022-02-23 12:03:32.101 227 Entering Passive Mode (91,208,99,4,112,73)
+> 2022-02-23 12:03:32.101 RETR fba.csv
+. 2022-02-23 12:03:32.101 Connecting to 91.208.99.4:28745 ...
+< 2022-02-23 12:03:32.162 150-Accepted data connection
+< 2022-02-23 12:03:32.162 150 1049.3 kbytes to download
+< 2022-02-23 12:03:32.208 226-File successfully transferred
+< 2022-02-23 12:03:32.208 226 0.041 seconds (measured here), 25.28 Mbytes per second
+. 2022-02-23 12:03:33.096 Data connection closed
+. 2022-02-23 12:03:33.096 Preserving timestamp [2022-02-23T00:00:24.000Z]
+. 2022-02-23 12:03:33.111 Download successful
+. 2022-02-23 12:03:33.111 Transfer done: '/public_html/reports/reports_for_apps/fba.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\fba.csv' [1074531]
+. 2022-02-23 12:03:33.111 Copying finished: Transferred: 1,074,531, Elapsed: 0:00:01, CPS: 1,127,524/s
+> 2022-02-23 12:03:33.111 Script: get stock.csv
+. 2022-02-23 12:03:33.111 Listing file "stock.csv".
+. 2022-02-23 12:03:33.111 Retrieving file information...
+> 2022-02-23 12:03:33.111 MLST /public_html/reports/reports_for_apps/stock.csv
+< 2022-02-23 12:03:33.142 250-Begin
+< 2022-02-23 12:03:33.142  type=file;size=181307;modify=20220223000107;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg1575628; /public_html/reports/reports_for_apps/stock.csv
+< 2022-02-23 12:03:33.142 250 End.
+. 2022-02-23 12:03:33.142  type=file;size=181307;modify=20220223000107;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg1575628; /public_html/reports/reports_for_apps/stock.csv
+. 2022-02-23 12:03:33.142 Retrieving file information successful
+. 2022-02-23 12:03:33.142 stock.csv;-;181307;2022-02-23T00:01:07.000Z;3;"385925" [0];"82284" [0];rw-r--r--;0
+. 2022-02-23 12:03:33.142 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 181,307
+. 2022-02-23 12:03:33.142   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-02-23 12:03:33.142   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-02-23 12:03:33.142   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-02-23 12:03:33.142 File: '/public_html/reports/reports_for_apps/stock.csv' [2022-02-23T00:01:07.000Z] [181307]
+. 2022-02-23 12:03:33.142 Copying "/public_html/reports/reports_for_apps/stock.csv" to local directory started.
+. 2022-02-23 12:03:33.142 Binary transfer mode selected.
+. 2022-02-23 12:03:33.158 Starting download of /public_html/reports/reports_for_apps/stock.csv
+> 2022-02-23 12:03:33.158 TYPE I
+< 2022-02-23 12:03:33.189 200 TYPE is now 8-bit binary
+> 2022-02-23 12:03:33.189 PASV
+< 2022-02-23 12:03:33.211 227 Entering Passive Mode (91,208,99,4,98,124)
+> 2022-02-23 12:03:33.211 RETR stock.csv
+. 2022-02-23 12:03:33.211 Connecting to 91.208.99.4:25212 ...
+< 2022-02-23 12:03:33.289 150-Accepted data connection
+< 2022-02-23 12:03:33.289 150 177.1 kbytes to download
+< 2022-02-23 12:03:33.289 226-File successfully transferred
+< 2022-02-23 12:03:33.289 226 0.000 seconds (measured here), 1000.31 Mbytes per second
+. 2022-02-23 12:03:33.476 Data connection closed
+. 2022-02-23 12:03:33.476 Preserving timestamp [2022-02-23T00:01:07.000Z]
+. 2022-02-23 12:03:33.476 Download successful
+. 2022-02-23 12:03:33.476 Transfer done: '/public_html/reports/reports_for_apps/stock.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\stock.csv' [181307]
+. 2022-02-23 12:03:33.476 Copying finished: Transferred: 181,307, Elapsed: 0:00:00, CPS: 892,058/s
+> 2022-02-23 12:03:33.476 Script: exit
+. 2022-02-23 12:03:33.476 Script: Exit code: 0
+. 2022-02-23 12:03:33.476 Disconnected from server
+. 2022-02-28 11:24:59.015 --------------------------------------------------------------------------
+. 2022-02-28 11:24:59.040 WinSCP Version 5.19.5 (Build 11933 2021-11-25) (OS 10.0.19043 - Windows 10 Enterprise)
+. 2022-02-28 11:24:59.041 Configuration: nul
+. 2022-02-28 11:24:59.041 Log level: Normal
+. 2022-02-28 11:24:59.042 Local account: SUPPORT10\Amberta Support10
+. 2022-02-28 11:24:59.042 Working directory: C:\Windows
+. 2022-02-28 11:24:59.044 Process ID: 16028
+. 2022-02-28 11:24:59.052 Ancestor processes: WinSCP, cmd, explorer, ...
+. 2022-02-28 11:24:59.053 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.19.5 /consoleinstance=_8168_826 "/log=""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\documents\winscp.log""" "/ini=nul" "/command" "open ftp://kanifa%40amberta.com:***@91.208.99.4:21/" "cd /public_html/reports/reports_for_apps" "lcd ""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports""" "option batch abort" "option failonnomatch on" "get purchase.csv" "get fba.csv" "get stock.csv" "exit"
+. 2022-02-28 11:24:59.054 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 27/03/2022, DST End: 30/10/2022
+. 2022-02-28 11:24:59.054 Login time: 28 February 2022 11:24:59
+. 2022-02-28 11:24:59.054 --------------------------------------------------------------------------
+. 2022-02-28 11:24:59.055 Script: Retrospectively logging previous script records:
+> 2022-02-28 11:24:59.055 Script: open ftp://kanifa%40amberta.com:***@91.208.99.4:21/
+. 2022-02-28 11:24:59.056 --------------------------------------------------------------------------
+. 2022-02-28 11:24:59.056 Session name: kanifa@amberta.com@91.208.99.4 (Ad-Hoc site)
+. 2022-02-28 11:24:59.056 Host name: 91.208.99.4 (Port: 21)
+. 2022-02-28 11:24:59.057 User name: kanifa@amberta.com (Password: Yes, Key file: No, Passphrase: No)
+. 2022-02-28 11:24:59.057 Transfer Protocol: FTP
+. 2022-02-28 11:24:59.058 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2022-02-28 11:24:59.058 Disable Nagle: No
+. 2022-02-28 11:24:59.058 Proxy: None
+. 2022-02-28 11:24:59.059 Send buffer: 262144
+. 2022-02-28 11:24:59.059 UTF: Auto
+. 2022-02-28 11:24:59.059 FTPS: None [Client certificate: No]
+. 2022-02-28 11:24:59.059 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2022-02-28 11:24:59.060 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2022-02-28 11:24:59.060 Cache directory changes: Yes, Permanent: Yes
+. 2022-02-28 11:24:59.060 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2022-02-28 11:24:59.061 Timezone offset: 0h 0m
+. 2022-02-28 11:24:59.061 --------------------------------------------------------------------------
+< 2022-02-28 11:24:59.064 Script: Connecting to 91.208.99.4 ...
+. 2022-02-28 11:24:59.065 Connecting to 91.208.99.4 ...
+. 2022-02-28 11:24:59.095 Connected with 91.208.99.4. Waiting for welcome message...
+< 2022-02-28 11:24:59.127 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+< 2022-02-28 11:24:59.127 220-You are user number 34 of 5000 allowed.
+< 2022-02-28 11:24:59.127 220-Local time is now 11:24. Server port: 21.
+< 2022-02-28 11:24:59.128 220-This is a private system - No anonymous login
+< 2022-02-28 11:24:59.128 220-IPv6 connections are also welcome on this server.
+< 2022-02-28 11:24:59.129 220 You will be disconnected after 15 minutes of inactivity.
+> 2022-02-28 11:24:59.130 USER kanifa@amberta.com
+< 2022-02-28 11:24:59.157 331 User kanifa@amberta.com OK. Password required
+> 2022-02-28 11:24:59.158 PASS ********************
+< 2022-02-28 11:24:59.204 230-This server supports FXP transfers
+< 2022-02-28 11:24:59.205 230 OK. Current restricted directory is /
+> 2022-02-28 11:24:59.206 SYST
+< 2022-02-28 11:24:59.235 215 UNIX Type: L8
+> 2022-02-28 11:24:59.236 FEAT
+< 2022-02-28 11:24:59.265 211-Extensions supported:
+< 2022-02-28 11:24:59.266  EPRT
+< 2022-02-28 11:24:59.267  IDLE
+< 2022-02-28 11:24:59.268  MDTM
+< 2022-02-28 11:24:59.269  SIZE
+< 2022-02-28 11:24:59.269  MFMT
+< 2022-02-28 11:24:59.270  REST STREAM
+< 2022-02-28 11:24:59.270  MLST type*;size*;sizd*;modify*;UNIX.mode*;UNIX.uid*;UNIX.gid*;unique*;
+< 2022-02-28 11:24:59.271  MLSD
+< 2022-02-28 11:24:59.271  AUTH TLS
+< 2022-02-28 11:24:59.271  PBSZ
+< 2022-02-28 11:24:59.272  PROT
+< 2022-02-28 11:24:59.272  ESTA
+< 2022-02-28 11:24:59.273  PASV
+< 2022-02-28 11:24:59.273  EPSV
+< 2022-02-28 11:24:59.273  SPSV
+< 2022-02-28 11:24:59.274 211 End.
+< 2022-02-28 11:24:59.274 Script: Connected
+. 2022-02-28 11:24:59.275 Connected
+. 2022-02-28 11:24:59.275 --------------------------------------------------------------------------
+. 2022-02-28 11:24:59.275 Using FTP protocol.
+. 2022-02-28 11:24:59.276 Doing startup conversation with host.
+< 2022-02-28 11:24:59.276 Script: Starting the session...
+> 2022-02-28 11:24:59.277 PWD
+< 2022-02-28 11:24:59.309 257 "/" is your current location
+. 2022-02-28 11:24:59.309 Getting current directory name.
+. 2022-02-28 11:24:59.309 Startup conversation with host finished.
+< 2022-02-28 11:24:59.310 Script: Session started.
+< 2022-02-28 11:24:59.311 Script: Active session: [1] kanifa@amberta.com@91.208.99.4
+> 2022-02-28 11:24:59.312 Script: cd /public_html/reports/reports_for_apps
+. 2022-02-28 11:24:59.312 Changing directory to "/public_html/reports/reports_for_apps".
+> 2022-02-28 11:24:59.313 CWD /public_html/reports/reports_for_apps
+< 2022-02-28 11:24:59.351 250 OK. Current directory is /public_html/reports/reports_for_apps
+. 2022-02-28 11:24:59.358 Getting current directory name.
+> 2022-02-28 11:24:59.359 PWD
+< 2022-02-28 11:24:59.389 257 "/public_html/reports/reports_for_apps" is your current location
+< 2022-02-28 11:24:59.390 Script: /public_html/reports/reports_for_apps
+> 2022-02-28 11:24:59.392 Script: lcd "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports"
+< 2022-02-28 11:24:59.395 Script: \\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports
+> 2022-02-28 11:24:59.396 Script: option batch abort
+< 2022-02-28 11:24:59.397 Script: batch           abort     
+> 2022-02-28 11:24:59.397 Script: option failonnomatch on
+< 2022-02-28 11:24:59.398 Script: failonnomatch   on        
+> 2022-02-28 11:24:59.398 Script: get purchase.csv
+. 2022-02-28 11:24:59.399 Listing file "purchase.csv".
+. 2022-02-28 11:24:59.399 Retrieving file information...
+> 2022-02-28 11:24:59.399 MLST /public_html/reports/reports_for_apps/purchase.csv
+< 2022-02-28 11:24:59.430 250-Begin
+< 2022-02-28 11:24:59.431  type=file;size=316853;modify=20220228000011;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg1ff16b5; /public_html/reports/reports_for_apps/purchase.csv
+< 2022-02-28 11:24:59.432 250 End.
+. 2022-02-28 11:24:59.432  type=file;size=316853;modify=20220228000011;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg1ff16b5; /public_html/reports/reports_for_apps/purchase.csv
+. 2022-02-28 11:24:59.433 Retrieving file information successful
+. 2022-02-28 11:24:59.433 purchase.csv;-;316853;2022-02-28T00:00:11.000Z;3;"385925" [0];"82284" [0];rw-r--r--;0
+. 2022-02-28 11:24:59.433 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 316,853
+. 2022-02-28 11:24:59.434   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-02-28 11:24:59.434   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-02-28 11:24:59.434   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-02-28 11:24:59.435 File: '/public_html/reports/reports_for_apps/purchase.csv' [2022-02-28T00:00:11.000Z] [316853]
+. 2022-02-28 11:24:59.435 Copying "/public_html/reports/reports_for_apps/purchase.csv" to local directory started.
+. 2022-02-28 11:24:59.436 Binary transfer mode selected.
+. 2022-02-28 11:24:59.438 Starting download of /public_html/reports/reports_for_apps/purchase.csv
+> 2022-02-28 11:24:59.438 TYPE A
+< 2022-02-28 11:24:59.473 200 TYPE is now ASCII
+> 2022-02-28 11:24:59.474 PASV
+< 2022-02-28 11:24:59.503 227 Entering Passive Mode (91,208,99,4,116,151)
+> 2022-02-28 11:24:59.504 MLSD
+. 2022-02-28 11:24:59.504 Connecting to 91.208.99.4:29847 ...
+< 2022-02-28 11:24:59.569 150 Accepted data connection
+< 2022-02-28 11:24:59.571 226-Options: -a -l 
+< 2022-02-28 11:24:59.572 226 10 matches total
+. 2022-02-28 11:24:59.573 type=cdir;sizd=10;modify=20220228000041;UNIX.mode=0755;UNIX.uid=385925;UNIX.gid=82284;unique=2egd73e025; .
+. 2022-02-28 11:24:59.574 type=pdir;sizd=397;modify=20220217092645;UNIX.mode=0755;UNIX.uid=385925;UNIX.gid=82284;unique=2eg438b10f0; ..
+. 2022-02-28 11:24:59.575 type=file;size=1743114;modify=20220228000038;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg1ff06b8; 1_month_sales.csv
+. 2022-02-28 11:24:59.576 type=dir;sizd=5;modify=20220216165547;UNIX.mode=0755;UNIX.uid=385925;UNIX.gid=82284;unique=2egf18c84c; accounting
+. 2022-02-28 11:24:59.576 type=file;size=1074449;modify=20220228000012;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg1ff17bc; fba.csv
+. 2022-02-28 11:24:59.577 type=file;size=12123332;modify=20220228000044;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg1ff06b7; forecast.csv
+. 2022-02-28 11:24:59.577 type=file;size=316853;modify=20220228000011;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg1ff16b5; purchase.csv
+. 2022-02-28 11:24:59.577 type=file;size=8226702;modify=20220228000038;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg1ff18a2; sales.csv
+. 2022-02-28 11:24:59.578 type=file;size=11482989;modify=20220228000047;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg1ff130f; sales_and_subsource.csv
+. 2022-02-28 11:24:59.578 type=file;size=181289;modify=20220228000011;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg1ff0a1f; stock.csv
+. 2022-02-28 11:24:59.578 Data connection closed
+> 2022-02-28 11:24:59.579 TYPE I
+< 2022-02-28 11:24:59.610 200 TYPE is now 8-bit binary
+> 2022-02-28 11:24:59.611 PASV
+< 2022-02-28 11:24:59.641 227 Entering Passive Mode (91,208,99,4,105,184)
+> 2022-02-28 11:24:59.642 RETR purchase.csv
+. 2022-02-28 11:24:59.642 Connecting to 91.208.99.4:27064 ...
+< 2022-02-28 11:24:59.709 150-Accepted data connection
+< 2022-02-28 11:24:59.710 150 309.4 kbytes to download
+< 2022-02-28 11:24:59.719 226-File successfully transferred
+< 2022-02-28 11:24:59.719 226 0.006 seconds (measured here), 51.88 Mbytes per second
+. 2022-02-28 11:25:00.130 Data connection closed
+. 2022-02-28 11:25:00.130 Preserving timestamp [2022-02-28T00:00:11.000Z]
+. 2022-02-28 11:25:00.131 Download successful
+. 2022-02-28 11:25:00.132 Transfer done: '/public_html/reports/reports_for_apps/purchase.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\purchase.csv' [316853]
+. 2022-02-28 11:25:00.133 Copying finished: Transferred: 316,853, Elapsed: 0:00:00, CPS: 750,836/s
+> 2022-02-28 11:25:00.133 Script: get fba.csv
+. 2022-02-28 11:25:00.134 Listing file "fba.csv".
+. 2022-02-28 11:25:00.134 Retrieving file information...
+> 2022-02-28 11:25:00.134 MLST /public_html/reports/reports_for_apps/fba.csv
+< 2022-02-28 11:25:00.165 250-Begin
+< 2022-02-28 11:25:00.166  type=file;size=1074449;modify=20220228000012;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg1ff17bc; /public_html/reports/reports_for_apps/fba.csv
+< 2022-02-28 11:25:00.167 250 End.
+. 2022-02-28 11:25:00.168  type=file;size=1074449;modify=20220228000012;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg1ff17bc; /public_html/reports/reports_for_apps/fba.csv
+. 2022-02-28 11:25:00.169 Retrieving file information successful
+. 2022-02-28 11:25:00.169 fba.csv;-;1074449;2022-02-28T00:00:12.000Z;3;"385925" [0];"82284" [0];rw-r--r--;0
+. 2022-02-28 11:25:00.170 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 1,074,449
+. 2022-02-28 11:25:00.171   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-02-28 11:25:00.172   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-02-28 11:25:00.173   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-02-28 11:25:00.174 File: '/public_html/reports/reports_for_apps/fba.csv' [2022-02-28T00:00:12.000Z] [1074449]
+. 2022-02-28 11:25:00.175 Copying "/public_html/reports/reports_for_apps/fba.csv" to local directory started.
+. 2022-02-28 11:25:00.176 Binary transfer mode selected.
+. 2022-02-28 11:25:00.177 Starting download of /public_html/reports/reports_for_apps/fba.csv
+> 2022-02-28 11:25:00.177 TYPE I
+< 2022-02-28 11:25:00.211 200 TYPE is now 8-bit binary
+> 2022-02-28 11:25:00.212 PASV
+< 2022-02-28 11:25:00.241 227 Entering Passive Mode (91,208,99,4,105,59)
+> 2022-02-28 11:25:00.242 RETR fba.csv
+. 2022-02-28 11:25:00.242 Connecting to 91.208.99.4:26939 ...
+< 2022-02-28 11:25:00.307 150-Accepted data connection
+< 2022-02-28 11:25:00.308 150-The computer is your friend. Trust the computer
+< 2022-02-28 11:25:00.309 150 1049.3 kbytes to download
+< 2022-02-28 11:25:00.319 226-File successfully transferred
+< 2022-02-28 11:25:00.320 226 0.012 seconds (measured here), 88.39 Mbytes per second
+. 2022-02-28 11:25:01.704 Data connection closed
+. 2022-02-28 11:25:01.705 Preserving timestamp [2022-02-28T00:00:12.000Z]
+. 2022-02-28 11:25:01.707 Download successful
+. 2022-02-28 11:25:01.707 Transfer done: '/public_html/reports/reports_for_apps/fba.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\fba.csv' [1074449]
+. 2022-02-28 11:25:01.708 Copying finished: Transferred: 1,074,449, Elapsed: 0:00:01, CPS: 772,429/s
+> 2022-02-28 11:25:01.708 Script: get stock.csv
+. 2022-02-28 11:25:01.709 Listing file "stock.csv".
+. 2022-02-28 11:25:01.709 Retrieving file information...
+> 2022-02-28 11:25:01.710 MLST /public_html/reports/reports_for_apps/stock.csv
+< 2022-02-28 11:25:01.741 250-Begin
+< 2022-02-28 11:25:01.743  type=file;size=181289;modify=20220228000011;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg1ff0a1f; /public_html/reports/reports_for_apps/stock.csv
+< 2022-02-28 11:25:01.745 250 End.
+. 2022-02-28 11:25:01.746  type=file;size=181289;modify=20220228000011;UNIX.mode=0644;UNIX.uid=385925;UNIX.gid=82284;unique=2eg1ff0a1f; /public_html/reports/reports_for_apps/stock.csv
+. 2022-02-28 11:25:01.747 Retrieving file information successful
+. 2022-02-28 11:25:01.747 stock.csv;-;181289;2022-02-28T00:00:11.000Z;3;"385925" [0];"82284" [0];rw-r--r--;0
+. 2022-02-28 11:25:01.747 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 181,289
+. 2022-02-28 11:25:01.748   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-02-28 11:25:01.748   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-02-28 11:25:01.748   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-02-28 11:25:01.749 File: '/public_html/reports/reports_for_apps/stock.csv' [2022-02-28T00:00:11.000Z] [181289]
+. 2022-02-28 11:25:01.749 Copying "/public_html/reports/reports_for_apps/stock.csv" to local directory started.
+. 2022-02-28 11:25:01.750 Binary transfer mode selected.
+. 2022-02-28 11:25:01.751 Starting download of /public_html/reports/reports_for_apps/stock.csv
+> 2022-02-28 11:25:01.751 TYPE I
+< 2022-02-28 11:25:01.782 200 TYPE is now 8-bit binary
+> 2022-02-28 11:25:01.783 PASV
+< 2022-02-28 11:25:01.815 227 Entering Passive Mode (91,208,99,4,86,218)
+> 2022-02-28 11:25:01.817 RETR stock.csv
+. 2022-02-28 11:25:01.819 Connecting to 91.208.99.4:22234 ...
+< 2022-02-28 11:25:01.883 150-Accepted data connection
+< 2022-02-28 11:25:01.884 150 177.0 kbytes to download
+< 2022-02-28 11:25:01.886 226-File successfully transferred
+< 2022-02-28 11:25:01.886 226 0.003 seconds (measured here), 58.85 Mbytes per second
+. 2022-02-28 11:25:02.157 Data connection closed
+. 2022-02-28 11:25:02.157 Preserving timestamp [2022-02-28T00:00:11.000Z]
+. 2022-02-28 11:25:02.158 Download successful
+. 2022-02-28 11:25:02.159 Transfer done: '/public_html/reports/reports_for_apps/stock.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\stock.csv' [181289]
+. 2022-02-28 11:25:02.159 Copying finished: Transferred: 181,289, Elapsed: 0:00:00, CPS: 645,156/s
+> 2022-02-28 11:25:02.159 Script: exit
+. 2022-02-28 11:25:02.160 Script: Exit code: 0
+. 2022-02-28 11:25:02.160 Disconnected from server
+. 2022-03-01 09:11:00.220 --------------------------------------------------------------------------
+. 2022-03-01 09:11:00.235 WinSCP Version 5.19.5 (Build 11933 2021-11-25) (OS 10.0.19044 - Windows 10 Enterprise)
+. 2022-03-01 09:11:00.236 Configuration: nul
+. 2022-03-01 09:11:00.236 Log level: Normal
+. 2022-03-01 09:11:00.236 Local account: SUPPORT8\AmbertaSupport8
+. 2022-03-01 09:11:00.236 Working directory: C:\Windows
+. 2022-03-01 09:11:00.236 Process ID: 16568
+. 2022-03-01 09:11:00.243 Ancestor processes: WinSCP, cmd, explorer, ...
+. 2022-03-01 09:11:00.244 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.19.5 /consoleinstance=_17336_845 "/log=""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\documents\winscp.log""" "/ini=nul" "/command" "open ftp://support8%40images.amberta.com:***@92.204.220.27/" "cd /public_html/reports/reports_for_apps" "lcd ""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports""" "option batch abort" "option failonnomatch on" "get purchase.csv" "get fba.csv" "get stock.csv" "exit"
+. 2022-03-01 09:11:00.244 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 27/03/2022, DST End: 30/10/2022
+. 2022-03-01 09:11:00.246 Login time: 01 March 2022 09:11:00
+. 2022-03-01 09:11:00.246 --------------------------------------------------------------------------
+. 2022-03-01 09:11:00.247 Script: Retrospectively logging previous script records:
+> 2022-03-01 09:11:00.247 Script: open ftp://support8%40images.amberta.com:***@92.204.220.27/
+. 2022-03-01 09:11:00.247 --------------------------------------------------------------------------
+. 2022-03-01 09:11:00.248 Session name: support8@images.amberta.com@92.204.220.27 (Ad-Hoc site)
+. 2022-03-01 09:11:00.248 Host name: 92.204.220.27 (Port: 21)
+. 2022-03-01 09:11:00.248 User name: support8@images.amberta.com (Password: Yes, Key file: No, Passphrase: No)
+. 2022-03-01 09:11:00.248 Transfer Protocol: FTP
+. 2022-03-01 09:11:00.248 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2022-03-01 09:11:00.249 Disable Nagle: No
+. 2022-03-01 09:11:00.249 Proxy: None
+. 2022-03-01 09:11:00.250 Send buffer: 262144
+. 2022-03-01 09:11:00.250 UTF: Auto
+. 2022-03-01 09:11:00.250 FTPS: None [Client certificate: No]
+. 2022-03-01 09:11:00.252 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2022-03-01 09:11:00.252 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2022-03-01 09:11:00.253 Cache directory changes: Yes, Permanent: Yes
+. 2022-03-01 09:11:00.253 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2022-03-01 09:11:00.253 Timezone offset: 0h 0m
+. 2022-03-01 09:11:00.254 --------------------------------------------------------------------------
+< 2022-03-01 09:11:00.255 Script: Connecting to 92.204.220.27 ...
+. 2022-03-01 09:11:00.256 Connecting to 92.204.220.27 ...
+. 2022-03-01 09:11:00.335 Connected with 92.204.220.27. Waiting for welcome message...
+< 2022-03-01 09:11:00.395 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+< 2022-03-01 09:11:00.524 220-You are user number 1 of 500 allowed.
+< 2022-03-01 09:11:00.525 220-Local time is now 02:10. Server port: 21.
+< 2022-03-01 09:11:00.525 220-This is a private system - No anonymous login
+< 2022-03-01 09:11:00.525 220-IPv6 connections are also welcome on this server.
+< 2022-03-01 09:11:00.526 220 You will be disconnected after 15 minutes of inactivity.
+> 2022-03-01 09:11:00.527 USER support8@images.amberta.com
+< 2022-03-01 09:11:00.528 331 User support8@images.amberta.com OK. Password required
+> 2022-03-01 09:11:00.528 PASS ********************
+< 2022-03-01 09:11:00.528 230-Your bandwidth usage is restricted
+< 2022-03-01 09:11:00.529 230 OK. Current restricted directory is /
+> 2022-03-01 09:11:00.529 SYST
+< 2022-03-01 09:11:00.580 215 UNIX Type: L8
+> 2022-03-01 09:11:00.715 FEAT
+< 2022-03-01 09:11:00.716 211-Extensions supported:
+< 2022-03-01 09:11:00.717  UTF8
+< 2022-03-01 09:11:00.717  EPRT
+< 2022-03-01 09:11:00.718  IDLE
+< 2022-03-01 09:11:00.718  MDTM
+< 2022-03-01 09:11:00.718  SIZE
+< 2022-03-01 09:11:00.720  MFMT
+< 2022-03-01 09:11:00.720  REST STREAM
+< 2022-03-01 09:11:00.720  MLST type*;size*;sizd*;modify*;UNIX.mode*;UNIX.uid*;UNIX.gid*;unique*;
+< 2022-03-01 09:11:00.721  MLSD
+< 2022-03-01 09:11:00.721  PRET
+< 2022-03-01 09:11:00.721  AUTH TLS
+< 2022-03-01 09:11:00.749  PBSZ
+< 2022-03-01 09:11:00.901  PROT
+< 2022-03-01 09:11:00.901  TVFS
+< 2022-03-01 09:11:00.902  ESTA
+< 2022-03-01 09:11:00.903  PASV
+< 2022-03-01 09:11:00.904  EPSV
+< 2022-03-01 09:11:00.905  SPSV
+< 2022-03-01 09:11:00.905  ESTP
+< 2022-03-01 09:11:00.906 211 End.
+> 2022-03-01 09:11:00.906 OPTS UTF8 ON
+< 2022-03-01 09:11:00.906 504 Unknown command
+< 2022-03-01 09:11:00.906 Script: Connected
+. 2022-03-01 09:11:00.907 Connected
+. 2022-03-01 09:11:00.907 --------------------------------------------------------------------------
+. 2022-03-01 09:11:00.908 Using FTP protocol.
+. 2022-03-01 09:11:00.909 Doing startup conversation with host.
+< 2022-03-01 09:11:00.909 Script: Starting the session...
+> 2022-03-01 09:11:00.909 PWD
+< 2022-03-01 09:11:00.968 257 "/" is your current location
+. 2022-03-01 09:11:00.969 Getting current directory name.
+. 2022-03-01 09:11:00.969 Startup conversation with host finished.
+< 2022-03-01 09:11:00.970 Script: Session started.
+< 2022-03-01 09:11:00.972 Script: Active session: [1] support8@images.amberta.com@92.204.220.27
+> 2022-03-01 09:11:00.973 Script: cd /public_html/reports/reports_for_apps
+. 2022-03-01 09:11:00.974 Changing directory to "/public_html/reports/reports_for_apps".
+> 2022-03-01 09:11:00.974 CWD /public_html/reports/reports_for_apps
+< 2022-03-01 09:11:01.033 250 OK. Current directory is /public_html/reports/reports_for_apps
+. 2022-03-01 09:11:01.034 Getting current directory name.
+> 2022-03-01 09:11:01.035 PWD
+< 2022-03-01 09:11:01.080 257 "/public_html/reports/reports_for_apps" is your current location
+< 2022-03-01 09:11:01.081 Script: /public_html/reports/reports_for_apps
+> 2022-03-01 09:11:01.081 Script: lcd "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports"
+< 2022-03-01 09:11:01.083 Script: \\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports
+> 2022-03-01 09:11:01.085 Script: option batch abort
+< 2022-03-01 09:11:01.085 Script: batch           abort     
+> 2022-03-01 09:11:01.086 Script: option failonnomatch on
+< 2022-03-01 09:11:01.086 Script: failonnomatch   on        
+> 2022-03-01 09:11:01.087 Script: get purchase.csv
+. 2022-03-01 09:11:01.087 Listing file "purchase.csv".
+. 2022-03-01 09:11:01.087 Retrieving file information...
+> 2022-03-01 09:11:01.087 MLST /public_html/reports/reports_for_apps/purchase.csv
+< 2022-03-01 09:11:01.146 250-Begin
+< 2022-03-01 09:11:01.146  type=file;size=316853;modify=20220301000017;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a81; /public_html/reports/reports_for_apps/purchase.csv
+< 2022-03-01 09:11:01.147 250 End.
+. 2022-03-01 09:11:01.148  type=file;size=316853;modify=20220301000017;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a81; /public_html/reports/reports_for_apps/purchase.csv
+. 2022-03-01 09:11:01.149 Retrieving file information successful
+. 2022-03-01 09:11:01.150 purchase.csv;-;316853;2022-03-01T00:00:17.000Z;3;"8475634" [0];"8475634" [0];rw-r--r--;0
+. 2022-03-01 09:11:01.150 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 316,853
+. 2022-03-01 09:11:01.151   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-03-01 09:11:01.151   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-03-01 09:11:01.151   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-03-01 09:11:01.151 File: '/public_html/reports/reports_for_apps/purchase.csv' [2022-03-01T00:00:17.000Z] [316853]
+. 2022-03-01 09:11:01.152 Copying "/public_html/reports/reports_for_apps/purchase.csv" to local directory started.
+. 2022-03-01 09:11:01.153 Binary transfer mode selected.
+. 2022-03-01 09:11:01.156 Starting download of /public_html/reports/reports_for_apps/purchase.csv
+> 2022-03-01 09:11:01.156 TYPE A
+< 2022-03-01 09:11:01.213 200 TYPE is now ASCII
+> 2022-03-01 09:11:01.214 PASV
+< 2022-03-01 09:11:01.270 227 Entering Passive Mode (92,204,220,27,196,203)
+> 2022-03-01 09:11:01.271 MLSD
+. 2022-03-01 09:11:01.271 Connecting to 92.204.220.27:50379 ...
+< 2022-03-01 09:11:01.351 150 Accepted data connection
+< 2022-03-01 09:11:01.352 226 9 matches total
+. 2022-03-01 09:11:01.353 type=file;size=316853;modify=20220301000017;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a81; purchase.csv
+. 2022-03-01 09:11:01.354 type=dir;sizd=4096;modify=20220301000023;UNIX.mode=0755;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a7d; accounting
+. 2022-03-01 09:11:01.355 type=cdir;sizd=4096;modify=20220301000029;UNIX.mode=0755;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a7c; .
+. 2022-03-01 09:11:01.356 type=file;size=181268;modify=20220301000028;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a94; stock.csv
+. 2022-03-01 09:11:01.356 type=file;size=11495931;modify=20220301000037;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a95; sales_and_subsource.csv
+. 2022-03-01 09:11:01.357 type=file;size=8225751;modify=20220301000037;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a93; sales.csv
+. 2022-03-01 09:11:01.357 type=pdir;sizd=20480;modify=20220228143715;UNIX.mode=0755;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e02c1; ..
+. 2022-03-01 09:11:01.357 type=file;size=1766817;modify=20220301000025;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a84; 1_month_sales.csv
+. 2022-03-01 09:11:01.358 type=file;size=1074558;modify=20220301000026;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a83; fba.csv
+. 2022-03-01 09:11:01.358 Data connection closed
+> 2022-03-01 09:11:01.359 TYPE I
+< 2022-03-01 09:11:01.417 200 TYPE is now 8-bit binary
+> 2022-03-01 09:11:01.418 PASV
+< 2022-03-01 09:11:01.475 227 Entering Passive Mode (92,204,220,27,199,3)
+> 2022-03-01 09:11:01.478 RETR purchase.csv
+. 2022-03-01 09:11:01.480 Connecting to 92.204.220.27:50947 ...
+< 2022-03-01 09:11:01.555 150-Accepted data connection
+< 2022-03-01 09:11:01.556 150 309.4 kbytes to download
+< 2022-03-01 09:11:01.916 226-File successfully transferred
+< 2022-03-01 09:11:01.917 226 0.358 seconds (measured here), 0.84 Mbytes per second
+. 2022-03-01 09:11:01.948 Data connection closed
+. 2022-03-01 09:11:01.949 Preserving timestamp [2022-03-01T00:00:17.000Z]
+. 2022-03-01 09:11:01.951 Download successful
+. 2022-03-01 09:11:01.951 Transfer done: '/public_html/reports/reports_for_apps/purchase.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\purchase.csv' [316853]
+. 2022-03-01 09:11:01.952 Copying finished: Transferred: 316,853, Elapsed: 0:00:00, CPS: 812,443/s
+> 2022-03-01 09:11:01.952 Script: get fba.csv
+. 2022-03-01 09:11:01.952 Listing file "fba.csv".
+. 2022-03-01 09:11:01.953 Retrieving file information...
+> 2022-03-01 09:11:01.953 MLST /public_html/reports/reports_for_apps/fba.csv
+< 2022-03-01 09:11:02.007 250-Begin
+< 2022-03-01 09:11:02.008  type=file;size=1074558;modify=20220301000026;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a83; /public_html/reports/reports_for_apps/fba.csv
+< 2022-03-01 09:11:02.009 250 End.
+. 2022-03-01 09:11:02.009  type=file;size=1074558;modify=20220301000026;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a83; /public_html/reports/reports_for_apps/fba.csv
+. 2022-03-01 09:11:02.010 Retrieving file information successful
+. 2022-03-01 09:11:02.010 fba.csv;-;1074558;2022-03-01T00:00:26.000Z;3;"8475634" [0];"8475634" [0];rw-r--r--;0
+. 2022-03-01 09:11:02.011 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 1,074,558
+. 2022-03-01 09:11:02.011   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-03-01 09:11:02.011   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-03-01 09:11:02.012   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-03-01 09:11:02.012 File: '/public_html/reports/reports_for_apps/fba.csv' [2022-03-01T00:00:26.000Z] [1074558]
+. 2022-03-01 09:11:02.013 Copying "/public_html/reports/reports_for_apps/fba.csv" to local directory started.
+. 2022-03-01 09:11:02.013 Binary transfer mode selected.
+. 2022-03-01 09:11:02.014 Starting download of /public_html/reports/reports_for_apps/fba.csv
+> 2022-03-01 09:11:02.014 TYPE I
+< 2022-03-01 09:11:02.067 200 TYPE is now 8-bit binary
+> 2022-03-01 09:11:02.068 PASV
+< 2022-03-01 09:11:02.111 227 Entering Passive Mode (92,204,220,27,197,118)
+> 2022-03-01 09:11:02.113 RETR fba.csv
+. 2022-03-01 09:11:02.114 Connecting to 92.204.220.27:50550 ...
+< 2022-03-01 09:11:02.225 150-Accepted data connection
+< 2022-03-01 09:11:02.226 150 1049.4 kbytes to download
+< 2022-03-01 09:11:04.695 226-File successfully transferred
+< 2022-03-01 09:11:04.695 226 2.508 seconds (measured here), 418.42 Kbytes per second
+. 2022-03-01 09:11:04.897 Data connection closed
+. 2022-03-01 09:11:04.898 Preserving timestamp [2022-03-01T00:00:26.000Z]
+. 2022-03-01 09:11:04.900 Download successful
+. 2022-03-01 09:11:04.900 Transfer done: '/public_html/reports/reports_for_apps/fba.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\fba.csv' [1074558]
+. 2022-03-01 09:11:04.901 Copying finished: Transferred: 1,074,558, Elapsed: 0:00:02, CPS: 399,909/s
+> 2022-03-01 09:11:04.902 Script: get stock.csv
+. 2022-03-01 09:11:04.902 Listing file "stock.csv".
+. 2022-03-01 09:11:04.902 Retrieving file information...
+> 2022-03-01 09:11:04.903 MLST /public_html/reports/reports_for_apps/stock.csv
+< 2022-03-01 09:11:04.969 250-Begin
+< 2022-03-01 09:11:05.086  type=file;size=181268;modify=20220301000028;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a94; /public_html/reports/reports_for_apps/stock.csv
+< 2022-03-01 09:11:05.087 250 End.
+. 2022-03-01 09:11:05.088  type=file;size=181268;modify=20220301000028;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a94; /public_html/reports/reports_for_apps/stock.csv
+. 2022-03-01 09:11:05.089 Retrieving file information successful
+. 2022-03-01 09:11:05.090 stock.csv;-;181268;2022-03-01T00:00:28.000Z;3;"8475634" [0];"8475634" [0];rw-r--r--;0
+. 2022-03-01 09:11:05.091 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 181,268
+. 2022-03-01 09:11:05.092   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-03-01 09:11:05.093   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-03-01 09:11:05.184   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-03-01 09:11:05.273 File: '/public_html/reports/reports_for_apps/stock.csv' [2022-03-01T00:00:28.000Z] [181268]
+. 2022-03-01 09:11:05.274 Copying "/public_html/reports/reports_for_apps/stock.csv" to local directory started.
+. 2022-03-01 09:11:05.274 Binary transfer mode selected.
+. 2022-03-01 09:11:05.275 Starting download of /public_html/reports/reports_for_apps/stock.csv
+> 2022-03-01 09:11:05.276 TYPE I
+< 2022-03-01 09:11:05.348 200 TYPE is now 8-bit binary
+> 2022-03-01 09:11:05.461 PASV
+< 2022-03-01 09:11:05.461 227 Entering Passive Mode (92,204,220,27,195,93)
+> 2022-03-01 09:11:05.463 RETR stock.csv
+. 2022-03-01 09:11:05.463 Connecting to 92.204.220.27:50013 ...
+< 2022-03-01 09:11:05.545 150-Accepted data connection
+< 2022-03-01 09:11:05.647 150 177.0 kbytes to download
+< 2022-03-01 09:11:05.823 226-File successfully transferred
+< 2022-03-01 09:11:05.824 226 0.283 seconds (measured here), 0.61 Mbytes per second
+. 2022-03-01 09:11:05.832 Data connection closed
+. 2022-03-01 09:11:05.832 Preserving timestamp [2022-03-01T00:00:28.000Z]
+. 2022-03-01 09:11:05.834 Download successful
+. 2022-03-01 09:11:05.835 Transfer done: '/public_html/reports/reports_for_apps/stock.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\stock.csv' [181268]
+. 2022-03-01 09:11:05.835 Copying finished: Transferred: 181,268, Elapsed: 0:00:00, CPS: 896,620/s
+> 2022-03-01 09:11:05.836 Script: exit
+. 2022-03-01 09:11:05.837 Script: Exit code: 0
+. 2022-03-01 09:11:05.838 Disconnected from server
+. 2022-03-01 09:57:15.821 --------------------------------------------------------------------------
+. 2022-03-01 09:57:15.821 WinSCP Version 5.19.5 (Build 11933 2021-11-25) (OS 10.0.19043 - Windows 10 Enterprise)
+. 2022-03-01 09:57:15.822 Configuration: nul
+. 2022-03-01 09:57:15.822 Log level: Normal
+. 2022-03-01 09:57:15.855 Local account: SUPPORT10\Amberta Support10
+. 2022-03-01 09:57:15.855 Working directory: C:\Windows
+. 2022-03-01 09:57:15.855 Process ID: 3928
+. 2022-03-01 09:57:15.864 Ancestor processes: WinSCP, cmd, explorer, ...
+. 2022-03-01 09:57:15.864 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.19.5 /consoleinstance=_8116_494 "/log=""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\documents\winscp.log""" "/ini=nul" "/command" "open ftp://support8%40images.amberta.com:***@92.204.220.27/" "cd /public_html/reports/reports_for_apps" "lcd ""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports""" "option batch abort" "option failonnomatch on" "get purchase.csv" "get fba.csv" "get stock.csv" "exit"
+. 2022-03-01 09:57:15.865 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 27/03/2022, DST End: 30/10/2022
+. 2022-03-01 09:57:15.866 Login time: 01 March 2022 09:57:15
+. 2022-03-01 09:57:15.866 --------------------------------------------------------------------------
+. 2022-03-01 09:57:15.866 Script: Retrospectively logging previous script records:
+> 2022-03-01 09:57:15.867 Script: open ftp://support8%40images.amberta.com:***@92.204.220.27/
+. 2022-03-01 09:57:15.867 --------------------------------------------------------------------------
+. 2022-03-01 09:57:15.868 Session name: support8@images.amberta.com@92.204.220.27 (Ad-Hoc site)
+. 2022-03-01 09:57:15.868 Host name: 92.204.220.27 (Port: 21)
+. 2022-03-01 09:57:15.868 User name: support8@images.amberta.com (Password: Yes, Key file: No, Passphrase: No)
+. 2022-03-01 09:57:15.869 Transfer Protocol: FTP
+. 2022-03-01 09:57:15.871 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2022-03-01 09:57:15.871 Disable Nagle: No
+. 2022-03-01 09:57:15.871 Proxy: None
+. 2022-03-01 09:57:15.872 Send buffer: 262144
+. 2022-03-01 09:57:15.872 UTF: Auto
+. 2022-03-01 09:57:15.873 FTPS: None [Client certificate: No]
+. 2022-03-01 09:57:15.873 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2022-03-01 09:57:15.873 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2022-03-01 09:57:15.874 Cache directory changes: Yes, Permanent: Yes
+. 2022-03-01 09:57:15.874 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2022-03-01 09:57:15.874 Timezone offset: 0h 0m
+. 2022-03-01 09:57:15.875 --------------------------------------------------------------------------
+< 2022-03-01 09:57:15.876 Script: Connecting to 92.204.220.27 ...
+. 2022-03-01 09:57:15.876 Connecting to 92.204.220.27 ...
+. 2022-03-01 09:57:15.925 Connected with 92.204.220.27. Waiting for welcome message...
+< 2022-03-01 09:57:15.966 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+< 2022-03-01 09:57:15.967 220-You are user number 2 of 500 allowed.
+< 2022-03-01 09:57:15.968 220-Local time is now 02:57. Server port: 21.
+< 2022-03-01 09:57:15.968 220-This is a private system - No anonymous login
+< 2022-03-01 09:57:15.968 220-IPv6 connections are also welcome on this server.
+< 2022-03-01 09:57:15.968 220 You will be disconnected after 15 minutes of inactivity.
+> 2022-03-01 09:57:15.969 USER support8@images.amberta.com
+< 2022-03-01 09:57:16.008 331 User support8@images.amberta.com OK. Password required
+> 2022-03-01 09:57:16.008 PASS ********************
+< 2022-03-01 09:57:16.092 230-Your bandwidth usage is restricted
+< 2022-03-01 09:57:16.093 230 OK. Current restricted directory is /
+> 2022-03-01 09:57:16.093 SYST
+< 2022-03-01 09:57:16.133 215 UNIX Type: L8
+> 2022-03-01 09:57:16.134 FEAT
+< 2022-03-01 09:57:16.181 211-Extensions supported:
+< 2022-03-01 09:57:16.196  UTF8
+< 2022-03-01 09:57:16.197  EPRT
+< 2022-03-01 09:57:16.198  IDLE
+< 2022-03-01 09:57:16.199  MDTM
+< 2022-03-01 09:57:16.199  SIZE
+< 2022-03-01 09:57:16.199  MFMT
+< 2022-03-01 09:57:16.200  REST STREAM
+< 2022-03-01 09:57:16.200  MLST type*;size*;sizd*;modify*;UNIX.mode*;UNIX.uid*;UNIX.gid*;unique*;
+< 2022-03-01 09:57:16.201  MLSD
+< 2022-03-01 09:57:16.201  PRET
+< 2022-03-01 09:57:16.202  AUTH TLS
+< 2022-03-01 09:57:16.202  PBSZ
+< 2022-03-01 09:57:16.202  PROT
+< 2022-03-01 09:57:16.203  TVFS
+< 2022-03-01 09:57:16.203  ESTA
+< 2022-03-01 09:57:16.204  PASV
+< 2022-03-01 09:57:16.204  EPSV
+< 2022-03-01 09:57:16.204  SPSV
+< 2022-03-01 09:57:16.205  ESTP
+< 2022-03-01 09:57:16.205 211 End.
+> 2022-03-01 09:57:16.205 OPTS UTF8 ON
+< 2022-03-01 09:57:16.221 504 Unknown command
+< 2022-03-01 09:57:16.221 Script: Connected
+. 2022-03-01 09:57:16.222 Connected
+. 2022-03-01 09:57:16.222 --------------------------------------------------------------------------
+. 2022-03-01 09:57:16.223 Using FTP protocol.
+. 2022-03-01 09:57:16.223 Doing startup conversation with host.
+< 2022-03-01 09:57:16.224 Script: Starting the session...
+> 2022-03-01 09:57:16.224 PWD
+< 2022-03-01 09:57:16.264 257 "/" is your current location
+. 2022-03-01 09:57:16.265 Getting current directory name.
+. 2022-03-01 09:57:16.265 Startup conversation with host finished.
+< 2022-03-01 09:57:16.266 Script: Session started.
+< 2022-03-01 09:57:16.266 Script: Active session: [1] support8@images.amberta.com@92.204.220.27
+> 2022-03-01 09:57:16.267 Script: cd /public_html/reports/reports_for_apps
+. 2022-03-01 09:57:16.267 Changing directory to "/public_html/reports/reports_for_apps".
+> 2022-03-01 09:57:16.268 CWD /public_html/reports/reports_for_apps
+< 2022-03-01 09:57:16.309 250 OK. Current directory is /public_html/reports/reports_for_apps
+. 2022-03-01 09:57:16.310 Getting current directory name.
+> 2022-03-01 09:57:16.311 PWD
+< 2022-03-01 09:57:16.350 257 "/public_html/reports/reports_for_apps" is your current location
+< 2022-03-01 09:57:16.350 Script: /public_html/reports/reports_for_apps
+> 2022-03-01 09:57:16.351 Script: lcd "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports"
+< 2022-03-01 09:57:16.352 Script: \\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports
+> 2022-03-01 09:57:16.353 Script: option batch abort
+< 2022-03-01 09:57:16.353 Script: batch           abort     
+> 2022-03-01 09:57:16.354 Script: option failonnomatch on
+< 2022-03-01 09:57:16.354 Script: failonnomatch   on        
+> 2022-03-01 09:57:16.354 Script: get purchase.csv
+. 2022-03-01 09:57:16.355 Listing file "purchase.csv".
+. 2022-03-01 09:57:16.355 Retrieving file information...
+> 2022-03-01 09:57:16.356 MLST /public_html/reports/reports_for_apps/purchase.csv
+< 2022-03-01 09:57:16.395 250-Begin
+< 2022-03-01 09:57:16.396  type=file;size=316853;modify=20220301000017;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a81; /public_html/reports/reports_for_apps/purchase.csv
+< 2022-03-01 09:57:16.396 250 End.
+. 2022-03-01 09:57:16.397  type=file;size=316853;modify=20220301000017;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a81; /public_html/reports/reports_for_apps/purchase.csv
+. 2022-03-01 09:57:16.397 Retrieving file information successful
+. 2022-03-01 09:57:16.398 purchase.csv;-;316853;2022-03-01T00:00:17.000Z;3;"8475634" [0];"8475634" [0];rw-r--r--;0
+. 2022-03-01 09:57:16.398 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 316,853
+. 2022-03-01 09:57:16.398   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-03-01 09:57:16.399   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-03-01 09:57:16.399   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-03-01 09:57:16.400 File: '/public_html/reports/reports_for_apps/purchase.csv' [2022-03-01T00:00:17.000Z] [316853]
+. 2022-03-01 09:57:16.400 Copying "/public_html/reports/reports_for_apps/purchase.csv" to local directory started.
+. 2022-03-01 09:57:16.401 Binary transfer mode selected.
+. 2022-03-01 09:57:16.402 Starting download of /public_html/reports/reports_for_apps/purchase.csv
+> 2022-03-01 09:57:16.402 TYPE A
+< 2022-03-01 09:57:16.443 200 TYPE is now ASCII
+> 2022-03-01 09:57:16.443 PASV
+< 2022-03-01 09:57:16.484 227 Entering Passive Mode (92,204,220,27,199,6)
+> 2022-03-01 09:57:16.486 MLSD
+. 2022-03-01 09:57:16.486 Connecting to 92.204.220.27:50950 ...
+< 2022-03-01 09:57:16.575 150 Accepted data connection
+. 2022-03-01 09:57:16.576 type=file;size=316853;modify=20220301000017;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a81; purchase.csv
+. 2022-03-01 09:57:16.577 type=dir;sizd=4096;modify=20220301000023;UNIX.mode=0755;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a7d; accounting
+. 2022-03-01 09:57:16.578 type=cdir;sizd=4096;modify=20220301000029;UNIX.mode=0755;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a7c; .
+. 2022-03-01 09:57:16.579 type=file;size=181268;modify=20220301000028;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a94; stock.csv
+. 2022-03-01 09:57:16.580 type=file;size=11495931;modify=20220301000037;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a95; sales_and_subsource.csv
+. 2022-03-01 09:57:16.580 type=file;size=8225751;modify=20220301000037;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a93; sales.csv
+. 2022-03-01 09:57:16.582 type=pdir;sizd=20480;modify=20220228143715;UNIX.mode=0755;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e02c1; ..
+. 2022-03-01 09:57:16.582 type=file;size=1766817;modify=20220301000025;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a84; 1_month_sales.csv
+. 2022-03-01 09:57:16.582 type=file;size=1074558;modify=20220301000026;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a83; fba.csv
+. 2022-03-01 09:57:16.583 Data connection closed
+< 2022-03-01 09:57:16.583 226 9 matches total
+> 2022-03-01 09:57:16.584 TYPE I
+< 2022-03-01 09:57:16.627 200 TYPE is now 8-bit binary
+> 2022-03-01 09:57:16.628 PASV
+< 2022-03-01 09:57:16.669 227 Entering Passive Mode (92,204,220,27,196,142)
+> 2022-03-01 09:57:16.672 RETR purchase.csv
+. 2022-03-01 09:57:16.673 Connecting to 92.204.220.27:50318 ...
+< 2022-03-01 09:57:16.757 150-Accepted data connection
+< 2022-03-01 09:57:16.758 150 309.4 kbytes to download
+< 2022-03-01 09:57:17.208 226-File successfully transferred
+< 2022-03-01 09:57:17.208 226 0.446 seconds (measured here), 0.68 Mbytes per second
+. 2022-03-01 09:57:17.243 Data connection closed
+. 2022-03-01 09:57:17.244 Preserving timestamp [2022-03-01T00:00:17.000Z]
+. 2022-03-01 09:57:17.247 Download successful
+. 2022-03-01 09:57:17.248 Transfer done: '/public_html/reports/reports_for_apps/purchase.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\purchase.csv' [316853]
+. 2022-03-01 09:57:17.248 Copying finished: Transferred: 316,853, Elapsed: 0:00:00, CPS: 633,706/s
+> 2022-03-01 09:57:17.249 Script: get fba.csv
+. 2022-03-01 09:57:17.249 Listing file "fba.csv".
+. 2022-03-01 09:57:17.249 Retrieving file information...
+> 2022-03-01 09:57:17.250 MLST /public_html/reports/reports_for_apps/fba.csv
+< 2022-03-01 09:57:17.292 250-Begin
+< 2022-03-01 09:57:17.292  type=file;size=1074558;modify=20220301000026;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a83; /public_html/reports/reports_for_apps/fba.csv
+< 2022-03-01 09:57:17.292 250 End.
+. 2022-03-01 09:57:17.293  type=file;size=1074558;modify=20220301000026;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a83; /public_html/reports/reports_for_apps/fba.csv
+. 2022-03-01 09:57:17.294 Retrieving file information successful
+. 2022-03-01 09:57:17.294 fba.csv;-;1074558;2022-03-01T00:00:26.000Z;3;"8475634" [0];"8475634" [0];rw-r--r--;0
+. 2022-03-01 09:57:17.294 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 1,074,558
+. 2022-03-01 09:57:17.295   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-03-01 09:57:17.295   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-03-01 09:57:17.296   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-03-01 09:57:17.296 File: '/public_html/reports/reports_for_apps/fba.csv' [2022-03-01T00:00:26.000Z] [1074558]
+. 2022-03-01 09:57:17.297 Copying "/public_html/reports/reports_for_apps/fba.csv" to local directory started.
+. 2022-03-01 09:57:17.297 Binary transfer mode selected.
+. 2022-03-01 09:57:17.298 Starting download of /public_html/reports/reports_for_apps/fba.csv
+> 2022-03-01 09:57:17.298 TYPE I
+< 2022-03-01 09:57:17.337 200 TYPE is now 8-bit binary
+> 2022-03-01 09:57:17.338 PASV
+< 2022-03-01 09:57:17.378 227 Entering Passive Mode (92,204,220,27,197,179)
+> 2022-03-01 09:57:17.379 RETR fba.csv
+. 2022-03-01 09:57:17.380 Connecting to 92.204.220.27:50611 ...
+< 2022-03-01 09:57:17.463 150-Accepted data connection
+< 2022-03-01 09:57:17.464 150 1049.4 kbytes to download
+< 2022-03-01 09:57:18.383 226-File successfully transferred
+< 2022-03-01 09:57:18.385 226 0.918 seconds (measured here), 1.12 Mbytes per second
+. 2022-03-01 09:57:18.419 Data connection closed
+. 2022-03-01 09:57:18.419 Preserving timestamp [2022-03-01T00:00:26.000Z]
+. 2022-03-01 09:57:18.421 Download successful
+. 2022-03-01 09:57:18.422 Transfer done: '/public_html/reports/reports_for_apps/fba.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\fba.csv' [1074558]
+. 2022-03-01 09:57:18.423 Copying finished: Transferred: 1,074,558, Elapsed: 0:00:01, CPS: 1,127,552/s
+> 2022-03-01 09:57:18.423 Script: get stock.csv
+. 2022-03-01 09:57:18.424 Listing file "stock.csv".
+. 2022-03-01 09:57:18.424 Retrieving file information...
+> 2022-03-01 09:57:18.425 MLST /public_html/reports/reports_for_apps/stock.csv
+< 2022-03-01 09:57:18.466 250-Begin
+< 2022-03-01 09:57:18.467  type=file;size=181268;modify=20220301000028;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a94; /public_html/reports/reports_for_apps/stock.csv
+< 2022-03-01 09:57:18.468 250 End.
+. 2022-03-01 09:57:18.469  type=file;size=181268;modify=20220301000028;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a94; /public_html/reports/reports_for_apps/stock.csv
+. 2022-03-01 09:57:18.469 Retrieving file information successful
+. 2022-03-01 09:57:18.470 stock.csv;-;181268;2022-03-01T00:00:28.000Z;3;"8475634" [0];"8475634" [0];rw-r--r--;0
+. 2022-03-01 09:57:18.471 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 181,268
+. 2022-03-01 09:57:18.472   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-03-01 09:57:18.472   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-03-01 09:57:18.472   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-03-01 09:57:18.473 File: '/public_html/reports/reports_for_apps/stock.csv' [2022-03-01T00:00:28.000Z] [181268]
+. 2022-03-01 09:57:18.474 Copying "/public_html/reports/reports_for_apps/stock.csv" to local directory started.
+. 2022-03-01 09:57:18.474 Binary transfer mode selected.
+. 2022-03-01 09:57:18.475 Starting download of /public_html/reports/reports_for_apps/stock.csv
+> 2022-03-01 09:57:18.475 TYPE I
+< 2022-03-01 09:57:18.516 200 TYPE is now 8-bit binary
+> 2022-03-01 09:57:18.517 PASV
+< 2022-03-01 09:57:18.556 227 Entering Passive Mode (92,204,220,27,198,175)
+> 2022-03-01 09:57:18.558 RETR stock.csv
+. 2022-03-01 09:57:18.559 Connecting to 92.204.220.27:50863 ...
+< 2022-03-01 09:57:18.640 150-Accepted data connection
+< 2022-03-01 09:57:18.641 150 177.0 kbytes to download
+< 2022-03-01 09:57:18.879 226-File successfully transferred
+< 2022-03-01 09:57:18.880 226 0.237 seconds (measured here), 0.73 Mbytes per second
+. 2022-03-01 09:57:18.924 Data connection closed
+. 2022-03-01 09:57:18.925 Preserving timestamp [2022-03-01T00:00:28.000Z]
+. 2022-03-01 09:57:18.926 Download successful
+. 2022-03-01 09:57:18.927 Transfer done: '/public_html/reports/reports_for_apps/stock.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\stock.csv' [181268]
+. 2022-03-01 09:57:18.927 Copying finished: Transferred: 181,268, Elapsed: 0:00:00, CPS: 642,794/s
+> 2022-03-01 09:57:18.928 Script: exit
+. 2022-03-01 09:57:18.928 Script: Exit code: 0
+. 2022-03-01 09:57:18.930 Disconnected from server
+. 2022-03-01 16:20:41.646 --------------------------------------------------------------------------
+. 2022-03-01 16:20:41.678 WinSCP Version 5.19.5 (Build 11933 2021-11-25) (OS 10.0.19044 - Windows 10 Enterprise)
+. 2022-03-01 16:20:41.678 Configuration: nul
+. 2022-03-01 16:20:41.678 Log level: Normal
+. 2022-03-01 16:20:41.678 Local account: SUPPORT8\AmbertaSupport8
+. 2022-03-01 16:20:41.678 Working directory: C:\WINDOWS\system32
+. 2022-03-01 16:20:41.678 Process ID: 13424
+. 2022-03-01 16:20:41.678 Ancestor processes: ...
+. 2022-03-01 16:20:41.678 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /log="""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\documents\winscp.log""" /ini=nul /command "open ftp://support8%40images.amberta.com:***@92.204.220.27/" "cd /public_html/reports/reports_for_apps" "lcd ""\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports""" "option batch abort" "option failonnomatch on" "get purchase.csv" "get fba.csv" "get stock.csv"  "exit"
+. 2022-03-01 16:20:41.678 Time zone: Current: GMT+0, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Daylight Time), DST Start: 27/03/2022, DST End: 30/10/2022
+. 2022-03-01 16:20:41.678 Login time: 01 March 2022 16:20:41
+. 2022-03-01 16:20:41.678 --------------------------------------------------------------------------
+. 2022-03-01 16:20:41.678 Script: Retrospectively logging previous script records:
+> 2022-03-01 16:20:41.678 Script: open ftp://support8%40images.amberta.com:***@92.204.220.27/
+. 2022-03-01 16:20:41.678 --------------------------------------------------------------------------
+. 2022-03-01 16:20:41.678 Session name: support8@images.amberta.com@92.204.220.27 (Ad-Hoc site)
+. 2022-03-01 16:20:41.693 Host name: 92.204.220.27 (Port: 21)
+. 2022-03-01 16:20:41.693 User name: support8@images.amberta.com (Password: Yes, Key file: No, Passphrase: No)
+. 2022-03-01 16:20:41.693 Transfer Protocol: FTP
+. 2022-03-01 16:20:41.693 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2022-03-01 16:20:41.693 Disable Nagle: No
+. 2022-03-01 16:20:41.693 Proxy: None
+. 2022-03-01 16:20:41.693 Send buffer: 262144
+. 2022-03-01 16:20:41.693 UTF: Auto
+. 2022-03-01 16:20:41.693 FTPS: None [Client certificate: No]
+. 2022-03-01 16:20:41.693 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2022-03-01 16:20:41.693 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2022-03-01 16:20:41.693 Cache directory changes: Yes, Permanent: Yes
+. 2022-03-01 16:20:41.693 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2022-03-01 16:20:41.693 Timezone offset: 0h 0m
+. 2022-03-01 16:20:41.693 --------------------------------------------------------------------------
+< 2022-03-01 16:20:41.693 Script: Connecting to 92.204.220.27 ...
+. 2022-03-01 16:20:41.693 Connecting to 92.204.220.27 ...
+. 2022-03-01 16:20:41.740 Connected with 92.204.220.27. Waiting for welcome message...
+< 2022-03-01 16:20:41.778 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+< 2022-03-01 16:20:41.778 220-You are user number 2 of 500 allowed.
+< 2022-03-01 16:20:41.778 220-Local time is now 09:20. Server port: 21.
+< 2022-03-01 16:20:41.778 220-This is a private system - No anonymous login
+< 2022-03-01 16:20:41.778 220-IPv6 connections are also welcome on this server.
+< 2022-03-01 16:20:41.778 220 You will be disconnected after 15 minutes of inactivity.
+> 2022-03-01 16:20:41.778 USER support8@images.amberta.com
+< 2022-03-01 16:20:41.825 331 User support8@images.amberta.com OK. Password required
+> 2022-03-01 16:20:41.825 PASS ********************
+< 2022-03-01 16:20:41.910 230-Your bandwidth usage is restricted
+< 2022-03-01 16:20:41.910 230 OK. Current restricted directory is /
+> 2022-03-01 16:20:41.910 SYST
+< 2022-03-01 16:20:41.963 215 UNIX Type: L8
+> 2022-03-01 16:20:41.963 FEAT
+< 2022-03-01 16:20:41.994 211-Extensions supported:
+< 2022-03-01 16:20:41.994  UTF8
+< 2022-03-01 16:20:41.994  EPRT
+< 2022-03-01 16:20:41.994  IDLE
+< 2022-03-01 16:20:42.010  MDTM
+< 2022-03-01 16:20:42.010  SIZE
+< 2022-03-01 16:20:42.010  MFMT
+< 2022-03-01 16:20:42.010  REST STREAM
+< 2022-03-01 16:20:42.010  MLST type*;size*;sizd*;modify*;UNIX.mode*;UNIX.uid*;UNIX.gid*;unique*;
+< 2022-03-01 16:20:42.010  MLSD
+< 2022-03-01 16:20:42.010  PRET
+< 2022-03-01 16:20:42.010  AUTH TLS
+< 2022-03-01 16:20:42.010  PBSZ
+< 2022-03-01 16:20:42.010  PROT
+< 2022-03-01 16:20:42.010  TVFS
+< 2022-03-01 16:20:42.010  ESTA
+< 2022-03-01 16:20:42.010  PASV
+< 2022-03-01 16:20:42.010  EPSV
+< 2022-03-01 16:20:42.010  SPSV
+< 2022-03-01 16:20:42.010  ESTP
+< 2022-03-01 16:20:42.010 211 End.
+> 2022-03-01 16:20:42.010 OPTS UTF8 ON
+< 2022-03-01 16:20:42.041 504 Unknown command
+< 2022-03-01 16:20:42.041 Script: Connected
+. 2022-03-01 16:20:42.041 Connected
+. 2022-03-01 16:20:42.041 --------------------------------------------------------------------------
+. 2022-03-01 16:20:42.041 Using FTP protocol.
+. 2022-03-01 16:20:42.041 Doing startup conversation with host.
+< 2022-03-01 16:20:42.041 Script: Starting the session...
+> 2022-03-01 16:20:42.041 PWD
+< 2022-03-01 16:20:42.079 257 "/" is your current location
+. 2022-03-01 16:20:42.095 Getting current directory name.
+. 2022-03-01 16:20:42.095 Startup conversation with host finished.
+< 2022-03-01 16:20:42.095 Script: Session started.
+< 2022-03-01 16:20:42.095 Script: Active session: [1] support8@images.amberta.com@92.204.220.27
+> 2022-03-01 16:20:42.095 Script: cd /public_html/reports/reports_for_apps
+. 2022-03-01 16:20:42.095 Changing directory to "/public_html/reports/reports_for_apps".
+> 2022-03-01 16:20:42.095 CWD /public_html/reports/reports_for_apps
+< 2022-03-01 16:20:42.126 250 OK. Current directory is /public_html/reports/reports_for_apps
+. 2022-03-01 16:20:42.126 Getting current directory name.
+> 2022-03-01 16:20:42.126 PWD
+< 2022-03-01 16:20:42.164 257 "/public_html/reports/reports_for_apps" is your current location
+< 2022-03-01 16:20:42.179 Script: /public_html/reports/reports_for_apps
+> 2022-03-01 16:20:42.179 Script: lcd "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports"
+< 2022-03-01 16:20:42.179 Script: \\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports
+> 2022-03-01 16:20:42.179 Script: option batch abort
+< 2022-03-01 16:20:42.179 Script: batch           abort     
+> 2022-03-01 16:20:42.179 Script: option failonnomatch on
+< 2022-03-01 16:20:42.179 Script: failonnomatch   on        
+> 2022-03-01 16:20:42.179 Script: get purchase.csv
+. 2022-03-01 16:20:42.179 Listing file "purchase.csv".
+. 2022-03-01 16:20:42.179 Retrieving file information...
+> 2022-03-01 16:20:42.179 MLST /public_html/reports/reports_for_apps/purchase.csv
+< 2022-03-01 16:20:42.211 250-Begin
+< 2022-03-01 16:20:42.211  type=file;size=316853;modify=20220301000017;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a81; /public_html/reports/reports_for_apps/purchase.csv
+< 2022-03-01 16:20:42.211 250 End.
+. 2022-03-01 16:20:42.211  type=file;size=316853;modify=20220301000017;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a81; /public_html/reports/reports_for_apps/purchase.csv
+. 2022-03-01 16:20:42.211 Retrieving file information successful
+. 2022-03-01 16:20:42.226 purchase.csv;-;316853;2022-03-01T00:00:17.000Z;3;"8475634" [0];"8475634" [0];rw-r--r--;0
+. 2022-03-01 16:20:42.226 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 316,853
+. 2022-03-01 16:20:42.226   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-03-01 16:20:42.226   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-03-01 16:20:42.226   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-03-01 16:20:42.226 File: '/public_html/reports/reports_for_apps/purchase.csv' [2022-03-01T00:00:17.000Z] [316853]
+. 2022-03-01 16:20:42.226 Copying "/public_html/reports/reports_for_apps/purchase.csv" to local directory started.
+. 2022-03-01 16:20:42.226 Binary transfer mode selected.
+. 2022-03-01 16:20:42.226 Starting download of /public_html/reports/reports_for_apps/purchase.csv
+> 2022-03-01 16:20:42.226 TYPE A
+< 2022-03-01 16:20:42.264 200 TYPE is now ASCII
+> 2022-03-01 16:20:42.264 PASV
+< 2022-03-01 16:20:42.315 227 Entering Passive Mode (92,204,220,27,195,167)
+> 2022-03-01 16:20:42.316 MLSD
+. 2022-03-01 16:20:42.317 Connecting to 92.204.220.27:50087 ...
+< 2022-03-01 16:20:42.395 150 Accepted data connection
+. 2022-03-01 16:20:42.395 type=file;size=316853;modify=20220301000017;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a81; purchase.csv
+. 2022-03-01 16:20:42.395 type=dir;sizd=4096;modify=20220301000023;UNIX.mode=0755;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a7d; accounting
+. 2022-03-01 16:20:42.395 type=cdir;sizd=4096;modify=20220301151024;UNIX.mode=0755;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a7c; .
+. 2022-03-01 16:20:42.395 type=file;size=181268;modify=20220301000028;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a94; stock.csv
+. 2022-03-01 16:20:42.395 type=file;size=11495931;modify=20220301000037;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a95; sales_and_subsource.csv
+. 2022-03-01 16:20:42.395 type=file;size=8225751;modify=20220301000037;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a93; sales.csv
+. 2022-03-01 16:20:42.395 type=pdir;sizd=20480;modify=20220228143715;UNIX.mode=0755;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e02c1; ..
+. 2022-03-01 16:20:42.395 type=file;size=1766817;modify=20220301000025;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a84; 1_month_sales.csv
+. 2022-03-01 16:20:42.395 type=file;size=1074555;modify=20220301151026;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a83; fba.csv
+. 2022-03-01 16:20:42.395 Data connection closed
+< 2022-03-01 16:20:42.411 226 9 matches total
+> 2022-03-01 16:20:42.411 TYPE I
+< 2022-03-01 16:20:42.447 200 TYPE is now 8-bit binary
+> 2022-03-01 16:20:42.447 PASV
+< 2022-03-01 16:20:42.495 227 Entering Passive Mode (92,204,220,27,198,233)
+> 2022-03-01 16:20:42.495 RETR purchase.csv
+. 2022-03-01 16:20:42.495 Connecting to 92.204.220.27:50921 ...
+< 2022-03-01 16:20:42.580 150-Accepted data connection
+< 2022-03-01 16:20:42.580 150 309.4 kbytes to download
+< 2022-03-01 16:20:43.567 226-File successfully transferred
+< 2022-03-01 16:20:43.567 226 0.985 seconds (measured here), 314.06 Kbytes per second
+. 2022-03-01 16:20:43.629 Data connection closed
+. 2022-03-01 16:20:43.645 Preserving timestamp [2022-03-01T00:00:17.000Z]
+. 2022-03-01 16:20:43.645 Download successful
+. 2022-03-01 16:20:43.645 Transfer done: '/public_html/reports/reports_for_apps/purchase.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\purchase.csv' [316853]
+. 2022-03-01 16:20:43.645 Copying finished: Transferred: 316,853, Elapsed: 0:00:01, CPS: 298,074/s
+> 2022-03-01 16:20:43.645 Script: get fba.csv
+. 2022-03-01 16:20:43.645 Listing file "fba.csv".
+. 2022-03-01 16:20:43.645 Retrieving file information...
+> 2022-03-01 16:20:43.645 MLST /public_html/reports/reports_for_apps/fba.csv
+< 2022-03-01 16:20:43.683 250-Begin
+< 2022-03-01 16:20:43.683  type=file;size=1074555;modify=20220301151026;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a83; /public_html/reports/reports_for_apps/fba.csv
+< 2022-03-01 16:20:43.683 250 End.
+. 2022-03-01 16:20:43.683  type=file;size=1074555;modify=20220301151026;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a83; /public_html/reports/reports_for_apps/fba.csv
+. 2022-03-01 16:20:43.683 Retrieving file information successful
+. 2022-03-01 16:20:43.683 fba.csv;-;1074555;2022-03-01T15:10:26.000Z;3;"8475634" [0];"8475634" [0];rw-r--r--;0
+. 2022-03-01 16:20:43.698 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 1,074,555
+. 2022-03-01 16:20:43.698   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-03-01 16:20:43.698   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-03-01 16:20:43.698   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-03-01 16:20:43.698 File: '/public_html/reports/reports_for_apps/fba.csv' [2022-03-01T15:10:26.000Z] [1074555]
+. 2022-03-01 16:20:43.698 Copying "/public_html/reports/reports_for_apps/fba.csv" to local directory started.
+. 2022-03-01 16:20:43.698 Binary transfer mode selected.
+. 2022-03-01 16:20:43.698 Starting download of /public_html/reports/reports_for_apps/fba.csv
+> 2022-03-01 16:20:43.698 TYPE I
+< 2022-03-01 16:20:43.745 200 TYPE is now 8-bit binary
+> 2022-03-01 16:20:43.745 PASV
+< 2022-03-01 16:20:43.783 227 Entering Passive Mode (92,204,220,27,196,111)
+> 2022-03-01 16:20:43.783 RETR fba.csv
+. 2022-03-01 16:20:43.783 Connecting to 92.204.220.27:50287 ...
+< 2022-03-01 16:20:43.868 150-Accepted data connection
+< 2022-03-01 16:20:43.868 150 1049.4 kbytes to download
+. 2022-03-01 16:20:44.785 Data connection closed
+< 2022-03-01 16:20:44.785 226-File successfully transferred
+< 2022-03-01 16:20:44.785 226 0.912 seconds (measured here), 1.12 Mbytes per second
+. 2022-03-01 16:20:44.785 Preserving timestamp [2022-03-01T15:10:26.000Z]
+. 2022-03-01 16:20:44.785 Download successful
+. 2022-03-01 16:20:44.785 Transfer done: '/public_html/reports/reports_for_apps/fba.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\fba.csv' [1074555]
+. 2022-03-01 16:20:44.785 Copying finished: Transferred: 1,074,555, Elapsed: 0:00:01, CPS: 1,165,460/s
+> 2022-03-01 16:20:44.785 Script: get stock.csv
+. 2022-03-01 16:20:44.785 Listing file "stock.csv".
+. 2022-03-01 16:20:44.785 Retrieving file information...
+> 2022-03-01 16:20:44.785 MLST /public_html/reports/reports_for_apps/stock.csv
+< 2022-03-01 16:20:44.832 250-Begin
+< 2022-03-01 16:20:44.832  type=file;size=181268;modify=20220301000028;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a94; /public_html/reports/reports_for_apps/stock.csv
+< 2022-03-01 16:20:44.832 250 End.
+. 2022-03-01 16:20:44.832  type=file;size=181268;modify=20220301000028;UNIX.mode=0644;UNIX.uid=8475634;UNIX.gid=8475634;unique=801g13e0a94; /public_html/reports/reports_for_apps/stock.csv
+. 2022-03-01 16:20:44.832 Retrieving file information successful
+. 2022-03-01 16:20:44.832 stock.csv;-;181268;2022-03-01T00:00:28.000Z;3;"8475634" [0];"8475634" [0];rw-r--r--;0
+. 2022-03-01 16:20:44.832 Copying 1 files/directories to local directory "\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports" - total size: 181,268
+. 2022-03-01 16:20:44.832   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-03-01 16:20:44.832   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-03-01 16:20:44.832   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-03-01 16:20:44.832 File: '/public_html/reports/reports_for_apps/stock.csv' [2022-03-01T00:00:28.000Z] [181268]
+. 2022-03-01 16:20:44.832 Copying "/public_html/reports/reports_for_apps/stock.csv" to local directory started.
+. 2022-03-01 16:20:44.832 Binary transfer mode selected.
+. 2022-03-01 16:20:44.832 Starting download of /public_html/reports/reports_for_apps/stock.csv
+> 2022-03-01 16:20:44.832 TYPE I
+< 2022-03-01 16:20:44.885 200 TYPE is now 8-bit binary
+> 2022-03-01 16:20:44.885 PASV
+< 2022-03-01 16:20:44.932 227 Entering Passive Mode (92,204,220,27,197,252)
+> 2022-03-01 16:20:44.932 RETR stock.csv
+. 2022-03-01 16:20:44.932 Connecting to 92.204.220.27:50684 ...
+< 2022-03-01 16:20:45.017 150-Accepted data connection
+< 2022-03-01 16:20:45.017 150 177.0 kbytes to download
+< 2022-03-01 16:20:45.289 226-File successfully transferred
+< 2022-03-01 16:20:45.289 226 0.276 seconds (measured here), 0.63 Mbytes per second
+. 2022-03-01 16:20:45.327 Data connection closed
+. 2022-03-01 16:20:45.327 Preserving timestamp [2022-03-01T00:00:28.000Z]
+. 2022-03-01 16:20:45.327 Download successful
+. 2022-03-01 16:20:45.327 Transfer done: '/public_html/reports/reports_for_apps/stock.csv' => '\\NIKOTSY-PC\Amberta LTD - Accounting\Purchase_Orders_Payment\reports\stock.csv' [181268]
+. 2022-03-01 16:20:45.343 Copying finished: Transferred: 181,268, Elapsed: 0:00:00, CPS: 552,646/s
+> 2022-03-01 16:20:45.343 Script: exit
+. 2022-03-01 16:20:45.343 Script: Exit code: 0
+. 2022-03-01 16:20:45.343 Disconnected from server
