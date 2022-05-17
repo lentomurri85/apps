@@ -1,7 +1,7 @@
 "C:\Program Files (x86)\WinSCP\WinSCP.com" ^
-  /log="""\\NIKOTSY-PC\Amberta LTD - Accounting\Stock Close\documents\winscp.log""" /ini=nul ^
+  /log="""LOG""" /ini=nul ^
   /command ^
-    "open ftp://support8%%40images.amberta.com:4q8g%%5DLX06q9%%28%%5B%%29nn0A%%23v@92.204.220.27/" ^
+FTP
     "cd /public_html/reports/reports_for_apps/accounting" ^
     "lcd ""\\NIKOTSY-PC\Amberta LTD - Accounting\Stock Close\reports""" ^
     "get -latest last_sales*.csv" ^
